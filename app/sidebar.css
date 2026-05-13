@@ -122,6 +122,31 @@
   padding: 0.5rem 0 !important;
 }
 
+/* Themed scrollbar — overrides no-scrollbar utility */
+.studies-sb-content::-webkit-scrollbar,
+[data-sidebar="content"]::-webkit-scrollbar {
+  display: block !important;
+  width: 4px;
+}
+.studies-sb-content::-webkit-scrollbar-track,
+[data-sidebar="content"]::-webkit-scrollbar-track {
+  background: transparent;
+}
+.studies-sb-content::-webkit-scrollbar-thumb,
+[data-sidebar="content"]::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+.studies-sb-content::-webkit-scrollbar-thumb:hover,
+[data-sidebar="content"]::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+.studies-sb-content,
+[data-sidebar="content"] {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(255, 255, 255, 0.1) transparent !important;
+}
+
 /* Book section wrapper */
 .studies-sb-book-section {
   margin-bottom: 0.25rem;
@@ -188,4 +213,69 @@
 .studies-sb-footer {
   padding: 1rem 1.25rem 1.5rem !important;
   border-top: 1px solid var(--divider, #d9d4cd) !important;
+}
+
+/* ── Collapsed icon-rail state ─────────────────────────────────────────────── */
+
+/* Center the full nav column */
+[data-collapsible="icon"] .studies-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Center each book section block */
+[data-collapsible="icon"] .studies-sb-book-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Center the shadcn menu list and each item */
+[data-collapsible="icon"] [data-sidebar="menu"] {
+  align-items: center;
+  width: 100%;
+}
+[data-collapsible="icon"] [data-sidebar="menu-item"] {
+  display: flex !important;
+  justify-content: center;
+  width: 100%;
+}
+
+/* The button itself: square, centred content, no overflow */
+[data-collapsible="icon"] .studies-book-btn {
+  width: 100% !important;
+  padding: 0.4rem !important;
+  justify-content: center !important;
+  gap: 0 !important;
+  overflow: hidden;
+}
+
+/* Hide label, chevron, and the icon-wrapper's gap */
+[data-collapsible="icon"] .studies-book-btn .studies-book-label {
+  display: none !important;
+}
+[data-collapsible="icon"] .studies-book-btn .studies-book-chevron {
+  display: none !important;
+}
+[data-collapsible="icon"] .studies-book-btn > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 !important;
+  width: auto;
+}
+
+/* Hide lesson list and footer text */
+[data-collapsible="icon"] .studies-lessons-list {
+  display: none !important;
+}
+[data-collapsible="icon"] .studies-sb-coming-soon {
+  display: none !important;
+}
+[data-collapsible="icon"] .studies-sb-footer {
+  padding: 0.75rem 0 !important;
+  display: flex;
+  align-items: center;
 }

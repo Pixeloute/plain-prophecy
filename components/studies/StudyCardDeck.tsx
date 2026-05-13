@@ -12,15 +12,50 @@ import { motion, AnimatePresence } from "framer-motion";
 interface FlatLesson {
   lesson: StudyLesson;
   book: StudyBook;
+  href?: string; // optional override — used for standalone feature pages
 }
+
+const GODHEAD_BOOK: StudyBook = {
+  slug: "theology",
+  title: "Theology",
+  icon: "✦",
+  description: "Studies in biblical theology.",
+  lessons: [],
+};
+
+const GODHEAD_LESSON: StudyLesson = {
+  slug: "godhead-views-compared",
+  title: "The Godhead",
+  scriptureRef: "John 1:1; Deut 6:4",
+  keyVerse: "In the beginning was the Word, and the Word was with God, and the Word was God.",
+  keyVerseRef: "John 1:1",
+  intro: "Three views of God's nature — compared side by side on five key questions.",
+  sections: [
+    { heading: "Origin — where did each member come from?" },
+    { heading: "Persons — are all three genuine beings?" },
+    { heading: "Structure — how do the three relate?" },
+    { heading: "Beings — how many divine beings exist?" },
+    { heading: "God — what does it mean to call each one God?" },
+  ],
+};
+
+const FEATURE_CARDS: FlatLesson[] = [
+  { lesson: GODHEAD_LESSON, book: GODHEAD_BOOK, href: "/studies/godhead" },
+];
 
 function buildFlatLessons(
   books: (StudyBook & { lessons: StudyLesson[] })[],
   bookFilter: string
 ): FlatLesson[] {
-  return books
+  const lessons = books
     .filter((book) => bookFilter === "all" || book.slug === bookFilter)
     .flatMap((book) => book.lessons.map((lesson) => ({ lesson, book })));
+
+  // Prepend feature cards only on "all" filter
+  if (bookFilter === "all") {
+    return [...FEATURE_CARDS, ...lessons];
+  }
+  return lessons;
 }
 
 // Wrap index for infinite loop
@@ -175,7 +210,7 @@ export default function StudyCardDeck({ bookFilter = "all" }: StudyCardDeckProps
       >
         <AnimatePresence initial={false}>
           {slots.map(({ slot, lessonIndex }) => {
-            const { lesson, book } = filteredLessons[lessonIndex];
+            const { lesson, book, href } = filteredLessons[lessonIndex];
             const meta = getCardMeta(lesson.slug);
             const isActive = slot === 0;
             const isFlipped = flippedIndex === lessonIndex;
@@ -229,6 +264,7 @@ export default function StudyCardDeck({ bookFilter = "all" }: StudyCardDeckProps
                   onUnflip={() => setFlippedIndex(null)}
                   priority={slot === 0}
                   imgLoading={slot === 0 || Math.abs(slot) === 1 ? "eager" : "lazy"}
+                  href={href}
                 />
               </motion.div>
             );

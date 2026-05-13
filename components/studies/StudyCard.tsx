@@ -16,6 +16,7 @@ interface Props {
   onUnflip: () => void;
   priority?: boolean;
   imgLoading?: "eager" | "lazy";
+  href?: string;
 }
 
 function getCategory(bookSlug: string): "gospel" | "prophecy" | "doctrine" {
@@ -31,8 +32,9 @@ export default function StudyCard({
   onUnflip,
   priority,
   imgLoading,
+  href,
 }: Props) {
-  const studyHref = `/studies/${book.slug}/${lesson.slug}`;
+  const studyHref = href ?? `/studies/${book.slug}/${lesson.slug}`;
   const cardImage = lesson.cardImageUrl || LESSON_CARD_IMAGES[lesson.slug];
   const category = getCategory(book.slug);
 

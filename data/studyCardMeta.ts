@@ -166,6 +166,12 @@ export const studyCardMeta: Record<string, StudyCardMeta> = {
     accentColor: "#0a050f",
     shortDescription: "The most-cited OT passage in the NT — a priest and king on an eternal throne.",
   },
+  "godhead-views-compared": {
+    emoji: "✦",
+    accentColor: "#0a0d1a",
+    isNew: true,
+    shortDescription: "Catholic, Non-Trinitarian, and Heavenly Trio — three views of God's nature, compared side by side.",
+  },
 };
 
 export function getCardMeta(slug: string): StudyCardMeta {
