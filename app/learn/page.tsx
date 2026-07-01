@@ -5,16 +5,16 @@ import { lessons } from "@/data/lessons";
 import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Learn — Plain Prophecy",
+  title: "Learn: Plain Prophecy",
   description:
     "In-depth study guides on Daniel and Revelation: the day-year principle, the 70 weeks, the 1,260 years, the little horn, the heavenly sanctuary, and the origins of futurism.",
   alternates: {
     canonical: "https://plainprophecy.com/learn",
   },
   openGraph: {
-    title: "Learn — In-Depth Prophecy Study Guides",
+    title: "Learn: In-Depth Prophecy Study Guides",
     description:
-      "Six deep-dive lessons on the prophetic framework of Daniel and Revelation — verified by history and Scripture.",
+      "Six deep-dive lessons on the prophetic framework of Daniel and Revelation, verified by history and Scripture.",
     url: "https://plainprophecy.com/learn",
     type: "website",
   },
@@ -25,7 +25,7 @@ const courseSchema = {
   "@type": "Course",
   name: "Daniel & Revelation: The Historicist Framework",
   description:
-    "Six in-depth study guides on the prophetic framework of Daniel and Revelation — verified by history and Scripture.",
+    "Six in-depth study guides on the prophetic framework of Daniel and Revelation, verified by history and Scripture.",
   provider: {
     "@type": "Organization",
     name: "Plain Prophecy",
@@ -86,7 +86,7 @@ export default function LearnPage() {
             opacity: 0.7,
           }}
         >
-          Six in-depth guides on the foundations of Historicist prophecy interpretation —
+          Six in-depth guides on the foundations of Historicist prophecy interpretation,
           from the day-year principle to the origins of futurism. Each lesson is
           evidence-based, exegetically grounded, and tied to verifiable history.
         </p>
@@ -289,7 +289,7 @@ export default function LearnPage() {
             >
               <div style={{ flex: "1 1 500px" }}>
                 <p style={{ fontSize: "0.85rem", lineHeight: 1.75, opacity: 0.75, maxWidth: 620, margin: "0 0 1.25rem" }}>
-                  The Reformation is the hinge moment of prophetic history — the century when the historicist
+                  The Reformation is the hinge moment of prophetic history, the century when the historicist
                   reading of Scripture was recovered, proclaimed, and paid for in blood. Lineage Journey
                   documents that story in full. We send you there for the history; we stay here for the prophecy.
                 </p>
@@ -365,7 +365,7 @@ export default function LearnPage() {
               maxWidth: 600,
             }}
           >
-            Put it to the test — compare the two frameworks directly, or work through the
+            Put it to the test. Compare the two frameworks directly, or work through the
             Daniel prophecies interactively.
           </p>
           <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>

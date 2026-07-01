@@ -46,7 +46,7 @@ export default function SiteFooter() {
         }}
         className="footer-grid"
       >
-        {/* Col 1 — Brand + mission */}
+        {/* Col 1: Brand + mission */}
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
           <Link href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
             <Image
@@ -67,7 +67,7 @@ export default function SiteFooter() {
             }}
           >
             A Christ-centred resource for understanding biblical prophecy.
-            Grounded in the Reformation consensus — Scripture first, always.
+            Grounded in the Reformation consensus. Scripture first, always.
           </p>
           {/* Scripture anchors */}
           <div
@@ -95,7 +95,7 @@ export default function SiteFooter() {
           </div>
         </div>
 
-        {/* Col 2 — Explore */}
+        {/* Col 2: Explore */}
         <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
           <span
             style={{
@@ -127,7 +127,7 @@ export default function SiteFooter() {
           ))}
         </div>
 
-        {/* Col 3 — Learn */}
+        {/* Col 3: Learn */}
         <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
           <span
             style={{

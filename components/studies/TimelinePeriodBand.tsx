@@ -6,7 +6,7 @@ interface TimelinePeriodBandProps {
 }
 
 // ── Gantt-bar layout constants ──────────────────────────────────────────────
-const BAND_H     = 150   // tall bar — at k=0.14 renders at ~21px; at k=0.35 renders at ~52px
+const BAND_H     = 150   // tall bar, at k=0.14 renders at ~21px; at k=0.35 renders at ~52px
 const BAND_GAP   = 20    // gap between lanes
 const BAND_TOP_Y = AXIS_Y + 100  // starts well below axis + tick labels
 
@@ -32,7 +32,7 @@ export default function TimelinePeriodBand({ band }: TimelinePeriodBandProps) {
         ry={12}
       />
 
-      {/* ── Left-edge "tab" — solid accent colour, no left rounding ── */}
+      {/* ── Left-edge "tab": solid accent colour, no left rounding ── */}
       <rect
         x={x1}
         y={y}
@@ -84,7 +84,7 @@ export default function TimelinePeriodBand({ band }: TimelinePeriodBandProps) {
         opacity={0.7}
       />
 
-      {/* ── Band label — left-justified inside bar, like a Gantt task name ── */}
+      {/* ── Band label: left-justified inside bar, like a Gantt task name ── */}
       {w > 300 && (
         <text
           x={labelX + 28}

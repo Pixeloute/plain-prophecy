@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const doctrine = await fetchQuery(api.doctrines.getBySlug, { slug });
   if (!doctrine) return { title: "Doctrine Not Found" };
 
-  const title = doctrine.metaTitle || `${doctrine.title} — Plain Prophecy`;
+  const title = doctrine.metaTitle || `${doctrine.title}: Plain Prophecy`;
   const description = doctrine.metaDescription || doctrine.intro;
 
   return {

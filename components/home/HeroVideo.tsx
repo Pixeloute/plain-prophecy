@@ -9,7 +9,7 @@ import { useEffect, useRef, useState } from "react";
 function shouldSkipVideo(): boolean {
   if (typeof navigator === "undefined") return true;
 
-  // Honour "Save Data" preference — Network Information API is not in all TS lib defs
+  // Honour "Save Data" preference. Network Information API is not in all TS lib defs
   type NetworkInformation = { saveData?: boolean; effectiveType?: string };
   type NavigatorWithConnection = Navigator & {
     connection?: NetworkInformation;
@@ -41,13 +41,13 @@ export default function HeroVideo() {
     if (!show || !videoRef.current) return;
     const video = videoRef.current;
 
-    // "playing" fires once the first frame is rendered — safe to fade in
+    // "playing" fires once the first frame is rendered, safe to fade in
     const onPlaying = () => setLoaded(true);
     video.addEventListener("playing", onPlaying);
 
     // play() both starts the download and requests playback
     video.play().catch(() => {
-      // Autoplay blocked (e.g. strict browser policy) — silently skip
+      // Autoplay blocked (e.g. strict browser policy), silently skip
     });
 
     return () => video.removeEventListener("playing", onPlaying);
@@ -57,7 +57,7 @@ export default function HeroVideo() {
 
   return (
     <>
-      {/* The video element — absolutely fills hero-bg */}
+      {/* The video element: absolutely fills hero-bg */}
       <video
         ref={videoRef}
         className={`hero-video${loaded ? " hero-video--visible" : ""}`}

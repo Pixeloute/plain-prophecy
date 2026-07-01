@@ -34,7 +34,7 @@ export default function StudiesIndexClient() {
       {/* Page header */}
       <div className="si-header">
         <div className="si-header-left">
-          {/* Sidebar trigger — reveals the hidden sidebar on index */}
+          {/* Sidebar trigger: reveals the hidden sidebar on index */}
           <SidebarTrigger className="si-sidebar-trigger" aria-label="Show study navigation" />
           <div className="si-header-text">
             <p className="si-eyebrow">Plain Prophecy</p>

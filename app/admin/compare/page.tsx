@@ -22,7 +22,7 @@ export default function CompareAdminPage() {
   const [statusFilter, setStatusFilter] = useState<"all" | "published" | "draft">("all");
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
 
-  // compareHighlights has no title — search on text instead
+  // compareHighlights has no title, search on text instead
   const filtered = (highlights ?? [])
     .filter((h) => h.text.toLowerCase().includes(search.toLowerCase()))
     .sort((a, b) =>

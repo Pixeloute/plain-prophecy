@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import StudiesIndexClient from "./StudiesIndexClient";
 
 export const metadata: Metadata = {
-  title: "Studies — Plain Prophecy",
+  title: "Studies · Plain Prophecy",
   description:
     "Explore Christ-centred studies in Daniel and Revelation. Discover the prophetic framework of Scripture through swipeable, visual study cards.",
   alternates: {

@@ -55,7 +55,7 @@ export function MasteryGrid({
                   key={card.id}
                   className="mastery-dot"
                   style={{ background: MASTERY_COLORS[level] }}
-                  title={`${card.reference} — ${level}`}
+                  title={`${card.reference}: ${level}`}
                 />
               );
             })}

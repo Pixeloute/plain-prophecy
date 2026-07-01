@@ -102,7 +102,7 @@ export default function ConnectionDetail({ arc, data, onShare }: ConnectionDetai
         </div>
       )}
 
-      {/* Why this matters — Christ Thread */}
+      {/* Why this matters: Christ Thread */}
       {christConn && (
         <div
           style={{
@@ -121,7 +121,7 @@ export default function ConnectionDetail({ arc, data, onShare }: ConnectionDetai
               marginBottom: 4,
             }}
           >
-            This isn&apos;t coincidence — it&apos;s convergence. The same Spirit moved both writers toward the same revelation of Christ.
+            This isn&apos;t coincidence. It&apos;s convergence. The same Spirit moved both writers toward the same revelation of Christ.
           </p>
           <p style={{ fontFamily: 'var(--font-cinzel)', fontSize: 9, color: 'rgba(201,168,76,0.55)', letterSpacing: '0.08em' }}>
             2 TIMOTHY 3:16
@@ -149,7 +149,7 @@ export default function ConnectionDetail({ arc, data, onShare }: ConnectionDetai
             between the two authors
           </div>
           <div style={{ fontFamily: 'var(--font-inter)', fontSize: 11, color: 'rgba(154,154,138,0.7)', fontStyle: 'italic' }}>
-            Two people, separated by centuries — yet the echo is unmistakable.
+            Two people, separated by centuries, yet the echo is unmistakable.
           </div>
         </div>
       )}

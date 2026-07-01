@@ -675,7 +675,7 @@ function CompletionScreen({
       <div className="completion-xp">+{xpEarned} XP earned</div>
 
       <p className="completion-text">
-        From Nebuchadnezzar&rsquo;s dream to Michael standing up — every vision
+        From Nebuchadnezzar&rsquo;s dream to Michael standing up, every vision
         converges on the same point. The stone that shatters all kingdoms. The
         Son of Man who receives eternal dominion. Jesus, in every chapter.
       </p>

@@ -380,7 +380,7 @@ function RevelationCompletionScreen({
       <div className="completion-xp">+{sessionXP} XP earned</div>
       <p className="completion-text">
         From the risen Christ in chapter one to &ldquo;Come, Lord Jesus&rdquo; in chapter
-        twenty-two — every vision, every seal, every trumpet points to the same
+        twenty-two. Every vision, every seal, every trumpet points to the same
         Lamb who was slain and is now worthy to open every seal.
       </p>
       <div className="completion-actions">

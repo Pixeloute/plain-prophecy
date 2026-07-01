@@ -64,7 +64,7 @@ export default function VerseSearch({ data, onVerseSelect, onClear }: VerseSearc
         })
         if (results.length >= 8) break
       } else {
-        // Just a book name match — suggest first verse
+        // Just a book name match, suggest first verse
         const chEntry = data.chapters.find(c => c.book === book.index && c.chapter === 1)
         if (chEntry) {
           results.push({
@@ -257,7 +257,7 @@ export default function VerseSearch({ data, onVerseSelect, onClear }: VerseSearc
             fontStyle: 'italic',
           }}
         >
-          This verse speaks across both Testaments — written centuries apart.
+          This verse speaks across both Testaments, written centuries apart.
         </p>
       )}
     </div>

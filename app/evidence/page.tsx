@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import EvidenceTab from "@/app/compare/EvidenceTab";
 
 export const metadata: Metadata = {
-  title: "Evidence Today — Prophecy in Action",
+  title: "Evidence Today: Prophecy in Action",
   description:
     "Six major prophetic signs in active fulfilment right now. The Historicist framework predicted these developments from Scripture centuries before they occurred. Christian nationalism, Sunday law, Babylon, Mark of the Beast infrastructure, the papal wound healed, and the unsealing of Daniel.",
   alternates: {
     canonical: "https://plainprophecy.com/evidence",
   },
   openGraph: {
-    title: "Evidence Today — Prophecy in Action | Plain Prophecy",
+    title: "Evidence Today: Prophecy in Action | Plain Prophecy",
     description:
       "Six prophetic signs in active fulfilment. The Historicist framework predicted these developments from Scripture centuries before they occurred.",
     url: "https://plainprophecy.com/evidence",
@@ -19,13 +19,13 @@ export const metadata: Metadata = {
         url: "/og/og-default.png",
         width: 1200,
         height: 630,
-        alt: "Evidence Today — Plain Prophecy",
+        alt: "Evidence Today: Plain Prophecy",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Evidence Today — Prophecy in Action",
+    title: "Evidence Today: Prophecy in Action",
     description: "Six major prophetic signs in active fulfilment right now.",
   },
 };

@@ -388,7 +388,7 @@ function GospelCompletionScreen({ onRestart, totalCards }: { onRestart: () => vo
         <span>One love.</span>
       </h1>
       <p className="completion-text">
-        From the incarnation to the new creation — every truth about the Gospel
+        From the incarnation to the new creation, every truth about the Gospel
         is a window into the same light. God is love, and every doctrine is a
         facet of that love made visible.
       </p>

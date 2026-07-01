@@ -23,13 +23,13 @@ export default function StudiesShellLayout({
     pathname === "/studies/timeline" ||
     pathname === "/studies/empire-map";
 
-  // Fullscreen pages — no sidebar
+  // Fullscreen pages, no sidebar
   if (isFullscreen) {
     return <>{children}</>;
   }
 
   // Authenticated users: AppSidebar (in PublicShell) already provides the
-  // studies subnav — skip StudiesLayout to avoid a double SidebarProvider
+  // studies subnav, skip StudiesLayout to avoid a double SidebarProvider
   if (user) {
     return <>{children}</>;
   }

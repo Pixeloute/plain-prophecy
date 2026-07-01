@@ -74,7 +74,7 @@ export default function LevelProgressCard({ spiritualLevel, completedCount }: Le
         <div className="mb-5 flex items-center gap-2">
           <CheckCircle2 size={14} style={{ color: "#e8a020" }} />
           <span className="text-xs" style={{ color: "#e8a020" }}>
-            Maximum level reached — {completedCount} studies completed
+            Maximum level reached. {completedCount} studies completed
           </span>
         </div>
       )}

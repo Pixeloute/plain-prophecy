@@ -4,9 +4,9 @@ import { fetchQuery } from "convex/nextjs";
 import { api } from "@/convex/_generated/api";
 
 export const metadata: Metadata = {
-  title: "Doctrine — Plain Prophecy",
+  title: "Doctrine: Plain Prophecy",
   description:
-    "These teachings are common in many churches today. Here is what Scripture actually says — examined through the historicist lens of the Reformation.",
+    "These teachings are common in many churches today. Here is what Scripture actually says, examined through the historicist lens of the Reformation.",
   alternates: {
     canonical: "https://plainprophecy.com/doctrine",
   },
@@ -83,7 +83,7 @@ export default async function DoctrinePage() {
           }}
         >
           These teachings are common in many churches today. Here is what
-          Scripture actually says — examined through the historicist lens of the
+          Scripture actually says, examined through the historicist lens of the
           Reformation.
         </p>
       </header>
@@ -260,7 +260,7 @@ export default async function DoctrinePage() {
                   maxWidth: 480,
                 }}
               >
-                Timelines, accuracy scoring, biblical pillars, and historical evidence — side by side.
+                Timelines, accuracy scoring, biblical pillars, and historical evidence, side by side.
               </p>
             </div>
             <span

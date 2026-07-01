@@ -165,7 +165,7 @@ export function expandRef(raw: string): string {
   }
 
   // Replace en-dash and em-dash with regular hyphen for range refs
-  s = s.replace(/[–—]/g, "-")
+  s = s.replace(/[–—]/g, "-") // content-lint-disable-line: dash chars matched as data to normalize Scripture ranges
 
   // Split into book portion and chapter:verse portion
   // Handles: "Dan 7:25", "Daniel 7:25", "1 Thess 4:16", "1John 1:1"

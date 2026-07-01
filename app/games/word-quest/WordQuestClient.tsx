@@ -576,7 +576,7 @@ export default function WordQuestClient() {
     if (!timerRunning || gameOver) return;
     if (timeLeft <= 0) {
       setTimerRunning(false);
-      // Timer ran out — end the game with current state
+      // Timer ran out, end the game with current state
       setTimeBonus(0);
       const finalScore = score;
       if (level) {

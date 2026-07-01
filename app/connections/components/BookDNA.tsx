@@ -193,7 +193,7 @@ export default function BookDNA({ bookIndex, data }: BookDNAProps) {
         >
           {book.displayAbbr} connects most strongly with{' '}
           <span style={{ color: '#F5F5F0' }}>{stats.strongestBook.name}</span>
-          {' '}— {stats.strongestCount.toLocaleString()} shared arcs
+          {': '}{stats.strongestCount.toLocaleString()} shared arcs
         </div>
       )}
 

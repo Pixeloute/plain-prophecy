@@ -55,7 +55,7 @@ export default function DoctrineContent({ doctrine }: Props) {
 
   const handleTwitter = () => {
     const text = encodeURIComponent(
-      `"${doctrine.verdict}" — ${doctrine.title} | Plain Prophecy`
+      `"${doctrine.verdict}": ${doctrine.title} | Plain Prophecy`
     );
     const url = encodeURIComponent(window.location.href);
     window.open(
@@ -66,7 +66,7 @@ export default function DoctrineContent({ doctrine }: Props) {
 
   const handleWhatsApp = () => {
     const text = encodeURIComponent(
-      `${doctrine.title} — ${doctrine.verdict}\n${window.location.href}`
+      `${doctrine.title}: ${doctrine.verdict}\n${window.location.href}`
     );
     window.open(`https://wa.me/?text=${text}`, "_blank");
   };

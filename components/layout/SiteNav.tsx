@@ -22,7 +22,7 @@ const NAV: NavEntry[] = [
           {
             href: "/studies",
             label: "Browse Daniel Studies",
-            description: "Chapters 2, 7, 8–9, 12 — world empires, the little horn & the 70 weeks",
+            description: "Chapters 2, 7, 8–9, 12: world empires, the little horn & the 70 weeks",
           },
         ],
       },
@@ -42,7 +42,7 @@ const NAV: NavEntry[] = [
           {
             href: "/studies",
             label: "Messianic Prophecies",
-            description: "Christ in every scroll — ten OT prophecies fulfilled in Jesus",
+            description: "Christ in every scroll: ten OT prophecies fulfilled in Jesus",
           },
         ],
       },

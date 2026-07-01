@@ -19,7 +19,7 @@ export interface StreakResult {
 export function updateStreak(state: PlayerState): StreakResult {
   const today = todayISO();
 
-  // Already active today — no change
+  // Already active today: no change
   if (state.lastActiveDate === today) {
     return { state, streakIncremented: false, milestonesHit: [] };
   }
@@ -28,13 +28,13 @@ export function updateStreak(state: PlayerState): StreakResult {
   let currentStreak: number;
 
   if (state.lastActiveDate === yesterday) {
-    // Consecutive day — increment
+    // Consecutive day: increment
     currentStreak = state.currentStreak + 1;
   } else if (state.lastActiveDate === "") {
     // First ever session
     currentStreak = 1;
   } else {
-    // Streak broken — reset to 1
+    // Streak broken: reset to 1
     currentStreak = 1;
   }
 

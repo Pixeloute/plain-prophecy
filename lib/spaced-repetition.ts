@@ -28,14 +28,14 @@ export function calculateNextReview(
   let { interval, easeFactor, repetitions } = card;
 
   if (rating < 2) {
-    // Failed recall — restart streak
+    // Failed recall: restart streak
     repetitions = 0;
     interval = 1;
     if (rating === 0) {
       easeFactor = Math.max(MIN_EASE, easeFactor - 0.2);
     }
   } else {
-    // Successful recall — advance interval
+    // Successful recall: advance interval
     if (repetitions === 0) {
       interval = 1;
     } else if (repetitions === 1) {
@@ -78,7 +78,7 @@ function freshCard(id: string): CardProgress {
   };
 }
 
-// ── localStorage persistence (deprecated — use PlayerContext) ──────────────
+// ── localStorage persistence (deprecated, use PlayerContext) ──────────────
 
 /** @deprecated Use PlayerContext state.games.verseMemory.cardProgress instead */
 export function loadProgress(): Record<string, CardProgress> {
@@ -98,7 +98,7 @@ export function saveProgress(progress: Record<string, CardProgress>): void {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
   } catch {
-    // localStorage full or unavailable — fail silently
+    // localStorage full or unavailable: fail silently
   }
 }
 

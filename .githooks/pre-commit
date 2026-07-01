@@ -1,0 +1,12 @@
+#!/bin/sh
+# Plain Prophecy content-rules gate. Enforces docs/WRITING-RULES.md (Layer 1).
+# Bypass in an emergency with: git commit --no-verify
+
+npm run lint:content --silent
+status=$?
+if [ "$status" -ne 0 ]; then
+  echo ""
+  echo "content-lint failed. Fix the errors above, or bypass with 'git commit --no-verify'."
+  exit 1
+fi
+exit 0

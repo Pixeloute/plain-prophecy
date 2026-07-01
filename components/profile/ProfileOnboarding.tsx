@@ -52,9 +52,9 @@ const questionSteps: Step[] = [
     id: "methodology",
     text: "How do you prefer to study complex topics?",
     options: [
-      { label: "The Big Picture — give me the 'why it matters'", value: "big_picture" },
-      { label: "The Evidence — dates, archaeology, original languages", value: "evidence" },
-      { label: "The Application — how does this shape my life today?", value: "application" },
+      { label: "The Big Picture: give me the 'why it matters'", value: "big_picture" },
+      { label: "The Evidence: dates, archaeology, original languages", value: "evidence" },
+      { label: "The Application: how does this shape my life today?", value: "application" },
     ],
   },
   {
@@ -72,9 +72,9 @@ const questionSteps: Step[] = [
     id: "goal",
     text: "If you finished a course here, what would you want the result to be?",
     options: [
-      { label: "Clarity — understand the symbols in Revelation", value: "clarity" },
-      { label: "Certainty — a firm, Bible-based reason for my faith", value: "certainty" },
-      { label: "Change — become more like Christ as I study", value: "change" },
+      { label: "Clarity: understand the symbols in Revelation", value: "clarity" },
+      { label: "Certainty: a firm, Bible-based reason for my faith", value: "certainty" },
+      { label: "Change: become more like Christ as I study", value: "change" },
     ],
   },
 ];
@@ -158,7 +158,7 @@ export default function ProfileOnboarding({ onComplete }: { onComplete: () => vo
   };
 
   const finish = async () => {
-    // Scoring logic — unchanged from original
+    // Scoring logic, unchanged from original
     let level: "beginner" | "intermediate" | "advanced" = "intermediate";
     if (answers.foundation === "new" || answers.background === "neither") {
       level = "beginner";
@@ -224,7 +224,7 @@ export default function ProfileOnboarding({ onComplete }: { onComplete: () => vo
       className="fixed inset-0 z-50 flex flex-col items-center justify-center overflow-y-auto"
       style={{ background: "#0c0a09" }}
     >
-      {/* Phase indicator — hidden on welcome */}
+      {/* Phase indicator: hidden on welcome */}
       {step > 0 && step < allSteps.length - 1 && (
         <div className="fixed top-0 left-0 right-0 flex justify-center pt-6 pb-4 z-10"
           style={{ background: "linear-gradient(to bottom, #0c0a09 80%, transparent)" }}>
@@ -292,7 +292,7 @@ export default function ProfileOnboarding({ onComplete }: { onComplete: () => vo
                     Biblical prophecy,<br />made clear.
                   </h1>
                   <p className="text-base leading-relaxed" style={{ color: "rgba(255,255,255,0.55)" }}>
-                    The most accurate prophecy resource on the internet — built for curious minds like yours. Grounded in Scripture. Christ-centred.
+                    The most accurate prophecy resource on the internet, built for curious minds like yours. Grounded in Scripture. Christ-centred.
                   </p>
                 </div>
 
@@ -466,10 +466,10 @@ export default function ProfileOnboarding({ onComplete }: { onComplete: () => vo
                   }}
                 >
                   {computedLevel === "beginner"
-                    ? "Seeker — Level 1"
+                    ? "Seeker: Level 1"
                     : computedLevel === "advanced"
-                    ? "Scholar — Level 3"
-                    : "Student — Level 2"}
+                    ? "Scholar: Level 3"
+                    : "Student: Level 2"}
                 </div>
 
                 {/* First study teaser */}
@@ -488,7 +488,7 @@ export default function ProfileOnboarding({ onComplete }: { onComplete: () => vo
                   <p className="text-xs mt-1" style={{ color: "rgba(255,255,255,0.45)" }}>
                     {computedLevel === "beginner"
                       ? "The key that unlocks biblical prophecy timelines."
-                      : "Daniel 9 — the most precise prophecy in all of Scripture."}
+                      : "Daniel 9: the most precise prophecy in all of Scripture."}
                   </p>
                 </div>
 

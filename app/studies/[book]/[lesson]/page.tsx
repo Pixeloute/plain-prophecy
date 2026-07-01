@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const { book, lesson } = found;
   return {
-    title: `${lesson.title} — ${book.title} Study`,
+    title: `${lesson.title}: ${book.title} Study`,
     description: lesson.intro,
     alternates: {
       canonical: `https://plainprophecy.com/studies/${bookSlug}/${lessonSlug}`,

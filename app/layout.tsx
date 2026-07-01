@@ -52,7 +52,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://plainprophecy.com"),
   title: {
-    default: "Plain Prophecy — Biblical Prophecy, Plain and Simple",
+    default: "Plain Prophecy: Biblical Prophecy, Plain and Simple",
     template: "%s | Plain Prophecy",
   },
   description:
@@ -94,9 +94,9 @@ export const metadata: Metadata = {
     canonical: "https://plainprophecy.com",
   },
   openGraph: {
-    title: "Plain Prophecy — Biblical Prophecy, Plain and Simple",
+    title: "Plain Prophecy: Biblical Prophecy, Plain and Simple",
     description:
-      "Biblical prophecy examined through Scripture, history, and the Reformation tradition. Futurism vs Historicism — rigorously compared.",
+      "Biblical prophecy examined through Scripture, history, and the Reformation tradition. Futurism vs Historicism, rigorously compared.",
     url: "https://plainprophecy.com",
     siteName: "Plain Prophecy",
     locale: "en_GB",
@@ -106,13 +106,13 @@ export const metadata: Metadata = {
         url: "/og/og-default.png",
         width: 1200,
         height: 630,
-        alt: "Plain Prophecy — Biblical Prophecy, Plain and Simple",
+        alt: "Plain Prophecy: Biblical Prophecy, Plain and Simple",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Plain Prophecy — Biblical Prophecy, Plain and Simple",
+    title: "Plain Prophecy: Biblical Prophecy, Plain and Simple",
     description:
       "Biblical prophecy examined through Scripture, history, and the Reformation tradition.",
     images: ["/og/og-default.png"],

@@ -40,7 +40,7 @@ export function GameHub() {
           </div>
         </section>
 
-        {/* Game tiles — 2-column grid */}
+        {/* Game tiles: 2-column grid */}
         <section className="game-hub-grid">
           <GameTile
             href="/games/daniel"

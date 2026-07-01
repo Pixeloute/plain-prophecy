@@ -45,7 +45,7 @@ export default function AdminDashboard() {
                 </CardHeader>
                 <CardContent className="px-4 pb-4">
                   <p className="text-2xl font-bold text-stone-100">
-                    {total === null ? "—" : total}
+                    {total === null ? "..." : total}
                   </p>
                   {published !== null && (
                     <p className="text-xs text-stone-500 mt-0.5">{published} published</p>

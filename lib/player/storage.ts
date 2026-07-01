@@ -14,7 +14,7 @@ export function loadPlayerState(): PlayerState {
       if (parsed.version === 1) return parsed;
     }
   } catch {
-    // Corrupted data — fall through to default + migration
+    // Corrupted data: fall through to default + migration
   }
 
   // Try migrating legacy data
@@ -30,7 +30,7 @@ export function savePlayerState(state: PlayerState): void {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
   } catch {
-    // Quota exceeded — silently fail
+    // Quota exceeded: silently fail
   }
 }
 
@@ -54,7 +54,7 @@ function migrateLegacyVerseMemory(state: PlayerState): void {
     state.games.verseMemory.cardProgress = legacy;
     localStorage.removeItem(LEGACY_VM_KEY);
   } catch {
-    // Migration failed — leave default empty state
+    // Migration failed: leave default empty state
   }
 }
 
@@ -77,6 +77,6 @@ function migrateLegacyWordQuest(state: PlayerState): void {
 
     localStorage.removeItem(LEGACY_WQ_KEY);
   } catch {
-    // Migration failed — leave default empty state
+    // Migration failed: leave default empty state
   }
 }

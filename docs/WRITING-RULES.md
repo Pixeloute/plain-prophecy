@@ -1,121 +1,155 @@
 # Writing Rules for Plain Prophecy
 
-This document outlines the essential communication principles and technical constraints for all content.
+This is the governing source of truth for every word that appears on the site: study text, `christCentre` Christ Pivots, lessons, doctrine pages, cards, blog posts, MDX articles, UI microcopy, and any string in `/data/*.ts` or `/content/`.
 
-Write in full complete sentences, not bullet points
-Include delivery notes at the end of each major section
-Mark pause moments with [Pause.] and indicate duration where critical
-Mark call-and-response moments in italics
-Flag any section where Christ is absent or underserved — do not wait to be asked
-Flag any application that could be read as "try harder" without gospel grounding
-Always write the three-point structure with Shadow layer → Substance layer → Invitation layer
+## How to use this document
 
+The rules are split into three layers. Read the layer that matches your task, and always respect the priority order.
 
-Prompt
-SHOULD use clear, simple language.
+- **Layer 1: Hard rules.** Mechanical and non-negotiable. Checked automatically by `npm run lint:content`. A piece that breaks these is not ready to ship.
+- **Layer 2: Voice and tone.** Style guidance. Human-reviewed. This is how the writing should feel.
+- **Layer 3: Theological framework.** The reason the site exists. Reviewed against the checklist at the end. This is where the differentiation lives.
 
-SHOULD be spartan and informative.
+**Priority order when rules conflict:**
 
-SHOULD use short, impactful sentences.
+1. Do not break the build (valid TypeScript, valid MDX, intact string escaping).
+2. Preserve Scripture and meaning: references, verse text, dates, numeric ranges, proper nouns, and every doctrinal claim stay exact.
+3. Layer 1 hard rules.
+4. Layer 2 voice and tone.
+5. Layer 3 theological depth.
 
-SHOULD use active voice; avoid passive voice.
+A note on scope: this document is for **published content**. Drafting artifacts from a research or generation session (inline citation markers like `[1]`, delivery notes, pause markers, call-and-response staging) belong to the writing process and must never reach the rendered page.
 
-SHOULD focus on practical, actionable insights.
+---
 
-SHOULD use bullet point lists in social media posts.
+## Layer 1: Hard rules (lint-enforced)
 
-SHOULD use data and examples to support claims when possible.
+These are checked by `npm run lint:content`. Zero exceptions.
 
-SHOULD use “you” and “your” to directly address the reader.
+### Punctuation
 
-AVOID using em dashes (—) anywhere in your response. Use only commas, periods, or other standard punctuation. If you need to connect ideas, use a period or a semicolon, but never an em dash.
+- **Zero em dashes (—).** Replace every one with a comma, a colon, or a period. To connect two ideas, prefer a period and write two sentences. Never substitute another dash or a spaced hyphen (` - `) as a connector.
+- **No semicolons in prose.** Use a period or a comma instead. This includes Scripture-reference lists inside a string: write `(Ezra 7, Daniel 9)`, not `(Ezra 7; Daniel 9)`. The only semicolons allowed in a content string are inside a verbatim Scripture quotation, where the words and punctuation of the verse stay exact.
+- **En dashes (–) are allowed only in numeric or verse ranges.** Keep `605–539 BC`, `Daniel 2:41–43`, `1798–1844`. Never use an en dash to join clauses.
 
-AVOID constructions like “…not just this, but also this”.
+### Formatting
 
-AVOID metaphors and clichés.
+- **No markdown syntax inside plain prose content.** No asterisks, no hashtags, no backticks used for emphasis or headers inside a study, card, or microcopy string.
+- **Exception:** blog and MDX bodies that are intentionally authored as markdown keep their rendered structure (headers, bold, lists). Even there, the em-dash, semicolon, and banned-word rules still apply to the words themselves.
+- **No hashtags anywhere in content.**
 
-AVOID generalizations.
+### Banned words, Tier 1 (hard ban)
 
-AVOID common setup language in any sentence, including: in conclusion, in closing, etc.
+Marketing filler, AI-slop, and empty intensifiers. These are never needed in this content. Remove them and rephrase.
 
-AVOID output warnings or notes, just the output requested.
+`just`, `very`, `really`, `literally`, `actually`, `certainly`, `probably`, `basically`, `maybe`, `delve`, `embark`, `enlightening`, `esteemed`, `shed light`, `craft`, `crafting`, `game-changer`, `unlock`, `skyrocket`, `skyrocketing`, `abyss`, `not alone`, `in a world where`, `revolutionize`, `disruptive`, `utilize`, `utilizing`, `dive deep`, `tapestry`, `illuminate`, `unveil`, `pivotal`, `intricate`, `elucidate`, `hence`, `furthermore`, `moreover`, `harness`, `exciting`, `groundbreaking`, `cutting-edge`, `remarkable`, `remains to be seen`, `glimpse into`, `navigating`, `landscape`, `stark`, `in summary`, `in conclusion`, `boost`, `opened up`, `powerful`, `inquiries`, `ever-evolving`, `realm`
 
-AVOID unnecessary adjectives and adverbs.
+The lint reports these as warnings rather than build failures, because a banned word can appear inside a quoted Bible verse. Review each hit: if it is your own prose, rewrite it; if it is verbatim Scripture, leave the verse exact.
 
-AVOID hashtags.
+### Non-negotiable content requirements
 
-AVOID semicolons.
+- Every piece cites Scripture.
+- Every piece lands on a Christ Pivot (see Layer 3).
+- Never present futurism or preterism as equivalent to the historicist reading. Never rely on date-setting.
 
-AVOID markdown.
+---
 
-AVOID asterisks.
+## Layer 2: Voice and tone
 
-AVOID these words:
+- **Active voice. Short, direct sentences.** Address the reader as "you" and "your".
+- **Hook immediately.** Open inside the scene. Skip introductions and setup language.
+- **Wonder, not fear.** The tone is awe-based, never anxiety-driven. No end-time countdown pressure.
+- **Conversational depth.** Clear English for 16 to 24 year olds without losing biblical rigour.
+- **Avoid the "not just X, but also Y" construction.** Split it into direct statements.
+- **Avoid clichés, decorative metaphors, and sweeping generalizations.**
+- **Avoid setup and filler transitions** ("in conclusion", "to sum up", "as we can see").
 
-“can, may, just, that, very, really, literally, actually, certainly, probably, basically, could, maybe, delve, embark, enlightening, esteemed, shed light, craft, crafting, imagine, realm, game-changer, unlock, discover, skyrocket, abyss, not alone, in a world where, revolutionize, disruptive, utilize, utilizing, dive deep, tapestry, illuminate, unveil, pivotal, intricate, elucidate, hence, furthermore, realm, however, harness, exciting, groundbreaking, cutting–edge, remarkable, it, remains to be seen, glimpse into, navigating, landscape, stark, testament, in summary, in conclusion, moreover, boost, skyrocketing, opened up, powerful, inquiries, ever–evolving”
+### Banned words, Tier 2 (avoid where natural)
 
-Important: Review your response and ensure no em dashes
+Structural or context-dependent words. Rephrase only when the sentence still reads cleanly and the meaning holds. Never break grammar or force awkward English to remove one.
 
-The communication style found in these sources is **fundamentally relational and narrative driven**, moving away from dry information toward a lived story. The presenters often describe their work as an unscripted, spirit led dialogue that aims for your heart through your intellect. This **Table Talk** approach prizes cross pollination and communal learning over isolated monologue. The preaching is characterized by **higher up and deeper in** energy, which means using intellectual study to reach deeper emotional and relational results. 
+`can`, `may`, `could`, `that`, `it`, `however`, `imagine`, `discover`
 
-A core feature of this style is the **vindication of God’s character**, framing every biblical truth through the lens of His non-coercive, self sacrificing love. You will notice a recurring use of **vibrant, everyday analogies** like construction sites, beachcombing, or even making a sandwich to explain high theological concepts. The speakers engage deeply with **secular scholarship and historical context**, using outside voices to highlight the uninventability of Jesus. They prioritize **authenticity and vulnerability**, often sharing personal failures or "knucklehead" moments to show that the Gospel is for real, broken people. 
+Do not touch `Old Testament` or `New Testament` (proper nouns), and do not touch the code key `testament` in data files.
 
-The writing and preaching emphasize **integration**, refusing to separate the spiritual from the mundane acts of eating, sleeping, or working. It is a **bias to save** philosophy that treats the Bible as a series of case studies in trauma healing rather than a cold legal code. Ultimately, the goal of this communication is to **recapture the beauty of language** and provide a clear lens through which you can see that God is your Father and you are His beloved child.
+### Mobile-first copy
 
-**Invitation:**
-Will you step into this conversation and let the beauty of God's character remake your own story today?
+Every string is read on a phone first. Keep paragraphs short. A sentence that wraps into a dense block at 390px is too long. Break it.
 
+---
 
+## Layer 3: Theological framework
 
-### 1. The Core Theological Lens
-*   **Vindicate God's Character:** Every topic must be framed through the **vindication of God’s character** as non-coercive, self-sacrificing love. 
-*   **Covenant vs. Appeasement:** Explicitly distinguish between **covenant sacrifice** (where God takes responsibility for his creation) and **appeasement sacrifice** (pagan systems where humans try to calm an angry deity).
-*   **The "Bias to Save":** Communicate the "bias to save" philosophy, emphasizing that the entire system of salvation is **rigged in the believer's favor**. 
-*   **Christ as the Center:** Ensure Jesus is the **epicenter of every prophecy and symbol**, serving as the "wonderful numberer" and the "mobile temple".
+This is the heart of the site. Every piece is written through this lens.
 
-### 2. Voice and Tone
-*   **Relational and Narrative-Driven:** Move away from dry data dumps toward a **lived story**. Communication should feel like an "unscripted, spirit-led dialogue" rather than a formal monologue.
-*   **Authenticity and Vulnerability:** Use **vulnerability** as a tool for connection, sharing "knucklehead" moments and personal struggles to show the Gospel is for real, broken people.
-*   **Higher Up and Deeper In:** Use intellectual study (the "higher up") as a gateway to reach deeper **emotional and relational results** (the "deeper in").
-*   **Direct "You" Address:** Speak directly to the reader’s heart, addressing their specific **shame, guilt, and vacancy** with the assurance of God's proximity.
+### Christ at the centre
 
-### 3. Structural Elements and Analogies
-*   **Vibrant Analogies:** Explain complex theological concepts using **everyday illustrations** such as construction sites, model airplanes, sandwiches, or beachcombing.
-*   **The 2-3-2 Method:** When explaining complex systems like the sanctuary, use clear structural breakdowns (e.g., **two elements, three parts, two phases**) to make information accessible.
-*   **Protocol-Based Guidance:** Frame practical life resets through the "Assess, Orient, Move" rubric. 
-*   **Worldview Recalibration:** Utilize the **"New, View, True"** pattern: embracing one's status as a new creature, adopting a biblical view, and replacing lies with truth.
+- Jesus is the epicentre of every prophecy and symbol. Every prophetic period anchors to who Jesus is, not to geopolitics or speculation.
+- Vindicate God's character. Frame every truth through his non-coercive, self-sacrificing love.
+- Distinguish covenant sacrifice, where God takes responsibility for his creation, from appeasement, where humans try to calm an angry deity.
+- Communicate the bias to save: the plan of salvation is weighted in the believer's favour.
 
-### 4. Technical and Formatting Constraints
-*   **Zero Em Dashes:** Avoid the use of em dashes (—) in all rewritten pivots to maintain a clean, rhythmic flow.
-*   **String Literals:** Keep all **Scripture references** and technical terms (e.g., *pistis christu*, *hesed*, *agape*) intact and accurate.
-*   **No Preambles:** Do not start responses with "Based on the sources" or similar introductory filler. Jump directly into the theological core.
-*   **Citations:** Every sentence drawing from the material **must end with a citation** in the format `[i]`.
+### The verdict is in your favour
 
-### 5. The Final Landing
-*   **The Invitation:** Every piece of writing must conclude with a **direct, heart-centered invitation** for the reader to respond to the beauty of Christ.
-*   **The Verdict:** Remind the reader that the judgment is not a threat but a **public decision in their favor**, ensuring they feel "home at last".
+- When you write about the Second Coming, focus on the return of a Person, the Bridegroom, not on the cataclysmic end of the world. Fear of an event runs out of fuel. Love for a Person lasts.
+- The judgment of Daniel 7 is not a threat. It is a public decision made in favour of the saints, giving them their lives back from the adversary.
 
+### How to handle failure and shame
 
-### 6. The Psychological Framework
-*   **Curiosity Over Condemnation:** When addressing failure or sin, move the reader from a posture of shame to one of **curiosity**. Instead of "Why did you do that?" ask "What was the unmet need or wound that triggered that survival mechanism?".
-*   **Acknowledge the Subconscious:** Recognize that humanity currently lives with a "split consciousness"—a subterranean realm of trauma and hidden motives that did not exist in Eden. The goal of the Gospel is to restore an "integrated consciousness" through the indwelling of the Spirit.
-*   **Address "Violated Violators":** Frame every human being as a "violated violator"—someone who has been sinned against (vacancy or violation wounds) and has sinned against others. The Gospel turns these individuals into "wounded healers".
-*   **Reject Spiritual Bypassing:** Never use spiritual jargon or "holy" activities to avoid dealing with real-life trauma, unpleasant emotions, or relational brokenness.
+- Move the reader from shame to curiosity. Instead of "why did you do that", ask "what wound or unmet need triggered that".
+- Treat every person as someone sinned against and someone who has sinned. The gospel turns wounded people into people who heal others.
+- Never use spiritual language to bypass real trauma or relational brokenness.
+- The Mirror principle: feeling your flaws is a sign of nearness to Jesus, not distance from him. The closer to the light, the more you see.
 
-### 7. Epistemology: Knowing vs. Showing
-*   **Knowledge is Relational:** Define true knowledge (*yada* or *ginosko*) as interpersonal intimacy rather than a fixed sum of data. 
-*   **The Knowing/Showing Distinction:** Clarify that a believer's ability to **know** God (through the internal witness of the Spirit) is not dependent on their ability to **show** or prove God's existence to a skeptic's satisfaction. 
-*   **Intellectual Humility:** Embrace the three most powerful words in theology: **"I don't know"**. Avoid the "data dump" approach that seeks to win arguments; instead, prioritize the "long game of love".
+### How to handle doubt and knowledge
 
-### 8. Communal and Ecclesial Rules
-*   **The Church as a "No Judgment Zone":** Portray the faith community as a "laboratory of grace" where people with issues belong, and where the "bump and grind" of life is the environment for practicing forgiveness.
-*   **Invisible vs. Hyper-visible:** Be sensitive to those who feel "invisible" (ignored/marginalized) or "hyper-visible" (constantly policed/judged). The writing should speak to the "overlooked".
-*   **Reciprocal Indwelling:** Describe the relationship with Christ as a "mutual indwelling"—not just us finding a home in Him, but He finding a home in us.
+- True knowledge of God is relational intimacy, not a pile of data.
+- A believer's ability to know God does not depend on their ability to prove God to a skeptic.
+- "I don't know" is an honest and strong answer. Prefer the long game of love over winning an argument.
 
-### 9. Revised Eschatological Framing
-*   **Person-Focused, Not Event-Focused:** When writing about the Second Coming, focus on the **Return of a Person** (the Bridegroom) rather than the "cataclysmic end of the world". Fear of an event runs out of gas; love for a Person is sustainable.
-*   **The Verdict is "In Favor":** Always remind the reader that the judgment of Daniel 7 is not a threat to be feared, but a **public decision made in favor** of the saints to get their lives back from the adversary.
+### The community
 
-### 10. Practical Metaphors and Litmus Tests
-*   **The Mirror Principle:** If the reader feels "dirty" or aware of their flaws, frame it as a sign of **proximity to the Mirror** (Jesus). The closer you are to the Light, the more defects you see—so feeling like a "great sinner" is often evidence of being very close to God.
-*   **The "Repentance Litmus Test":** Define repentance simply: "If you had a time machine and could go back to the moment of your failure knowing what you know now, would you choose differently?" If the answer is yes, you are free and have repented.
+- Portray the church as a place where people with issues belong, a workshop for practising grace and forgiveness.
+- Speak to the overlooked: those who feel invisible, and those who feel constantly judged.
+
+### The three-part structure
+
+Build each piece on this arc:
+
+1. **Shadow.** The Old Testament type, the symbol, the historical setting, the prophecy in its own world.
+2. **Substance.** How it finds its fulfilment and meaning in Christ.
+3. **Invitation.** A direct, heart-centred call for the reader to respond to the beauty of Christ.
+
+---
+
+## Review checklist
+
+Run this before marking any piece done. Layer 1 is verified by the lint; the rest is a human or agent read.
+
+**Layer 1 (or run `npm run lint:content`):**
+
+1. Zero em dashes.
+2. No semicolons in prose (verse quotations excepted).
+3. En dashes only in numeric or verse ranges.
+4. No stray markdown, asterisks, or hashtags in plain prose.
+5. No Tier 1 banned words in your own prose.
+6. Scripture is cited.
+
+**Layer 2:**
+
+7. Active voice, short sentences, "you" address.
+8. Opens inside the scene, no setup filler.
+9. Tone is wonder, not fear.
+10. Reads cleanly at 390px.
+
+**Layer 3:**
+
+11. Jesus is the centre, not geopolitics or speculation.
+12. God's character is vindicated as self-giving love.
+13. Any judgment or Second Coming content reads as a verdict in the reader's favour.
+14. The piece lands on a genuine Christ Pivot (Invitation), not a "try harder" application.
+15. If a section has no room for Christ, that is flagged, not shipped.
+
+---
+
+_Earlier notes in `docs/writing-guidelines.md` and `.cursor/rules/writing-guidelines.mdc` are superseded. This document wins wherever they overlap._

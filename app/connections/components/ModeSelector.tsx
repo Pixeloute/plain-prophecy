@@ -51,7 +51,7 @@ const MODES: { id: FilterMode; label: string; icon: React.ReactNode }[] = [
 
 const MODE_DESCRIPTORS: Record<FilterMode, string> = {
   christThread: 'Tracing the scarlet thread from Genesis to Revelation',
-  base: 'All 63,779 cross-references — the fingerprint of divine authorship',
+  base: 'All 63,779 cross-references: the fingerprint of divine authorship',
   verse: 'Search any verse to see every thread connecting to it',
   prophecyHighway: 'Connections within the prophetic-core books',
   bookDna: 'Tap a book label on the canvas to see its connection fingerprint',

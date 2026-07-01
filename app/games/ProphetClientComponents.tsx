@@ -240,12 +240,12 @@ export function CompletionScreen({
         <h1 className="completion-title">All Prophecies Explored</h1>
         <p className="completion-body">
           You&apos;ve walked through {completed.length} of {totalProphecies} Daniel
-          prophecies. Every timeline — from Babylon to the Second Coming —
+          prophecies. Every timeline, from Babylon to the Second Coming,
           points to the same Person.
         </p>
         <blockquote className="completion-verse">
           &ldquo;The testimony of Jesus is the spirit of prophecy.&rdquo;
-          <cite>— Revelation 19:10</cite>
+          <cite>Revelation 19:10</cite>
         </blockquote>
         <div className="completion-actions">
           <button className="completion-btn-map" onClick={onShowMap}>

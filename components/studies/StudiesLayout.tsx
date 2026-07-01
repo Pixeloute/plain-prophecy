@@ -17,7 +17,7 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar";
 
-// ── Inner nav — inside the SidebarProvider tree
+// ── Inner nav: inside the SidebarProvider tree
 function StudiesNav() {
   const pathname = usePathname();
   const router = useRouter();
@@ -102,7 +102,7 @@ function StudiesNav() {
                 
                 <SidebarMenu>
                   <SidebarMenuItem>
-                    {/* Book toggle — shows as icon in collapsed mode */}
+                    {/* Book toggle: shows as icon in collapsed mode */}
                     <SidebarMenuButton
                       isActive={bookActive}
                       tooltip={book.title}
@@ -116,7 +116,7 @@ function StudiesNav() {
                       <span className={`studies-book-chevron ${isExpanded ? "studies-book-chevron--open" : ""}`}>›</span>
                     </SidebarMenuButton>
 
-                    {/* Lesson links — nested under the Book item */}
+                    {/* Lesson links: nested under the Book item */}
                     {isExpanded && (
                       <div className="pl-4 mt-1">
                         <SidebarMenu className="studies-lessons-list border-l border-white/10 ml-[23px]">

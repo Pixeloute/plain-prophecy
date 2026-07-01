@@ -4,14 +4,14 @@ import PulsarMap from '@/components/studies/PulsarMap'
 import { pulsarMapData } from '@/data/pulsar-map'
 
 export const metadata: Metadata = {
-  title: 'God IS Love — The Connected Map · Plain Prophecy',
+  title: 'God IS Love: The Connected Map · Plain Prophecy',
   description: 'Every study. Every prophecy. Every doctrine. One truth at the centre.',
 }
 
 export default function PulsarMapPage() {
   return (
     /*
-     * Fullscreen container — 100dvh so it fills the true viewport on mobile
+     * Fullscreen container, 100dvh so it fills the true viewport on mobile
      * (avoids browser chrome overlap). Overflow hidden keeps it contained.
      */
     <div
@@ -39,7 +39,7 @@ export default function PulsarMapPage() {
           pointerEvents: 'none',
         }}
       >
-        {/* Back link + Timeline link row — re-enables pointer events */}
+        {/* Back link + Timeline link row: re-enables pointer events */}
         <div
           style={{
             alignSelf: 'flex-start',
@@ -126,7 +126,7 @@ export default function PulsarMapPage() {
             textAlign: 'center',
           }}
         >
-          Every doctrine, every prophecy, every study — all orbiting one truth.
+          Every doctrine, every prophecy, every study, all orbiting one truth.
         </p>
       </header>
 

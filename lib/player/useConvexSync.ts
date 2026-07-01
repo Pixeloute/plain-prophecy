@@ -33,7 +33,7 @@ function useConvexSyncInner(
     if (!isAuthenticated || hasMerged.current || serverState === undefined) return;
     hasMerged.current = true;
 
-    if (!serverState) return; // No server state — nothing to merge
+    if (!serverState) return; // No server state, nothing to merge
 
     setState((local) => mergeStates(local, serverState));
   }, [isAuthenticated, serverState, setState]);
@@ -84,7 +84,7 @@ function useConvexSyncInner(
     };
 
     syncMutation(payload).catch(() => {
-      // Sync failed — localStorage is the fallback
+      // Sync failed: localStorage is the fallback
     });
   }, [isAuthenticated, state, syncMutation]);
 
@@ -99,7 +99,7 @@ function useConvexSyncInner(
 }
 
 /**
- * Public hook — delegates to the inner implementation.
+ * Public hook: delegates to the inner implementation.
  */
 export function useConvexSync(
   state: PlayerState,
@@ -112,7 +112,7 @@ export function useConvexSync(
 // Principle: never lose progress. Take max XP, max streaks, union of arrays,
 // max of scores, union of trophies.
 
-// Server game state shape — matches the Convex gameState schema
+// Server game state shape: matches the Convex gameState schema
 interface ServerGameState {
   totalXP: number;
   currentStreak: number;

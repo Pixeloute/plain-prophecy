@@ -21,14 +21,14 @@ export default function ScrollHeroVideo() {
 
   // Whether to use the static (non-scroll-scrub) path.
   // Lazy initializer reads window synchronously on first client render so the
-  // correct version (desktop or static) is shown immediately — no flash or
+  // correct version (desktop or static) is shown immediately, no flash or
   // layout shift. With ssr:false on the dynamic import, typeof window is always
   // "object" here, so the check is reliable.
   const [useStatic, setUseStatic] = useState(getInitialStatic);
 
   useEffect(() => {
     const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-    // Also use static on mobile (< 768px) or touch devices — video scrubbing
+    // Also use static on mobile (< 768px) or touch devices. Video scrubbing
     // is unreliable on iOS Safari / Android Chrome without user gesture
     const isMobile =
       window.innerWidth < 768 || navigator.maxTouchPoints > 0;

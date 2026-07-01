@@ -12,7 +12,7 @@ import { motion, AnimatePresence } from "framer-motion";
 interface FlatLesson {
   lesson: StudyLesson;
   book: StudyBook;
-  href?: string; // optional override — used for standalone feature pages
+  href?: string; // optional override, used for standalone feature pages
 }
 
 const GODHEAD_BOOK: StudyBook = {
@@ -29,13 +29,13 @@ const GODHEAD_LESSON: StudyLesson = {
   scriptureRef: "John 1:1; Deut 6:4",
   keyVerse: "In the beginning was the Word, and the Word was with God, and the Word was God.",
   keyVerseRef: "John 1:1",
-  intro: "Three views of God's nature — compared side by side on five key questions.",
+  intro: "Three views of God's nature, compared side by side on five key questions.",
   sections: [
-    { heading: "Origin — where did each member come from?" },
-    { heading: "Persons — are all three genuine beings?" },
-    { heading: "Structure — how do the three relate?" },
-    { heading: "Beings — how many divine beings exist?" },
-    { heading: "God — what does it mean to call each one God?" },
+    { heading: "Origin: where did each member come from?" },
+    { heading: "Persons: are all three genuine beings?" },
+    { heading: "Structure: how do the three relate?" },
+    { heading: "Beings: how many divine beings exist?" },
+    { heading: "God: what does it mean to call each one God?" },
   ],
 };
 
@@ -63,7 +63,7 @@ function wrap(index: number, total: number): number {
   return ((index % total) + total) % total;
 }
 
-// Responsive card width — matches CSS: min(360px, 82vw) | min(320px, 92vw) on phones
+// Responsive card width, matches CSS: min(360px, 82vw) | min(320px, 92vw) on phones
 function getCardWidth(): number {
   if (typeof window === "undefined") return 320;
   const vw = window.innerWidth;
@@ -156,7 +156,7 @@ export default function StudyCardDeck({ bookFilter = "all" }: StudyCardDeckProps
       setDragOffset(0);
       setTimeout(() => setIsAnimating(false), 350); // Match spring duration
     } else if (Math.abs(delta) < 6) {
-      // Tap — flip active card
+      // Tap: flip active card
       setDragOffset(0);
       const activeLessonIdx = wrap(activeIndex, TOTAL);
       setFlippedIndex((prev) => (prev === activeLessonIdx ? null : activeLessonIdx));

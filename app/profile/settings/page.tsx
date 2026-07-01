@@ -42,15 +42,15 @@ const backgroundLabels: Record<string, string> = {
   neither: "I haven't heard much about either",
 };
 const goalLabels: Record<string, string> = {
-  clarity: "Clarity — understand Revelation",
-  certainty: "Certainty — firm faith foundation",
-  change: "Change — become more like Christ",
+  clarity: "Clarity: understand Revelation",
+  certainty: "Certainty: firm faith foundation",
+  change: "Change: become more like Christ",
 };
 
 const levelLabels: Record<string, string> = {
-  beginner: "Seeker — Level 1",
-  intermediate: "Student — Level 2",
-  advanced: "Scholar — Level 3",
+  beginner: "Seeker: Level 1",
+  intermediate: "Student: Level 2",
+  advanced: "Scholar: Level 3",
 };
 
 export default function ProfileSettingsPage() {
@@ -181,9 +181,9 @@ export default function ProfileSettingsPage() {
             onChange={handleAvatarChange}
           />
           <div className="flex-1 min-w-0">
-            <p className="font-semibold text-white truncate">{user.name || "—"}</p>
+            <p className="font-semibold text-white truncate">{user.name || "Not set"}</p>
             <p className="text-sm mt-0.5 truncate" style={{ color: "rgba(255,255,255,0.4)" }}>
-              {user.email || "—"}
+              {user.email || "Not set"}
             </p>
             {user.spiritualLevel && (
               <span

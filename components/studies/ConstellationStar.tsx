@@ -18,7 +18,7 @@ const CATEGORY_COLOURS: Record<StarCategory, string> = {
   doctrine: '#B8906A',
 }
 
-// Glow colours — slightly lighter/warmer for the bloom
+// Glow colours: slightly lighter/warmer for the bloom
 const GLOW_COLOURS: Record<StarCategory, string> = {
   gospel:   'rgba(240,208,128,0.5)',
   prophecy: 'rgba(130,175,220,0.5)',
@@ -40,7 +40,7 @@ export default function ConstellationStar({
   const isComingSoon = star.status === 'coming-soon'
   const isHighlit   = isActive || hovered
 
-  // Sizes — much bigger for visual impact
+  // Sizes: much bigger for visual impact
   const coreR   = isActive ? 14 : hovered ? 11 : isComingSoon ? 6 : 8
   const glowR   = isActive ? 28 : hovered ? 20 : 14
   const glowOp  = isActive ? 0.55 : hovered ? 0.40 : 0.18

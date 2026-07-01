@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const lesson = lessons.find((l) => l.slug === slug);
   if (!lesson) return {};
   return {
-    title: `${lesson.title} — Plain Prophecy`,
+    title: `${lesson.title}: Plain Prophecy`,
     description: lesson.summary,
     alternates: { canonical: `https://plainprophecy.com/learn/${slug}` },
     openGraph: {

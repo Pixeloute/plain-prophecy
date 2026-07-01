@@ -90,7 +90,7 @@ function EmpirePolygons({ activeId }: EmpirePolygonsProps) {
     }
   }, [activeId])
 
-  // ── Capital city marker (classic Marker — no mapId required) ─────────────
+  // ── Capital city marker (classic Marker, no mapId required) ─────────────
   useEffect(() => {
     if (!map) return
 
@@ -151,7 +151,7 @@ function EmpirePolygons({ activeId }: EmpirePolygonsProps) {
   return null
 }
 
-/** rAF opacity tween — Google Maps Polygons have no CSS transitions */
+/** rAF opacity tween: Google Maps Polygons have no CSS transitions */
 function animatePolygonOpacity(
   poly: google.maps.Polygon,
   targetFill: number,
@@ -190,7 +190,7 @@ export default function EmpireMap() {
   const canGoPrev    = activeIdx > 0
   const canGoNext    = activeIdx < EMPIRE_ORDER.length - 1
 
-  // Navigate — pauses auto-play on manual interaction
+  // Navigate: pauses auto-play on manual interaction
   const goTo = useCallback((id: EmpireId, pausePlay = true) => {
     if (pausePlay) setIsPlaying(false)
     setActiveId(id)

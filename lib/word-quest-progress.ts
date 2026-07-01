@@ -56,7 +56,7 @@ export function saveWordQuestProgress(progress: WordQuestProgress): void {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
   } catch {
-    // localStorage full or unavailable — fail silently
+    // localStorage full or unavailable: fail silently
   }
 }
 
@@ -164,7 +164,7 @@ export function isDailyCompleted(progress: WordQuestProgress): boolean {
 }
 
 /**
- * Deterministic daily seed — everyone gets the same words each day.
+ * Deterministic daily seed: everyone gets the same words each day.
  * Returns a numeric hash from a date string.
  */
 export function dailySeed(date?: string): number {
@@ -177,7 +177,7 @@ export function dailySeed(date?: string): number {
 }
 
 /**
- * Seeded shuffle — deterministic given the same seed.
+ * Seeded shuffle: deterministic given the same seed.
  */
 export function seededShuffle<T>(arr: T[], seed: number): T[] {
   const copy = [...arr];

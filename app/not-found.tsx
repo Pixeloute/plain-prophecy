@@ -23,7 +23,7 @@ export default function NotFound() {
           marginBottom: "1.5rem",
         }}
       >
-        404 — Page Not Found
+        404: Page Not Found
       </div>
 
       <h1

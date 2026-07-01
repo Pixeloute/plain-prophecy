@@ -55,12 +55,12 @@ export default function PropheticTimeline() {
   const containerRef    = useRef<HTMLDivElement>(null)
   const contentGroupRef = useRef<SVGGElement>(null)
 
-  // ── Transform stored as plain ref — zero React re-renders during pan/zoom ──
+  // ── Transform stored as plain ref: zero React re-renders during pan/zoom ──
   const T     = useRef({ x: 0, y: 0, k: 1 })
   const initT = useRef({ x: 0, y: 0, k: 1 })
   const raf   = useRef<number | null>(null)
 
-  // ── React state — only changes that require a re-render ──────────────────
+  // ── React state: only changes that require a re-render ──────────────────
   const [activeEventId,  setActiveEventId]  = useState<string | null>(null)
   const [activeFramework, setActiveFramework] = useState<Framework>('historicist')
   const [showReset,      setShowReset]      = useState(false)
@@ -176,14 +176,14 @@ export default function PropheticTimeline() {
     let targetX: number, targetY: number, targetK: number
 
     if (isMobile) {
-      // Mobile: show 600 BC → 200 AD — the 70-weeks anchor cluster
+      // Mobile: show 600 BC → 200 AD, the 70-weeks anchor cluster
       const x1 = yearToX(-600)
       const x2 = yearToX(200)
       targetK = (W * 0.88) / (x2 - x1)
       targetX = W / 2 - ((x1 + x2) / 2) * targetK
       targetY = (H - CANVAS_H * targetK) / 2
     } else {
-      // Desktop: show 600 BC → 700 AD — 70-weeks + papal rise era (readable at ~21px)
+      // Desktop: show 600 BC → 700 AD, 70-weeks + papal rise era (readable at ~21px)
       const x1 = yearToX(-600)
       const x2 = yearToX(700)
       targetK = (W * 0.90) / (x2 - x1)
@@ -349,7 +349,7 @@ export default function PropheticTimeline() {
       {/* ── SVG canvas ── */}
       <svg
         style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', overflow: 'hidden' }}
-        aria-label="Interactive prophetic timeline — pan and zoom to explore"
+        aria-label="Interactive prophetic timeline: pan and zoom to explore"
         role="img"
       >
         {/* Fixed background */}
@@ -364,7 +364,7 @@ export default function PropheticTimeline() {
         </defs>
         <rect x="0" y="0" width="100%" height="100%" fill="url(#tl-atm)" />
 
-        {/* ── Panning / zooming group — direct DOM transform ── */}
+        {/* ── Panning / zooming group: direct DOM transform ── */}
         <g ref={contentGroupRef} style={{ willChange: 'transform' }}>
           {/* Period bands */}
           {framework.bands.map(band => (

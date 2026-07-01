@@ -52,7 +52,7 @@ export default function StudyCard({
           restDelta: 0.001
         }}
         style={{ transformStyle: "preserve-3d" }}
-        aria-label={isFlipped ? `${lesson.title} details` : `${lesson.title} — tap to explore`}
+        aria-label={isFlipped ? `${lesson.title} details` : `${lesson.title}: tap to explore`}
       >
         {/* Front */}
         <div 

@@ -13,7 +13,7 @@ const TICK_INTERVALS: Record<number, number> = {
   5: 10,
 }
 
-// Bottom of bands — TODAY line extends down to here
+// Bottom of bands: TODAY line extends down to here
 const BANDS_BOTTOM_Y = AXIS_Y + 100 + 3 * 150 + 2 * 20  // = 400+100+450+40 = 990
 
 function formatYear(year: number): string {
@@ -93,7 +93,7 @@ export default function TimelineAxis({ zoomTier }: TimelineAxisProps) {
         strokeDasharray="12,8"
       />
 
-      {/* "BC" label — sits just below the tick zone, above the first band */}
+      {/* "BC" label: sits just below the tick zone, above the first band */}
       <text
         x={yearToX(-30)}
         y={AXIS_Y + 80}
@@ -121,7 +121,7 @@ export default function TimelineAxis({ zoomTier }: TimelineAxisProps) {
         AD
       </text>
 
-      {/* ── TODAY line — spans from above axis through all bands ── */}
+      {/* ── TODAY line: spans from above axis through all bands ── */}
       <line
         x1={todayX}
         y1={AXIS_Y - 80}

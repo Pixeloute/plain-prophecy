@@ -1,5 +1,5 @@
 /**
- * CanvasRenderer.ts — Pure TypeScript class, no React.
+ * CanvasRenderer.ts: Pure TypeScript class, no React.
  * Renders 63,779 Bible cross-reference arcs on an HTML5 Canvas.
  *
  * Architecture: Two-layer composite
@@ -7,7 +7,7 @@
  * - Main canvas: composites base + highlighted arcs on each interaction frame
  * - Result: hover/filter only repaints the highlight layer, not all 63k arcs
  *
- * Never instantiate this outside of a useEffect — OffscreenCanvas requires a browser.
+ * Never instantiate this outside of a useEffect. OffscreenCanvas requires a browser.
  */
 
 import type { CrossReferenceData, FilterState, ArcHit } from '@/types/connections'
@@ -20,8 +20,8 @@ const _ARC_DIM_OPACITY = 0.04  // Opacity of dimmed arcs in filter modes (reserv
 const ARC_HIGHLIGHT_OPACITY = 1.0
 const BASE_STROKE_WIDTH = 0.7
 const HIGHWAY_STROKE_WIDTH = 1.5
-const HIT_RADIUS = 8           // px — snap radius for hover hit testing
-const SPATIAL_CELL_SIZE = 40   // px — grid cell size for spatial index
+const HIT_RADIUS = 8           // px, snap radius for hover hit testing
+const SPATIAL_CELL_SIZE = 40   // px, grid cell size for spatial index
 
 // Colour ramp: violet → teal → gold → white (distance-based)
 // Matches Harrison's rainbow while harmonising with Plain Prophecy palette
@@ -63,7 +63,7 @@ const COLOUR_LUT = buildColourLUT()
 // ── Prophetic-core book indices for Prophecy Highway mode ─────────────────
 // OT: Isaiah(22), Jeremiah(23), Ezekiel(25), Daniel(26), Zechariah(37),
 //     Malachi(38), Psalms(18), Genesis(0), Joel(28), Amos(29), Micah(32), Habakkuk(34)
-// NT: Matthew(39 — ch24), Mark(40 — ch13), Luke(41 — ch21),
+// NT: Matthew(39, ch24), Mark(40, ch13), Luke(41, ch21),
 //     Revelation(65), Hebrews(57), 1Peter(59), 2Peter(60)
 const PROPHETIC_CORE_BOOKS = new Set([0, 18, 22, 23, 25, 26, 28, 29, 32, 34, 37, 38, 39, 40, 41, 57, 59, 60, 65])
 
@@ -568,7 +568,7 @@ export class CanvasRenderer {
   private _drawOTNTDivider(ctx: CanvasRenderingContext2D): void {
     if (!this.data) return
     const books = this.data.books
-    // Matthew is book index 39 — NT start
+    // Matthew is book index 39, NT start
     const mattBook = books[39]
     if (!mattBook) return
     const chapters = this.data.chapters

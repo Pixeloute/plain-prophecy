@@ -7,10 +7,10 @@ interface TimelineJumpButtonsProps {
   hidden: boolean
 }
 
-/** Strip short label from "70 Weeks — 490 Years" → "70 Weeks" */
+/** Strip the trailing detail from a band label, keeping only the leading name (e.g. "70 Weeks"). Splits on the label separator when one is present. */
 function shortBandLabel(label: string): string {
-  const dash = label.indexOf(' —')
-  return dash !== -1 ? label.slice(0, dash) : label
+  const sep = label.indexOf(' —') // content-lint-disable-line: legacy label delimiter, matched as data
+  return sep !== -1 ? label.slice(0, sep) : label
 }
 
 export default function TimelineJumpButtons({ bands, onJump, hidden }: TimelineJumpButtonsProps) {

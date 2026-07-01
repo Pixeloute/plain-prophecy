@@ -188,7 +188,7 @@ export default function ChallengeModal({ open, onClose }: ChallengeModalProps) {
                   ) : (
                     <div>
                       <div style={{ fontFamily: 'var(--font-inter)', fontSize: 13, color: '#9A9A8A', marginBottom: 8 }}>
-                        Not quite — try again?
+                        Not quite. Try again?
                       </div>
                       <button
                         onClick={() => setResult(null)}

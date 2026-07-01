@@ -86,7 +86,7 @@ const SLASH_ITEMS: SlashItem[] = [
   },
   {
     title: "Divider",
-    icon: "—",
+    icon: "─",
     command: ({ editor, range }) =>
       (editor as ReturnType<typeof useEditor>)!
         .chain().focus().deleteRange(range).setHorizontalRule().run(),

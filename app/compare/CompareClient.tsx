@@ -43,7 +43,7 @@ export default function CompareClient() {
   useEffect(() => {
     const url = encodeURIComponent(window.location.href);
     const text = encodeURIComponent(
-      "Futurism vs Preterism vs Historicism — a rigorous evidential comparison"
+      "Futurism vs Preterism vs Historicism: a rigorous evidential comparison"
     );
     const tw = document.getElementById("tw-btn") as HTMLAnchorElement | null;
     const wa = document.getElementById("wa-btn") as HTMLAnchorElement | null;
@@ -95,15 +95,15 @@ export default function CompareClient() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "1rem", marginTop: "1.25rem" }}>
             <div style={{ borderLeft: "3px solid var(--futurist-primary, #c0392b)", paddingLeft: "1rem" }}>
               <div style={{ fontWeight: 700, fontSize: "0.85rem", marginBottom: "0.25rem" }}>Futurism</div>
-              <div style={{ fontSize: "0.85rem", color: "var(--neutral)" }}>Most prophecy is still future — a 7-year tribulation, a literal rebuilt temple, a rapture before the end.</div>
+              <div style={{ fontSize: "0.85rem", color: "var(--neutral)" }}>Most prophecy is still future: a 7-year tribulation, a literal rebuilt temple, a rapture before the end.</div>
             </div>
             <div style={{ borderLeft: "3px solid var(--preterist-primary, #7f8c8d)", paddingLeft: "1rem" }}>
               <div style={{ fontWeight: 700, fontSize: "0.85rem", marginBottom: "0.25rem" }}>Preterism</div>
-              <div style={{ fontSize: "0.85rem", color: "var(--neutral)" }}>Most prophecy was fulfilled in the 1st century — the destruction of Jerusalem in 70 AD.</div>
+              <div style={{ fontSize: "0.85rem", color: "var(--neutral)" }}>Most prophecy was fulfilled in the 1st century: the destruction of Jerusalem in 70 AD.</div>
             </div>
             <div style={{ borderLeft: "3px solid var(--sda-primary, #2c5f2e)", paddingLeft: "1rem" }}>
               <div style={{ fontWeight: 700, fontSize: "0.85rem", marginBottom: "0.25rem" }}>Historicism</div>
-              <div style={{ fontSize: "0.85rem", color: "var(--neutral)" }}>Prophecy unfolds across church history — from Christ&rsquo;s first coming to His return. The Reformation consensus.</div>
+              <div style={{ fontSize: "0.85rem", color: "var(--neutral)" }}>Prophecy unfolds across church history, from Christ&rsquo;s first coming to His return. The Reformation consensus.</div>
             </div>
           </div>
         </div>
@@ -206,7 +206,7 @@ export default function CompareClient() {
 
             <div className="key-diff" style={{ marginTop: "2rem" }}>
               <h4>⚑ The Central Hermeneutical Divide</h4>
-              <p>All three frameworks agree the Cross is central — but disagree radically on what prophecy points to after it. Futurism defers most fulfilment to a future 7-year period (with a 2,000-year gap no text supports). Preterism closes the book at 70 AD, leaving 2,000 years of church history prophetically silent. Historicism alone traces a continuous prophetic thread from Daniel to the present — every anchor historically verified.</p>
+              <p>All three frameworks agree the Cross is central, but disagree radically on what prophecy points to after it. Futurism defers most fulfilment to a future 7-year period (with a 2,000-year gap no text supports). Preterism closes the book at 70 AD, leaving 2,000 years of church history prophetically silent. Historicism alone traces a continuous prophetic thread from Daniel to the present, every anchor historically verified.</p>
             </div>
           </div>
         )}
@@ -273,7 +273,7 @@ export default function CompareClient() {
               <div>
                 <div className="se-eyebrow">Methodology</div>
                 <h2 className="se-title">How Scoring Works</h2>
-                <p className="se-subtitle">Each criterion is scored 1–10 on five independent axes, then averaged. This is not advocacy scoring — all three traditions are held to the same evidentiary standard.</p>
+                <p className="se-subtitle">Each criterion is scored 1–10 on five independent axes, then averaged. This is not advocacy scoring. All three traditions are held to the same evidentiary standard.</p>
               </div>
               <div className="se-criteria-grid">
                 {scoringMethodology.map((m, i) => (
@@ -288,9 +288,9 @@ export default function CompareClient() {
               </div>
               <div className="se-deductions">
                 <div className="se-ded-header">
-                  <div className="se-eyebrow" style={{ color: "rgba(255,255,255,0.55)", marginBottom: "0.4rem" }}>Honest Assessment — Preterism</div>
+                  <div className="se-eyebrow" style={{ color: "rgba(255,255,255,0.55)", marginBottom: "0.4rem" }}>Honest Assessment: Preterism</div>
                   <h3 className="se-ded-title">Where Preterism Has Partial Merit</h3>
-                  <p className="se-ded-intro">Preterism scores higher than Futurism because it anchors prophecy to verifiable history and reads the 70 weeks correctly. But it closes the prophetic book at 70 AD — and full preterism&apos;s denial of a future bodily resurrection is its most significant exegetical failure.</p>
+                  <p className="se-ded-intro">Preterism scores higher than Futurism because it anchors prophecy to verifiable history and reads the 70 weeks correctly. But it closes the prophetic book at 70 AD, and full preterism&apos;s denial of a future bodily resurrection is its most significant exegetical failure.</p>
                 </div>
                 <div className="se-ded-grid">
                   {preteristDeductions.map((d, i) => (
@@ -303,9 +303,9 @@ export default function CompareClient() {
               </div>
               <div className="se-deductions" style={{ marginTop: "2rem" }}>
                 <div className="se-ded-header">
-                  <div className="se-eyebrow" style={{ color: "rgba(255,255,255,0.55)", marginBottom: "0.4rem" }}>Honest Assessment — Historicism</div>
+                  <div className="se-eyebrow" style={{ color: "rgba(255,255,255,0.55)", marginBottom: "0.4rem" }}>Honest Assessment: Historicism</div>
                   <h3 className="se-ded-title">Why Some Historicist Positions Are Not 10/10</h3>
-                  <p className="se-ded-intro">The Historicist framework scores significantly higher than both alternatives across every criterion — but intellectual honesty demands acknowledging where legitimate scholarly pushback exists. A 10/10 requires near-unanimous agreement among qualified exegetes.</p>
+                  <p className="se-ded-intro">The Historicist framework scores significantly higher than both alternatives across every criterion, but intellectual honesty demands acknowledging where legitimate scholarly pushback exists. A 10/10 requires near-unanimous agreement among qualified exegetes.</p>
                 </div>
                 <div className="se-ded-grid">
                   {sdaDeductions.map((d, i) => (
@@ -367,7 +367,7 @@ export default function CompareClient() {
               <div className="fb-label">Scholarly Verdict</div>
               <div className="fb-headline">The Historicist-SDA Framework is Exegetically Superior</div>
               <div className="fb-body">
-                The SDA/Historicist prophetic framework rests on an explicitly stated hermeneutical principle (day-year), multiple historically verified anchors, internal biblical coherence, and the full weight of the Reformation tradition. Preterism correctly anchors the 70 weeks to Christ and rejects the futurist gap — but closes the prophetic canon at 70 AD, leaving 2,000 years of church history prophetically silent, and full preterism requires a spiritual resurrection that contradicts Paul. Evangelical Futurism depends on an unproven gap, a theologically problematic rebuilt Temple, a doctrinally invented Rapture, and a hermeneutic with Counter-Reformation origins. Popularity is not the same as accuracy. The biblical data strongly favours the Historicist reading.
+                The SDA/Historicist prophetic framework rests on an explicitly stated hermeneutical principle (day-year), multiple historically verified anchors, internal biblical coherence, and the full weight of the Reformation tradition. Preterism correctly anchors the 70 weeks to Christ and rejects the futurist gap, but closes the prophetic canon at 70 AD, leaving 2,000 years of church history prophetically silent, and full preterism requires a spiritual resurrection that contradicts Paul. Evangelical Futurism depends on an unproven gap, a theologically problematic rebuilt Temple, a doctrinally invented Rapture, and a hermeneutic with Counter-Reformation origins. Popularity is not the same as accuracy. The biblical data strongly favours the Historicist reading.
               </div>
             </div>
           </div>

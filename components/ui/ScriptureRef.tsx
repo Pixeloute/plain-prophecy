@@ -121,7 +121,7 @@ export function ScriptureRef({ children, className, style }: ScriptureRefProps) 
                   </span>
                 )}
 
-                {/* Close button — critical for mobile dismissal */}
+                {/* Close button: critical for mobile dismissal */}
                 <PopoverPrimitive.Close
                   render={
                     <button
@@ -172,7 +172,7 @@ export function ScriptureRef({ children, className, style }: ScriptureRefProps) 
                     fontStyle: "italic",
                   }}
                 >
-                  Verse unavailable — open a Bible app to read this passage.
+                  Verse unavailable. Open a Bible app to read this passage.
                 </p>
               )}
 

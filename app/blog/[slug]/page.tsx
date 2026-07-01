@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = await fetchQuery(api.blog.getBySlug, { slug });
   if (!post) return { title: "Post Not Found" };
 
-  const title = post.metaTitle || `${post.title} — Plain Prophecy`;
+  const title = post.metaTitle || `${post.title}: Plain Prophecy`;
   const description = post.metaDescription || post.excerpt;
   const imageUrl = post.ogImage || post.coverImage;
 

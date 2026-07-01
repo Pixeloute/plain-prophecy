@@ -4,7 +4,7 @@ interface JsonLdProps {
 
 /**
  * Zero-overhead component that injects JSON-LD structured data into the page.
- * Use inside any Server Component page — renders a <script> tag with no client JS.
+ * Use inside any Server Component page: renders a <script> tag with no client JS.
  */
 export default function JsonLd({ schema }: JsonLdProps) {
   return (

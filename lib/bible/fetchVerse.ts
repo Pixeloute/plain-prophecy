@@ -13,7 +13,7 @@ const cache = new Map<string, VerseResult>()
 
 /**
  * Fetch verse text from bible-api.com (WEB translation, no API key required).
- * Results are cached in memory — subsequent calls for the same reference are
+ * Results are cached in memory. Subsequent calls for the same reference are
  * instantaneous and make no network request.
  */
 export async function fetchVerse(raw: string): Promise<VerseResult> {

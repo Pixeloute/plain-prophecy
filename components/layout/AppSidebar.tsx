@@ -133,9 +133,9 @@ export default function AppSidebar() {
         } as React.CSSProperties
       }
     >
-      {/* Header — Logo + Collapse toggle */}
+      {/* Header: Logo + Collapse toggle */}
       <SidebarHeader className="flex-row items-center justify-between px-3 py-3">
-        {/* Logo — hidden in icon-only mode */}
+        {/* Logo: hidden in icon-only mode */}
         <Link
           href="/profile"
           className="flex items-center group-data-[collapsible=icon]:hidden"
@@ -189,7 +189,7 @@ export default function AppSidebar() {
                 </SidebarMenuButton>
               </SidebarMenuItem>
 
-              {/* Studies — collapsible subnav */}
+              {/* Studies: collapsible subnav */}
               <SidebarMenuItem>
                 <SidebarMenuButton
                   onClick={() => setStudiesOpen((v) => !v)}
@@ -241,13 +241,13 @@ export default function AppSidebar() {
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
 
-                        {/* Books from Convex — each expandable to show lessons */}
+                        {/* Books from Convex: each expandable to show lessons */}
                         {booksData?.map((book) => {
                           const bookActive = pathname.startsWith(`/studies/${book.slug}`);
                           const bookExpanded = expandedBooks.includes(book.slug);
                           return (
                             <SidebarMenuSubItem key={book.slug}>
-                              {/* Book header — click to toggle lessons */}
+                              {/* Book header: click to toggle lessons */}
                               <SidebarMenuSubButton
                                 onClick={() => toggleBook(book.slug)}
                                 isActive={bookActive}
@@ -382,13 +382,13 @@ export default function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
 
-      {/* Footer — User + Sign Out */}
+      {/* Footer: User + Sign Out */}
       <SidebarFooter className="pb-3">
         <SidebarMenu>
           <SidebarMenuItem>
             <DropdownMenu>
               {/* Fix: use render prop so DropdownMenuTrigger merges onto the
-                  SidebarMenuButton element — avoids nested <button> in <button> */}
+                  SidebarMenuButton element, avoids nested <button> in <button> */}
               <DropdownMenuTrigger
                 render={
                   <SidebarMenuButton

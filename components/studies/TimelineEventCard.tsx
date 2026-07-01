@@ -75,7 +75,7 @@ export default function TimelineEventCard({ event, accentColour, onClose }: Time
         className="tl-card tl-card-mobile tl-card-desktop"
         role="dialog"
         aria-modal="false"
-        aria-label={`${event.label} — timeline event`}
+        aria-label={`${event.label}: timeline event`}
         style={{
           background: 'linear-gradient(160deg, #141410 0%, #0A0A06 100%)',
           border: `1px solid ${accentColour}33`,

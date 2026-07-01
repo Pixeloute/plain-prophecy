@@ -79,7 +79,7 @@ export default function StarCard({ star, onClose }: StarCardProps) {
         }
       `}</style>
 
-      {/* Mobile backdrop — visible only on small screens */}
+      {/* Mobile backdrop: visible only on small screens */}
       <div
         className="star-card-backdrop"
         style={{
@@ -225,7 +225,7 @@ export default function StarCard({ star, onClose }: StarCardProps) {
           ✦ God is Love
         </p>
 
-        {/* Love connection — Christ-block pattern */}
+        {/* Love connection: Christ-block pattern */}
         <div
           style={{
             borderLeft: '3px solid #C9A84C',

@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-// CSS travels with the component — any page that drops in <StudyCardCarousel>
+// CSS travels with the component. Any page that drops in <StudyCardCarousel>
 // gets the card styles automatically, without needing to import studies-index.css itself.
 import "@/app/studies-index.css";
 

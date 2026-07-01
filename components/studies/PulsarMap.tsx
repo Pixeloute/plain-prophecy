@@ -36,7 +36,7 @@ function starCoords(angle: number, distance: number) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Milky Way starfield — all coords in 0–1000 space
+// Milky Way starfield: all coords in 0–1000 space
 // ─────────────────────────────────────────────────────────────────────────────
 function StarfieldBackground() {
   const bgStars = [
@@ -153,7 +153,7 @@ export default function PulsarMap({ data }: PulsarMapProps) {
   const containerRef    = useRef<HTMLDivElement>(null)
   const contentGroupRef = useRef<SVGGElement>(null)
 
-  // ── Transform stored as plain ref — zero React re-renders during pan/zoom ──
+  // ── Transform stored as plain ref: zero React re-renders during pan/zoom ──
   const T    = useRef({ x: 0, y: 0, k: 1 })
   const initT = useRef({ x: 0, y: 0, k: 1 }) // saved initial (for reset)
   const raf  = useRef<number | null>(null)
@@ -224,7 +224,7 @@ export default function PulsarMap({ data }: PulsarMapProps) {
     const y = (H - CANVAS_SIZE * k) / 2
     T.current    = { x, y, k }
     initT.current = { x, y, k }
-    commit() // immediate — no rAF delay on first render
+    commit() // immediate, no rAF delay on first render
   }, [commit])
 
   // ── Measure container on mount + resize ─────────────────────────────────
@@ -358,10 +358,10 @@ export default function PulsarMap({ data }: PulsarMapProps) {
         overscrollBehavior: 'none',
       }}
     >
-      {/* ── SVG — fills container, no preserveAspectRatio, we own all transforms ── */}
+      {/* ── SVG: fills container, no preserveAspectRatio, we own all transforms ── */}
       <svg
         style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', overflow: 'hidden' }}
-        aria-label="God IS Love constellation map — every study orbiting a central truth"
+        aria-label="God IS Love constellation map: every study orbiting a central truth"
         role="img"
       >
         <defs>
@@ -412,10 +412,10 @@ export default function PulsarMap({ data }: PulsarMapProps) {
           </radialGradient>
         </defs>
 
-        {/* ── Fixed full-screen background — always covers the entire SVG element ── */}
+        {/* ── Fixed full-screen background: always covers the entire SVG element ── */}
         <rect x="0" y="0" width="100%" height="100%" fill="#010408" />
 
-        {/* ── Panning / zooming group — direct DOM transform, no React re-renders ── */}
+        {/* ── Panning / zooming group: direct DOM transform, no React re-renders ── */}
         <g ref={contentGroupRef} style={{ willChange: 'transform' }}>
           {/* Space background */}
           <rect x={0} y={0} width={CANVAS_SIZE} height={CANVAS_SIZE} fill="url(#m-bg)" />

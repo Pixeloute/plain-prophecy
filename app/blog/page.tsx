@@ -4,7 +4,7 @@ import { fetchQuery } from "convex/nextjs";
 import { api } from "@/convex/_generated/api";
 
 export const metadata: Metadata = {
-  title: "Blog — Plain Prophecy",
+  title: "Blog: Plain Prophecy",
   description:
     "Articles on Christ-centred biblical prophecy, the historicist framework, and what Scripture actually says about Daniel and Revelation.",
   alternates: {
@@ -84,7 +84,7 @@ export default async function BlogIndexPage() {
           }}
         >
           Articles on biblical prophecy, hermeneutics, and what Scripture
-          actually says — written for people who want answers, not speculation.
+          actually says, written for people who want answers, not speculation.
         </p>
       </header>
 
@@ -101,7 +101,7 @@ export default async function BlogIndexPage() {
       >
         {posts.length === 0 ? (
           <p style={{ color: "rgba(255,255,255,0.35)", textAlign: "center", padding: "48px 0" }}>
-            No posts yet — check back soon.
+            No posts yet. Check back soon.
           </p>
         ) : (
           posts.map((post) => (

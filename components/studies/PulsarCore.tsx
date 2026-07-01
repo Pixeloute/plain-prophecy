@@ -45,7 +45,7 @@ export default function PulsarCore({ cx, cy }: PulsarCoreProps) {
         }
       `}</style>
 
-      {/* Outer corona glow — very wide, very faint */}
+      {/* Outer corona glow: very wide, very faint */}
       <circle
         cx={cx}
         cy={cy}
@@ -102,7 +102,7 @@ export default function PulsarCore({ cx, cy }: PulsarCoreProps) {
         fill="rgba(255,220,120,0.14)"
       />
 
-      {/* Core glow circle — gradient */}
+      {/* Core glow circle: gradient */}
       <circle
         cx={cx}
         cy={cy}

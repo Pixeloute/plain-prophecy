@@ -72,7 +72,7 @@ export async function generateShareCard(input: ShareCardInput): Promise<Blob> {
   canvas.height = H;
   const ctx = canvas.getContext("2d")!;
 
-  // 1 — Background: AI-generated if available, canvas gradient as fallback
+  // 1. Background: AI-generated if available, canvas gradient as fallback
   const aiBg = await fetchAIBackground(accentColor, format);
   if (aiBg) {
     ctx.drawImage(aiBg, 0, 0, W, H);
@@ -90,7 +90,7 @@ export async function generateShareCard(input: ShareCardInput): Promise<Blob> {
     ctx.fillRect(0, 0, W, H);
   }
 
-  // 3 — Top gold rule
+  // 3. Top gold rule
   ctx.save();
   ctx.globalAlpha = 0.6;
   ctx.strokeStyle = accentColor;
@@ -101,7 +101,7 @@ export async function generateShareCard(input: ShareCardInput): Promise<Blob> {
   ctx.stroke();
   ctx.restore();
 
-  // 4 — Large faded opening quote mark
+  // 4. Large faded opening quote mark
   ctx.save();
   ctx.globalAlpha = 0.07;
   ctx.font = `bold 280px "Playfair Display"`;
@@ -110,7 +110,7 @@ export async function generateShareCard(input: ShareCardInput): Promise<Blob> {
   ctx.fillText("\u275D", PADDING - 16, format === "portrait" ? 520 : 340);
   ctx.restore();
 
-  // 5 — Verse text (two-tier sizing, vertically centred)
+  // 5. Verse text (two-tier sizing, vertically centred)
   const verseText = `\u201C${keyVerse}\u201D`;
   const centreY = format === "portrait" ? 880 : 480;
 
@@ -138,7 +138,7 @@ export async function generateShareCard(input: ShareCardInput): Promise<Blob> {
   // Last baseline of verse text
   const lastLineY = verseY - lineHeight;
 
-  // 6 — Thin separator line
+  // 6. Thin separator line
   const sepY = lastLineY + 52;
   ctx.save();
   ctx.globalAlpha = 0.4;
@@ -151,19 +151,19 @@ export async function generateShareCard(input: ShareCardInput): Promise<Blob> {
   ctx.stroke();
   ctx.restore();
 
-  // 7 — Scripture reference
+  // 7. Scripture reference
   ctx.font = `500 32px "IBM Plex Mono"`;
   ctx.fillStyle = accentColor;
   ctx.textAlign = "center";
   ctx.fillText(`\u2014 ${keyVerseRef}`, W / 2, sepY + 56);
 
-  // 8 — Branding watermark
+  // 8. Branding watermark
   ctx.font = `400 26px "IBM Plex Sans"`;
   ctx.fillStyle = "rgba(255,255,255,0.18)";
   ctx.textAlign = "center";
   ctx.fillText("PlainProphecy.com", W / 2, H - 60);
 
-  // 9 — Bottom gold rule
+  // 9. Bottom gold rule
   ctx.save();
   ctx.globalAlpha = 0.6;
   ctx.strokeStyle = accentColor;

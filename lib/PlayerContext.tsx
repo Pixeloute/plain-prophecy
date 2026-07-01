@@ -138,7 +138,7 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
           }));
           pushTrophyToast(def);
           playSound("trophy-unlock");
-          // Trophy XP (don't recurse — add directly)
+          // Trophy XP (don't recurse, add directly)
           setState((prev) => {
             const result = awardXPFn(prev, "trophy", def.xpReward, def.name);
             return result.state;

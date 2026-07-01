@@ -327,7 +327,7 @@ export default function InteractiveStudyTemplate({ book, lesson, VisualComponent
             </Link>
           ) : (
             <div className="study-final-note" style={{ color: 'rgba(255,255,255,0.5)', fontStyle: 'italic' }}>
-              You&apos;ve completed this series — more studies coming soon.
+              You&apos;ve completed this series. More studies coming soon.
             </div>
           )}
         </div>

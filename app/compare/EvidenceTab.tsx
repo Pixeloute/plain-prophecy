@@ -113,7 +113,7 @@ export default function EvidenceTab() {
       {/* Summary Banner */}
       <div className="ev-summary-banner" style={{ background: "linear-gradient(135deg, var(--sda-primary) 0%, #0d2218 100%)", marginTop: "1.5rem" }}>
         <div style={{ fontFamily: "var(--font-ibm-plex-mono)", fontSize: "0.62rem", letterSpacing: "0.25em", textTransform: "uppercase", opacity: 0.6, marginBottom: "0.5rem" }}>Assessment</div>
-        <div className="sb-title">The Prophetic Framework Is Active — Not Theoretical</div>
+        <div className="sb-title">The Prophetic Framework Is Active, Not Theoretical</div>
         <div className="sb-grid">
           {[
             { num: "6", desc: "Major prophetic signs in active fulfilment" },

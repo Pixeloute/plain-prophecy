@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ProphecyParallels from "@/components/studies/ProphecyParallels";
 
 export const metadata: Metadata = {
-  title: "Prophecy Parallel Viewer — Plain Prophecy",
+  title: "Prophecy Parallel Viewer · Plain Prophecy",
   description:
     "Daniel 2, 7, 8 and Revelation 13 describe the same world empires from four completely different angles. See the convergence in a single view.",
 };
@@ -63,7 +63,7 @@ export default function ParallelsPage() {
           }}
         >
           Daniel 2, 7, 8, and Revelation 13 each describe the same arc of world
-          empires — from Babylon to the eternal kingdom — using completely
+          empires, from Babylon to the eternal kingdom, using completely
           different symbols. Read them side by side and the convergence becomes
           impossible to dismiss.
         </p>

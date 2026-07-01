@@ -14,7 +14,7 @@ const TIER_RADIUS: Record<1 | 2 | 3, number> = { 1: 55, 2: 40, 3: 26 }
 
 // ── Vertical milestone line extents ─────────────────────────────────────────
 
-// ── 5-row label system — rows spread across the full 400px label area above axis ──
+// ── 5-row label system: rows spread across the full 400px label area above axis ──
 // Row 1 = just above the axis rail; Row 5 = near the top of the canvas
 const LABEL_ROW_Y: Record<1 | 2 | 3 | 4 | 5, number> = {
   1: 260,
@@ -24,7 +24,7 @@ const LABEL_ROW_Y: Record<1 | 2 | 3 | 4 | 5, number> = {
   5: 40,
 }
 
-// ── Badge/dot colours — vivid ────────────────────────────────────────────────
+// ── Badge/dot colours: vivid ────────────────────────────────────────────────
 const BADGE_COLOURS: Record<string, string> = {
   fulfilled:  '#5a9ef5',  // bright blue
   historical: '#3ebd72',  // bright green
@@ -73,7 +73,7 @@ export default function TimelineEventNode({
       onClick={onClick}
       role="button"
       tabIndex={0}
-      aria-label={`${event.label} — ${event.dateLabel}`}
+      aria-label={`${event.label}, ${event.dateLabel}`}
       style={{ cursor: 'pointer' }}
       onKeyDown={e => {
         if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClick() }
@@ -135,7 +135,7 @@ export default function TimelineEventNode({
         />
       )}
 
-      {/* ── Short tag on diamond (zoomed out) — just the year ── */}
+      {/* ── Short tag on diamond (zoomed out): just the year ── */}
       {showShortTag && (
         <text
           x={x}

@@ -565,7 +565,7 @@ export default function ProfilePage() {
         </section>
       )}
 
-      {/* ── Section 5: Milestones (legacy — shown only if no game trophies) ── */}
+      {/* ── Section 5: Milestones (legacy, shown only if no game trophies) ── */}
       {progress !== undefined && progress !== null && !fullProfile && (
         <MilestonesSection completedCount={progress.completedCount} streak={progress.streak ?? 0} />
       )}

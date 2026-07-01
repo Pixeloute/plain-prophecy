@@ -21,7 +21,7 @@ export default function ShareCardModal({ open, onClose, lesson, meta }: Props) {
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [canNativeShare, setCanNativeShare] = useState(false);
 
-  // Detect Web Share API with file support (iOS/Android) — client-side only
+  // Detect Web Share API with file support (iOS/Android), client-side only
   useEffect(() => {
     if (typeof navigator === "undefined" || typeof navigator.canShare !== "function") return;
     try {
@@ -29,7 +29,7 @@ export default function ShareCardModal({ open, onClose, lesson, meta }: Props) {
         navigator.canShare({ files: [new File([], "test.png", { type: "image/png" })] })
       );
     } catch {
-      // canShare throws on some browsers — treat as unsupported
+      // canShare throws on some browsers, treat as unsupported
     }
   }, []);
 
@@ -86,10 +86,10 @@ export default function ShareCardModal({ open, onClose, lesson, meta }: Props) {
         await navigator.share({
           files: [file],
           title: lesson.keyVerseRef,
-          text: `"${lesson.keyVerse}" — ${lesson.keyVerseRef}\n\nPlainProphecy.com`,
+          text: `"${lesson.keyVerse}" ${lesson.keyVerseRef}\n\nPlainProphecy.com`,
         });
       } catch {
-        // User cancelled — not an error
+        // User cancelled, not an error
       }
     } else {
       const a = document.createElement("a");

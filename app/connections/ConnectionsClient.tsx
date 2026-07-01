@@ -327,7 +327,7 @@ export default function ConnectionsClient() {
                 marginBottom: 40,
               }}
             >
-              Every arc below is a cross-reference — a place where one part of Scripture quotes,
+              Every arc below is a cross-reference, a place where one part of Scripture quotes,
               alludes to, or echoes another. Together, they are a fingerprint of divine authorship.
             </motion.p>
 
@@ -375,10 +375,10 @@ export default function ConnectionsClient() {
         )}
       </AnimatePresence>
 
-      {/* Fixed top nav — home link + auth state */}
+      {/* Fixed top nav: home link + auth state */}
       <ConnectionsNav />
 
-      {/* Page header — padded to clear the fixed nav (~52px) */}
+      {/* Page header: padded to clear the fixed nav (~52px) */}
       <header
         style={{
           padding: '0 1rem 0',
@@ -555,7 +555,7 @@ export default function ConnectionsClient() {
         </AnimatePresence>
       </div>
 
-      {/* Section navigation strip — sits below the canvas in its own row */}
+      {/* Section navigation strip: sits below the canvas in its own row */}
       {data && (
         <div
           style={{
@@ -612,7 +612,7 @@ export default function ConnectionsClient() {
         </div>
       )}
 
-      {/* What does this tell us — scholarly insights */}
+      {/* What does this tell us: scholarly insights */}
       <InsightsSection />
 
       {/* Accessibility: View as table toggle */}
@@ -709,7 +709,7 @@ export default function ConnectionsClient() {
         onClose={() => setChallengeOpen(false)}
       />
 
-      {/* Mobile bottom nav spacer — prevents content hiding under the 72px fixed tab bar */}
+      {/* Mobile bottom nav spacer: prevents content hiding under the 72px fixed tab bar */}
       <div className="h-[72px] sm:h-0" aria-hidden="true" />
     </div>
   )

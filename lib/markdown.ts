@@ -71,7 +71,7 @@ export function markdownToHtml(md: string): string {
       continue;
     }
 
-    // Blank line — skip
+    // Blank line: skip
     if (line.trim() === "") {
       i++;
       continue;

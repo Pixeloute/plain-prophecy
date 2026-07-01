@@ -18,7 +18,7 @@ function hexToRgb(hex: string) {
   return `${r}, ${g}, ${b}`;
 }
 
-/** Dark gradient tinted to the empire's metal — matching InteractiveStudyTemplate's getCardStyle */
+/** Dark gradient tinted to the empire's metal, matching InteractiveStudyTemplate's getCardStyle */
 function empireGradient(id: string): string {
   switch (id) {
     case "babylon":    return "linear-gradient(160deg, #2A1F00 0%, #0F0C00 100%)";
@@ -62,7 +62,7 @@ function VisionCellView({
   if (!cell.present) {
     return (
       <div className="pp-cell-empty">
-        <span className="pp-cell-empty-dash">—</span>
+        <span className="pp-cell-empty-dash">·</span>
         <span className="pp-cell-empty-label">not in this vision</span>
       </div>
     );
@@ -144,12 +144,12 @@ function DesktopGrid({
   return (
     <div className="pp-grid-scroll">
       <div className="pp-grid">
-        {/* Header row — corner cell */}
+        {/* Header row: corner cell */}
         <div className="pp-grid-corner">
           <span className="pp-grid-corner-label">Empire</span>
         </div>
 
-        {/* Header row — vision columns */}
+        {/* Header row: vision columns */}
         {VISIONS.map((v) => (
           <div key={v.id} className="pp-grid-header-cell">
             <VisionColHeader visionId={v.id} />
@@ -202,7 +202,7 @@ function DesktopGrid({
               </button>
             )),
 
-            /* Detail panel — spans full width when active */
+            /* Detail panel: spans full width when active */
             isActive ? (
               <div key={`${empire.id}-detail`} className="pp-detail-row">
                 <DetailPanel empire={empire} />
@@ -287,7 +287,7 @@ function MobileView({
                   <div>
                     <div className="pp-mobile-card-vision-label">{vision.label}</div>
                     <div className="pp-mobile-card-absent-text">
-                      — not in this vision
+                      Not in this vision
                     </div>
                   </div>
                 </div>

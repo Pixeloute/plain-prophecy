@@ -64,7 +64,7 @@ export default function StudyCardBack({ lesson, meta, studyHref, onClose }: Prop
         <span className="scb-verse-label">Key verse</span>
         <blockquote className="scb-verse">
           &ldquo;{lesson.keyVerse}&rdquo;
-          <cite className="scb-verse-ref">— <ScriptureRef>{lesson.keyVerseRef ?? ""}</ScriptureRef></cite>
+          <cite className="scb-verse-ref"><ScriptureRef>{lesson.keyVerseRef ?? ""}</ScriptureRef></cite>
         </blockquote>
       </div>
 

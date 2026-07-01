@@ -1,4 +1,4 @@
-// Procedural sound definitions — no audio files needed.
+// Procedural sound definitions. No audio files needed.
 // Each sound is generated via Web Audio API oscillators + noise.
 
 export type SoundId =

@@ -23,14 +23,14 @@ import {
 export const metadata: Metadata = {
   title: "Biblical Prophecy, Plain and Simple",
   description:
-    "A Christ-centred, rigorous resource for understanding biblical prophecy. Discover the Reformation consensus on Daniel and Revelation — verified by history and Scripture.",
+    "A Christ-centred, rigorous resource for understanding biblical prophecy. Discover the Reformation consensus on Daniel and Revelation, verified by history and Scripture.",
   alternates: {
     canonical: "https://plainprophecy.com",
   },
   openGraph: {
-    title: "Plain Prophecy — Biblical Prophecy, Plain and Simple",
+    title: "Plain Prophecy: Biblical Prophecy, Plain and Simple",
     description:
-      "Discover the Reformation consensus on Daniel and Revelation — Futurism vs Historicism, rigorously compared.",
+      "Discover the Reformation consensus on Daniel and Revelation. Futurism vs Historicism, rigorously compared.",
     url: "https://plainprophecy.com",
     type: "website",
     images: [
@@ -38,15 +38,15 @@ export const metadata: Metadata = {
         url: "/og/og-default.png",
         width: 1200,
         height: 630,
-        alt: "Plain Prophecy — Biblical Prophecy, Plain and Simple",
+        alt: "Plain Prophecy: Biblical Prophecy, Plain and Simple",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Plain Prophecy — Biblical Prophecy, Plain and Simple",
+    title: "Plain Prophecy: Biblical Prophecy, Plain and Simple",
     description:
-      "Discover the Reformation consensus on Daniel and Revelation — rigorously compared.",
+      "Discover the Reformation consensus on Daniel and Revelation, rigorously compared.",
     images: ["/og/og-default.png"],
   },
 };
@@ -75,21 +75,21 @@ const prophecyCards = [
   {
     icon: IconScroll,
     title: "Daniel's 70 Weeks",
-    hook: "Predicted the exact year of Christ's baptism — 500 years in advance.",
+    hook: "Predicted the exact year of Christ's baptism, 500 years in advance.",
     ref: "Dan 9:24–27",
     color: "#c8a96e",
   },
   {
     icon: IconHourglass,
     title: "The 1,260 Years",
-    hook: "Six Bible texts. One period. 538–1798 AD — verified to the decade.",
+    hook: "Six Bible texts. One period. 538–1798 AD, verified to the decade.",
     ref: "Dan 7:25 · Rev 12:6",
     color: "#8b7355",
   },
   {
     icon: IconCloud,
     title: "The Second Coming",
-    hook: "Not two events. One visible, audible, glorious return — every eye sees Him.",
+    hook: "Not two events. One visible, audible, glorious return. Every eye sees Him.",
     ref: "Rev 1:7 · 1 Thess 4:16",
     color: "#6b9eb5",
   },
@@ -102,7 +102,7 @@ const prophecyCards = [
   },
   {
     icon: IconStatue,
-    title: "Daniel 2 — The Image",
+    title: "Daniel 2: The Image",
     hook: "Four kingdoms, then God's. History confirmed every limb of the statue.",
     ref: "Dan 2:31–45",
     color: "#7b8c6e",
@@ -110,7 +110,7 @@ const prophecyCards = [
   {
     icon: IconSeal,
     title: "The Mark of the Beast",
-    hook: "Identified in history. Not a chip — a mark of allegiance in worship.",
+    hook: "Identified in history. Not a chip, but a mark of allegiance in worship.",
     ref: "Rev 13:16–17",
     color: "#9b6eb5",
   },
@@ -121,28 +121,28 @@ const reformers = ["Luther", "Calvin", "Newton", "Wesley"];
 const paths = [
   {
     label: "Learn by doing",
-    desc: "Swipe through 8 Daniel prophecies — commit to an answer before the reveal, then see how history and Scripture converge on Christ.",
+    desc: "Swipe through 8 Daniel prophecies. Commit to an answer before the reveal, then see how history and Scripture converge on Christ.",
     href: "/games",
     cta: "Start Games →",
     accent: "var(--sda-accent)",
   },
   {
     label: "I'm new to this",
-    desc: "Start with the side-by-side timeline — see both prophetic frameworks laid out from Scripture.",
+    desc: "Start with the side-by-side timeline. See both prophetic frameworks laid out from Scripture.",
     href: "/compare#timelines",
     cta: "View Timelines →",
     accent: "var(--sda-primary)",
   },
   {
     label: "Study the foundations",
-    desc: "Six in-depth guides — the day-year principle, the 70 weeks, the 1,260 years, and more. Evidence-based, exegetically grounded.",
+    desc: "Six in-depth guides: the day-year principle, the 70 weeks, the 1,260 years, and more. Evidence-based, exegetically grounded.",
     href: "/learn",
     cta: "Start Learning →",
     accent: "#5c3d11",
   },
   {
     label: "Compare the frameworks",
-    desc: "Futurism vs Historicism — see how each reads Daniel and Revelation, and which one actually fits the text.",
+    desc: "Futurism vs Historicism. See how each reads Daniel and Revelation, and which one actually fits the text.",
     href: "/compare#scoring",
     cta: "See the Comparison →",
     accent: "var(--futurist-primary)",
@@ -159,7 +159,7 @@ export default function HomePage() {
 
       {/* ── SECTION 1: HERO ─────────────────────────────────────────────── */}
       <section className="hero-section">
-        {/* Background — stars always present; video layered on top on fast connections */}
+        {/* Background: stars always present; video layered on top on fast connections */}
         <div className="hero-bg" aria-hidden="true">
           <div className="hero-stars" />
           <HeroVideo />
@@ -172,7 +172,7 @@ export default function HomePage() {
           <div className="hero-rule" />
         </div>
 
-        {/* Main headline — two lines animate in via data-hero-line */}
+        {/* Main headline: two lines animate in via data-hero-line */}
         <h1 className="hero-headline">
           <span className="hero-line" data-hero-line="300">Biblical Prophecy.</span>
           <span className="hero-line hero-accent" data-hero-line="500">Plain and Simple.</span>
@@ -180,7 +180,7 @@ export default function HomePage() {
 
         {/* Subheadline - One thought per line rhythm */}
         <p className="hero-sub" data-hero-fade="900">
-          Daniel and Revelation — made clear.
+          Daniel and Revelation, made clear.
           <br className="hero-sub-br" />
           Confirmed by history.
           <br className="hero-sub-br" />
@@ -279,7 +279,7 @@ export default function HomePage() {
             <div className="section-eyebrow">The Prophecies</div>
             <h2 className="section-title">Six Anchors in Scripture and History</h2>
             <p className="section-subtitle">
-              Each prophecy is a precision instrument — verified by independent
+              Each prophecy is a precision instrument, verified by independent
               archaeology, secular chronology, and the fulfilment of centuries.
             </p>
           </div>
@@ -328,12 +328,12 @@ export default function HomePage() {
             The Reformation Consensus
           </div>
           <h2 className="reformers-title">
-            The interpretation that started the Reformation — then got buried.
+            The interpretation that started the Reformation, then got buried.
           </h2>
           <p className="reformers-body">
             For 300 years, the historicist reading of Daniel and Revelation was
             the Protestant consensus. Then, in the 1800s, a different framework
-            quietly took over. Most churches today teach the newer one —
+            quietly took over. Most churches today teach the newer one,
             without knowing why it changed, or who changed it.
           </p>
           <Link href="/compare" className="btn-accent">

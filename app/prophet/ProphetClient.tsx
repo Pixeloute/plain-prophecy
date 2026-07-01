@@ -131,7 +131,7 @@ function ConnectionWeb({
       if (line2) ctx.fillText(line2, pos.x, labelY + 11);
     });
 
-    // Christ centre node — glow
+    // Christ centre node, glow
     ctx.beginPath();
     ctx.arc(cx, cy, 36, 0, 2 * Math.PI);
     const allDone = prophecies.every((p) => completed.includes(p.id));
@@ -364,7 +364,7 @@ export interface SwipeCardHandle {
 }
 
 const THRESHOLD_FRAC = 0.28;
-const MAX_ROTATE = 13;    // degrees — hard cap
+const MAX_ROTATE = 13;    // degrees, hard cap
 const PEAK_FRACTION = 0.2; // tilt peaks at 20% of threshold drag
 
 const SwipeCard = forwardRef<
@@ -668,7 +668,7 @@ function CompletionScreen({
         <span>One centre.</span>
       </h1>
       <p className="completion-text">
-        From Nebuchadnezzar&rsquo;s dream to Michael standing up — every vision
+        From Nebuchadnezzar&rsquo;s dream to Michael standing up, every vision
         converges on the same point. The stone that shatters all kingdoms. The
         Son of Man who receives eternal dominion. The High Priest who intercedes
         without ceasing. Jesus, in every chapter.
@@ -729,7 +729,7 @@ function GamePicker({ onSelect }: { onSelect: (mode: "daniel") => void }) {
           <div className="game-picker-card-label">The Gospel</div>
           <div className="game-picker-card-title">God IS Love</div>
           <div className="game-picker-card-desc">
-            8 core truths about the Gospel — each one a window into the love of God and connected to a full study.
+            8 core truths about the Gospel. Each one a window into the love of God and connected to a full study.
           </div>
           <div className="game-picker-card-meta">8 cards · Gospel</div>
         </Link>
@@ -739,7 +739,7 @@ function GamePicker({ onSelect }: { onSelect: (mode: "daniel") => void }) {
           <div className="game-picker-card-label">Book of Revelation</div>
           <div className="game-picker-card-title">Revelation</div>
           <div className="game-picker-card-desc">
-            22 chapters. Seals, trumpets, beasts, and a Lamb. Every vision placed in history — and every chapter anchored to the love of God.
+            22 chapters. Seals, trumpets, beasts, and a Lamb. Every vision placed in history, and every chapter anchored to the love of God.
           </div>
           <div className="game-picker-card-meta">22 cards · Prophecy</div>
         </Link>
@@ -965,7 +965,7 @@ export default function ProphetClient() {
               hideHints();
               swipeCardRef.current?.triggerSwipe("left");
             }}
-            aria-label="Not sure — mark prophecy as uncertain"
+            aria-label="Not sure: mark prophecy as uncertain"
           >
             ✕
           </button>
@@ -982,7 +982,7 @@ export default function ProphetClient() {
               hideHints();
               swipeCardRef.current?.triggerSwipe("right");
             }}
-            aria-label="Fulfilled — mark prophecy as fulfilled"
+            aria-label="Fulfilled: mark prophecy as fulfilled"
           >
             ✓
           </button>
