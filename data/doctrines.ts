@@ -115,11 +115,11 @@ export const doctrines: DoctrinePage[] = [
           },
         ],
         christCentre:
-          "Christ's return is not a secret evacuation — it is the culmination of redemption history. Every eye will see Him. Every knee will bow. The One who was crucified publicly is coming back publicly, in glory. The hope of the Second Coming is not escape from tribulation but the final vindication of every saint who trusted Him through it.",
+          "Christ's return is not a secret evacuation. It is the climax of redemption history. Every eye will see Him. Every knee will bow. The One crucified in public is coming back in public, in glory. The hope of the Second Coming is not escape from tribulation. It is the final vindication of every saint who trusted Him through it.",
       },
     ],
     christCentre:
-      "The Second Coming is the grand climax of Scripture — the moment when everything Christ purchased on the cross is fully realised. Not a whisper, but a shout. Not a vanishing, but a resurrection. The same Jesus who bled openly on a Roman cross will return openly in the clouds. That is the hope.",
+      "The Second Coming is the climax of Scripture, the moment everything Christ purchased on the cross is fully realised. Not a whisper, a shout. Not a vanishing, a resurrection. The same Jesus who bled openly on a Roman cross will return openly in the clouds. That is your hope.",
     verdict:
       "The rapture as a secret, pre-tribulation event has no biblical basis. It is a nineteenth-century invention with no support in church history before 1830.",
     nextDoctrine: { slug: "gap-theory-daniel-9", title: "The Gap in Daniel 9" },
@@ -203,11 +203,11 @@ export const doctrines: DoctrinePage[] = [
           },
         ],
         christCentre:
-          "Daniel 9 is the most Christ-centred prophecy in the Old Testament. It predicts the exact year of His baptism, the exact year of His death, and the reason for His death — to 'make reconciliation for iniquity' and 'bring in everlasting righteousness.' Cutting a 2,000-year gap into it does not just distort chronology. It obscures the most precise prediction of the Messiah in all Scripture.",
+          "Daniel 9 is the most Christ-centred prophecy in the Old Testament. It names the exact year of His baptism, the exact year of His death, and the reason He died: to 'make reconciliation for iniquity' and 'bring in everlasting righteousness.' Cutting a 2,000-year gap into it does more than distort the chronology. It hides the most precise prediction of the Messiah in all Scripture.",
       },
     ],
     christCentre:
-      "The 70 weeks of Daniel exist for one reason: to identify and validate Jesus as the Messiah. The prophecy names Him, times Him, and describes His work — all before a single event happened. No gap is needed. The text is complete, and Christ is the fulfilment.",
+      "The 70 weeks of Daniel exist for one reason: to identify Jesus as the Messiah. The prophecy names Him, dates Him, and describes His work, all before a single event happened. No gap is needed. The text is complete, and Christ is the fulfilment.",
     verdict:
       "The 2,000-year gap in Daniel 9 has no basis in the text. It was invented in 1590 to protect the papacy from Protestant identification and later absorbed into evangelical dispensationalism.",
     nextDoctrine: {
@@ -294,11 +294,11 @@ export const doctrines: DoctrinePage[] = [
           },
         ],
         christCentre:
-          "The real antichrist question is not 'who is this future man?' but 'what has been set up in place of Christ?' Christ is the sole mediator between God and humanity (1 Tim 2:5). Any system that inserts another mediator — human or institutional — into that role is, by definition, anti-christ. The prophetic warning is not about geopolitics. It is about where we place our trust for salvation.",
+          "The real antichrist question is not 'who is this future man?' It is 'what has been set up in place of Christ?' Christ is the sole mediator between God and humanity (1 Timothy 2:5). Any power that inserts another mediator, human or institutional, into that role is by definition anti-christ. The warning is not about geopolitics. It is about where you place your trust for salvation.",
       },
     ],
     christCentre:
-      "Christ is the only high priest, the only mediator, the only one who sits at the right hand of the Father. The antichrist is whatever claims His seat. The prophecy is a warning to keep our eyes on Jesus — and be sceptical of any earthly institution that claims His authority.",
+      "Christ is the only high priest, the only mediator, the only one seated at the right hand of the Father. The antichrist is whatever claims His seat. The prophecy is one long warning: keep your eyes on Jesus, and stay wary of any earthly institution that claims His authority over your conscience.",
     verdict:
       "The Antichrist as a future world leader is a post-Reformation invention with no exegetical support. Daniel's little horn has already risen, ruled, and received its wound — on prophetic schedule.",
     nextDoctrine: {
@@ -385,11 +385,11 @@ export const doctrines: DoctrinePage[] = [
           },
         ],
         christCentre:
-          "The mark of the beast is ultimately a counterfeit seal. God seals His people with His name (Rev 14:1) — meaning His character, His authority, His ownership. The beast offers a different allegiance, a different authority, a different lord. Every person will ultimately bear one mark or the other — not on their skin, but in their devotion. Christ's call is simple: worship the Creator.",
+          "The mark of the beast is a counterfeit seal. God seals His people with His name (Revelation 14:1), meaning His character, His authority, His ownership. The beast offers a rival allegiance, a rival authority, a rival lord. Everyone ends up bearing one mark or the other, not on the skin but in the devotion. One power demands your loyalty by force. The other, the Lamb, wins it by love. Christ's call is simple: worship the Creator who gave Himself for you.",
       },
     ],
     christCentre:
-      "The mark question is the Revelation's way of asking: who owns you? Every soul will be either sealed by God or marked by the beast — not physically, but in the orientation of their loyalty and worship. Christ has purchased us with His blood. The seal of God is the assurance that we belong to Him.",
+      "The mark question is Revelation's way of asking: who owns you? Every soul ends up either sealed by God or marked by the beast, not physically, but in the direction of its loyalty and worship. Christ purchased you with His blood. The seal of God is the assurance that you belong to Him.",
     verdict:
       "The mark of the beast is not a microchip or a vaccine. It is a mark of spiritual allegiance in a final conflict over worship — and it is inseparable from the question of who you obey as Lord.",
     nextDoctrine: {
@@ -476,11 +476,11 @@ export const doctrines: DoctrinePage[] = [
           },
         ],
         christCentre:
-          "Christ did not promise to remove His people from suffering — He promised to be with them through it. 'Lo, I am with you alway, even unto the end of the world' (Matt 28:20). The seven-year tribulation teaching offers escape; Jesus offers presence. The saints of Revelation endured tribulation and overcame it through the blood of the Lamb. That is the biblical model.",
+          "Christ did not promise to remove His people from suffering. He promised to be with them through it. 'Lo, I am with you alway, even unto the end of the world' (Matthew 28:20). The seven-year tribulation teaching offers escape. Jesus offers presence. The saints of Revelation endured tribulation and overcame it by the blood of the Lamb. That is the biblical model.",
       },
     ],
     christCentre:
-      "The seven-year tribulation is built on a gap that does not exist, for a church that will not be removed, featuring an antichrist who has already risen. Scripture's actual promise to the saints is not escape but endurance — and the One who walked with Shadrach in the furnace is the same One who walks with His people through every tribulation.",
+      "The seven-year tribulation is built on a gap that does not exist, for a church that will not be removed, featuring an antichrist who has already risen. Scripture's real promise to the saints is not escape but endurance. The One who walked with Shadrach in the furnace is the same One who walks with His people through every fire.",
     verdict:
       "The seven-year tribulation has no independent scriptural basis. It is an architectural consequence of the Gap Theory, and it collapses without it.",
     nextDoctrine: {
@@ -567,7 +567,7 @@ export const doctrines: DoctrinePage[] = [
         ],
       },
     ],
-    christCentre: "The study of the Antichrist is ultimately a study of the true Christ. We identify the counterfeit only so we can more clearly cling to the original. Jesus is our only Mediator, High Priest, and Head. Any system that seeks to occupy that space — even with good intentions — operates in the spirit of antichrist. Our safety is found in knowing the voice of the Shepherd so well that no substitute can deceive us.",
+    christCentre: "The study of the Antichrist is finally a study of the true Christ. You identify the counterfeit only so you can cling more tightly to the original. Jesus is your only Mediator, High Priest, and Head. Any power that tries to occupy that space, even with good intentions, works in the spirit of antichrist. Your safety is in knowing the voice of the Shepherd so well that no substitute can deceive you.",
     verdict: "The Antichrist is first and foremost a spirit of substitution that works within the church to replace the true Christ with human traditions and authority. It is the 'mystery of lawlessness' that began in the first century and continues today.",
     nextDoctrine: undefined,
   },

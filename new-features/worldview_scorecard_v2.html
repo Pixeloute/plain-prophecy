@@ -1,0 +1,443 @@
+
+<h2 class="sr-only">Worldview comparison: how five belief systems answer the four questions of origins, meaning, morality and destiny</h2>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.wrap{padding:1.25rem 0 2rem;font-family:var(--font-sans)}
+.header-label{font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:.35rem}
+.header-title{font-size:20px;font-weight:500;color:var(--color-text-primary);margin-bottom:.4rem;line-height:1.3}
+.header-sub{font-size:13px;color:var(--color-text-secondary);margin-bottom:1.5rem;line-height:1.6;max-width:560px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:1.5rem}
+.tab{padding:7px 16px;border-radius:999px;border:0.5px solid var(--color-border-secondary);font-size:13px;cursor:pointer;background:var(--color-background-primary);color:var(--color-text-secondary);transition:all .15s;white-space:nowrap}
+.tab.on{background:#042C53;color:#B5D4F4;border-color:#042C53;font-weight:500}
+.tab:hover:not(.on){background:var(--color-background-secondary)}
+.q-frame{display:none}
+.q-frame.on{display:block}
+.q-intro{background:var(--color-background-secondary);border-left:3px solid #185FA5;padding:.75rem 1rem;border-radius:0 var(--border-radius-md) var(--border-radius-md) 0;margin-bottom:1.25rem}
+.q-intro-q{font-size:15px;font-weight:500;color:var(--color-text-primary);margin-bottom:.2rem}
+.q-intro-why{font-size:13px;color:var(--color-text-secondary);line-height:1.5}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:10px}
+.card{border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);overflow:hidden;background:var(--color-background-primary)}
+.card.featured{border:1.5px solid #185FA5}
+.rating-bar{padding:6px 12px;font-size:11px;font-weight:500;letter-spacing:.05em;text-transform:uppercase}
+.r-strong{background:#EAF3DE;color:#27500A}
+.r-partial{background:#FAEEDA;color:#633806}
+.r-weak{background:#FCEBEB;color:#791F1F}
+.card-body{padding:.85rem 1rem}
+.tradition{font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:.25rem}
+.tradition-name{font-size:15px;font-weight:500;color:var(--color-text-primary);margin-bottom:.7rem;line-height:1.3}
+.answer-label{font-size:11px;font-weight:500;letter-spacing:.04em;color:var(--color-text-tertiary);text-transform:uppercase;margin-bottom:.3rem}
+.answer-text{font-size:13px;color:var(--color-text-primary);line-height:1.5;margin-bottom:.75rem}
+.flaw-box{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:.55rem .7rem;margin-bottom:.6rem}
+.flaw-label{font-size:10px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:#A32D2D;margin-bottom:.2rem}
+.flaw-text{font-size:12px;color:var(--color-text-secondary);line-height:1.45}
+.life-box{background:#E6F1FB;border-radius:var(--border-radius-md);padding:.55rem .7rem}
+.life-label{font-size:10px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:#0C447C;margin-bottom:.2rem}
+.life-text{font-size:12px;color:#185FA5;line-height:1.45}
+.summary-grid{margin-top:.5rem}
+.sg-label{font-size:12px;color:var(--color-text-tertiary);margin-bottom:.85rem;line-height:1.5}
+.sg-table{width:100%;border-collapse:collapse;font-size:13px}
+.sg-table th{font-size:11px;font-weight:500;letter-spacing:.05em;text-transform:uppercase;color:var(--color-text-tertiary);padding:.5rem .75rem;text-align:left;border-bottom:0.5px solid var(--color-border-tertiary)}
+.sg-table td{padding:.6rem .75rem;border-bottom:0.5px solid var(--color-border-tertiary);vertical-align:middle}
+.sg-table tr:last-child td{border-bottom:none}
+.sg-table .trad-col{font-weight:500;color:var(--color-text-primary);white-space:nowrap}
+.cell-strong{background:#EAF3DE;color:#27500A;border-radius:var(--border-radius-md);padding:3px 8px;font-size:11px;font-weight:500;white-space:nowrap;display:inline-block}
+.cell-partial{background:#FAEEDA;color:#633806;border-radius:var(--border-radius-md);padding:3px 8px;font-size:11px;font-weight:500;white-space:nowrap;display:inline-block}
+.cell-weak{background:#FCEBEB;color:#791F1F;border-radius:var(--border-radius-md);padding:3px 8px;font-size:11px;font-weight:500;white-space:nowrap;display:inline-block}
+.sg-note{font-size:12px;color:var(--color-text-tertiary);margin-top:.75rem;line-height:1.5;font-style:italic}
+@media(prefers-color-scheme:dark){
+.tab.on{background:#0C447C;color:#B5D4F4;border-color:#185FA5}
+.r-strong{background:#173404;color:#C0DD97}
+.r-partial{background:#412402;color:#FAC775}
+.r-weak{background:#501313;color:#F7C1C1}
+.flaw-label{color:#F7C1C1}
+.flaw-text{color:var(--color-text-secondary)}
+.life-box{background:#042C53}
+.life-label{color:#85B7EB}
+.life-text{color:#B5D4F4}
+.cell-strong{background:#173404;color:#C0DD97}
+.cell-partial{background:#412402;color:#FAC775}
+.cell-weak{background:#501313;color:#F7C1C1}
+.q-intro{background:var(--color-background-secondary);border-color:#378ADD}
+.card.featured{border-color:#378ADD}
+.sg-table th{color:var(--color-text-tertiary)}
+}
+</style>
+
+<div class="wrap">
+<div class="header-label">Workshop reference</div>
+<div class="header-title">The Four Questions Every Worldview Must Answer</div>
+<div class="header-sub">Ravi Zacharias's test: every belief system must pass two checks. Does its answer correspond to reality? Do all its answers cohere with each other? Select a question or view the full summary.</div>
+
+<div class="tabs">
+  <div class="tab on" onclick="show('origins')">Origins</div>
+  <div class="tab" onclick="show('meaning')">Meaning</div>
+  <div class="tab" onclick="show('morality')">Morality</div>
+  <div class="tab" onclick="show('destiny')">Destiny</div>
+  <div class="tab" onclick="show('summary')">Full scorecard</div>
+</div>
+
+<div id="origins" class="q-frame on">
+  <div class="q-intro">
+    <div class="q-intro-q">Where did I come from?</div>
+    <div class="q-intro-why">This is not just a science question. It determines whether you are a person or an accident — and whether your life carries weight before it begins.</div>
+  </div>
+  <div class="cards">
+    <div class="card featured">
+      <div class="rating-bar r-strong">Passes both tests</div>
+      <div class="card-body">
+        <div class="tradition">Christianity</div>
+        <div class="tradition-name">Made, named, and dignified</div>
+        <div class="answer-label">The answer</div>
+        <div class="answer-text">A personal God creates intentionally. Genesis 1:27 — every human being, regardless of background, is made in God's image. The universe's fine-tuning points to a designer.</div>
+        <div class="life-box">
+          <div class="life-label">Why it lands</div>
+          <div class="life-text">You are not a cosmic accident. You are a deliberate act. That changes everything about how you walk into a room.</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="rating-bar r-partial">Partial — coherence gap</div>
+      <div class="card-body">
+        <div class="tradition">Islam</div>
+        <div class="tradition-name">Created by a solitary God</div>
+        <div class="answer-label">The answer</div>
+        <div class="answer-text">Intentional creation by Allah. Surah 32:7-9. Clear and purposeful. This passes the correspondence test.</div>
+        <div class="flaw-box">
+          <div class="flaw-label">Critical flaw</div>
+          <div class="flaw-text">Allah is eternally alone before creation. But 1 John 4:8 says God is love. Love requires an object. A solitary God cannot be essentially love before he creates someone to love. The Trinity answers this — love exists within God before creation begins.</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="rating-bar r-weak">Fails correspondence</div>
+      <div class="card-body">
+        <div class="tradition">Buddhism</div>
+        <div class="tradition-name">No creator, no self</div>
+        <div class="answer-label">The answer</div>
+        <div class="answer-text">No personal God. The self (anatta) is an illusion. You did not arrive — you arose from conditions.</div>
+        <div class="flaw-box">
+          <div class="flaw-label">Critical flaw</div>
+          <div class="flaw-text">An eternal, beginningless universe contradicts the Big Bang — the clearest scientific evidence that the universe had a definite start. You cannot ignore a beginning.</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="rating-bar r-partial">Partial — scope problem</div>
+      <div class="card-body">
+        <div class="tradition">Hebrew Israelites</div>
+        <div class="tradition-name">Created as covenant people</div>
+        <div class="answer-label">The answer</div>
+        <div class="answer-text">Intentional creation by Yahweh. Genesis 1 affirmed. Strong on divine intention.</div>
+        <div class="flaw-box">
+          <div class="flaw-label">Critical flaw</div>
+          <div class="flaw-text">God's image in Genesis 1:27 is universal, not ethnic. Restricting human dignity to one group contradicts the very text being cited.</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="rating-bar r-weak">Fails both tests</div>
+      <div class="card-body">
+        <div class="tradition">Agnosticism / Secularism</div>
+        <div class="tradition-name">An accident with no author</div>
+        <div class="answer-label">The answer</div>
+        <div class="answer-text">Matter + energy + time + chance. No designer. No intention. You are here because the conditions happened to allow it.</div>
+        <div class="flaw-box">
+          <div class="flaw-label">Critical flaw</div>
+          <div class="flaw-text">Dawkins admits natural selection selects for survival, not truth — so our reasoning is untrustworthy. If that's true, you can't trust the reasoning that built this worldview in the first place.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="meaning" class="q-frame">
+  <div class="q-intro">
+    <div class="q-intro-q">Why am I here?</div>
+    <div class="q-intro-why">On a Sunday night at 11pm, scrolling and feeling hollow, this is the question running underneath everything else. Every worldview has an answer. Not all of them hold.</div>
+  </div>
+  <div class="cards">
+    <div class="card featured">
+      <div class="rating-bar r-strong">Passes both tests</div>
+      <div class="card-body">
+        <div class="tradition">Christianity</div>
+        <div class="tradition-name">Known by name, called by Person</div>
+        <div class="answer-label">The answer</div>
+        <div class="answer-text">John 17:3 — eternal life is knowing the Father and the Son. Meaning is not a mission you complete. It is a Person you know. It cannot be taken by illness, failure, or death.</div>
+        <div class="life-box">
+          <div class="life-label">Why it lands</div>
+          <div class="life-text">Christopher Hitchens found meaning in art and literature — until he had terminal cancer. His writing about the experience said nothing about art giving comfort. It collapsed precisely when it was needed most.</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="rating-bar r-partial">Partial — assurance gap</div>
+      <div class="card-body">
+        <div class="tradition">Islam</div>
+        <div class="tradition-name">To worship and submit</div>
+        <div class="answer-label">The answer</div>
+        <div class="answer-text">Surah 51:56 — humans created to worship Allah. Clear and purposeful direction for daily life.</div>
+        <div class="flaw-box">
+          <div class="flaw-label">Critical flaw</div>
+          <div class="flaw-text">Meaning built on uncertain acceptance produces anxiety, not rest. Al-Ghazali — one of Islam's greatest theologians — acknowledged no Muslim can know their standing before death.</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="rating-bar r-weak">Fails coherence</div>
+      <div class="card-body">
+        <div class="tradition">Buddhism</div>
+        <div class="tradition-name">To escape desire and self</div>
+        <div class="answer-label">The answer</div>
+        <div class="answer-text">The First Noble Truth: life is suffering. Meaning is found by walking the Eightfold Path toward nirvana — the extinction of desire and self.</div>
+        <div class="flaw-box">
+          <div class="flaw-label">Critical flaw</div>
+          <div class="flaw-text">If the self is already an illusion (anatta), who is searching for meaning? Who experiences nirvana when they arrive? The system is trying to liberate a self it says does not exist.</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="rating-bar r-weak">Fails correspondence</div>
+      <div class="card-body">
+        <div class="tradition">Hebrew Israelites</div>
+        <div class="tradition-name">To be the chosen nation</div>
+        <div class="answer-label">The answer</div>
+        <div class="answer-text">Deuteronomy 7:6 — a holy people set apart. Strong corporate identity. Clear sense of national purpose.</div>
+        <div class="flaw-box">
+          <div class="flaw-label">Critical flaw</div>
+          <div class="flaw-text">Acts 17:26 — God made all nations from one blood. A meaning ethnically gated cannot be universally true. Isaiah 49:6 calls Israel a light to the nations — not a barrier around them.</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="rating-bar r-weak">Fails at the moment it counts</div>
+      <div class="card-body">
+        <div class="tradition">Agnosticism / Secularism</div>
+        <div class="tradition-name">Self-constructed</div>
+        <div class="answer-label">The answer</div>
+        <div class="answer-text">You create your own meaning through relationships, achievement, creativity, experience. No external authority required.</div>
+        <div class="flaw-box">
+          <div class="flaw-label">Critical flaw</div>
+          <div class="flaw-text">A Nobel Prize-winning physicist said: the more the universe seems comprehensible, the more it seems pointless. That is their own honest answer. Self-constructed meaning cannot survive the hospital waiting room.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="morality" class="q-frame">
+  <div class="q-intro">
+    <div class="q-intro-q">How should I live?</div>
+    <div class="q-intro-why">Every worldview tries to tell you this. The question is whether it can ground the obligation — or whether it just has opinions.</div>
+  </div>
+  <div class="cards">
+    <div class="card featured">
+      <div class="rating-bar r-strong">Passes both tests</div>
+      <div class="card-body">
+        <div class="tradition">Christianity</div>
+        <div class="tradition-name">Love from character, not fear</div>
+        <div class="answer-label">The answer</div>
+        <div class="answer-text">Matthew 22:37-40 — two commands summarise all ethics. Love God, love your neighbour. The law is the shape love takes in a broken world. Jesus does not just command the ethic. He lives it to the cross.</div>
+        <div class="life-box">
+          <div class="life-label">Why it lands</div>
+          <div class="life-text">The cross is not a sad ending. It is the logic of love followed to its final conclusion. The moral law has skin on it.</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="rating-bar r-partial">Partial — grounding question</div>
+      <div class="card-body">
+        <div class="tradition">Islam</div>
+        <div class="tradition-name">Submit to divine command</div>
+        <div class="answer-label">The answer</div>
+        <div class="answer-text">Clear moral framework through Sharia rooted in Quran and Hadith. Justice, honesty, and care for the poor are commanded explicitly.</div>
+        <div class="flaw-box">
+          <div class="flaw-label">Critical flaw</div>
+          <div class="flaw-text">Divine command theory: if something is good only because God commands it, could God have commanded otherwise? If yes, morality is arbitrary. Christianity grounds ethics in God's unchanging character — not just his will.</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="rating-bar r-weak">Good ethics, no foundation</div>
+      <div class="card-body">
+        <div class="tradition">Buddhism</div>
+        <div class="tradition-name">Non-harm and compassion</div>
+        <div class="answer-label">The answer</div>
+        <div class="answer-text">Ahimsa (non-violence) and the Eightfold Path produce genuinely rich ethical content. Compassion is central.</div>
+        <div class="flaw-box">
+          <div class="flaw-label">Critical flaw</div>
+          <div class="flaw-text">No lawgiver, no enduring self to be harmed, no ultimate accountability. You cannot ground a moral obligation in a system that denies a stable moral agent and a judge who enforces it.</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="rating-bar r-partial">Partial — applies unevenly</div>
+      <div class="card-body">
+        <div class="tradition">Hebrew Israelites</div>
+        <div class="tradition-name">Torah observance</div>
+        <div class="answer-label">The answer</div>
+        <div class="answer-text">The Torah is one of the most sophisticated moral codes in ancient history. Rooted in divine command with personal divine witness at Sinai.</div>
+        <div class="flaw-box">
+          <div class="flaw-label">Critical flaw</div>
+          <div class="flaw-text">Many streams apply the moral code only to one ethnic group. A law that carries different weight by race cannot claim universal binding authority.</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="rating-bar r-weak">Destroys itself from inside</div>
+      <div class="card-body">
+        <div class="tradition">Agnosticism / Secularism</div>
+        <div class="tradition-name">Social consensus</div>
+        <div class="answer-label">The answer</div>
+        <div class="answer-text">Morality is negotiated — majority agreement, harm reduction, or evolutionary ethics provide the framework.</div>
+        <div class="flaw-box">
+          <div class="flaw-label">Critical flaw</div>
+          <div class="flaw-text">Dawkins: natural selection selects for survival not truth, so we cannot trust our own reasoning. If that is true, our moral intuitions are equally untrustworthy. The system refutes itself.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="destiny" class="q-frame">
+  <div class="q-intro">
+    <div class="q-intro-q">Where am I going when this is over?</div>
+    <div class="q-intro-why">This question makes every other answer either urgent or irrelevant. And only one worldview provides historical evidence — not just a claim — for what happens next.</div>
+  </div>
+  <div class="cards">
+    <div class="card featured">
+      <div class="rating-bar r-strong">Only historically verified answer</div>
+      <div class="card-body">
+        <div class="tradition">Christianity</div>
+        <div class="tradition-name">Resurrection — a place and a Person</div>
+        <div class="answer-label">The answer</div>
+        <div class="answer-text">John 14:2 — a prepared place. John 11:25 — Jesus is the resurrection, not just its messenger. And he walked out of a tomb to back the claim.</div>
+        <div class="life-box">
+          <div class="life-label">The unique claim</div>
+          <div class="life-text">Every other worldview asks you to trust a teacher's words about what lies beyond. Christianity asks you to examine a verifiable historical event — the empty tomb, 500+ witnesses, the converted persecutor Paul, the sceptical brother James.</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="rating-bar r-partial">Partial — no assurance</div>
+      <div class="card-body">
+        <div class="tradition">Islam</div>
+        <div class="tradition-name">Judgment, paradise or hell</div>
+        <div class="answer-label">The answer</div>
+        <div class="answer-text">Clear eschatology. Resurrection, judgment, Jannah or Jahannam. Surah 3:185. Justice is taken seriously.</div>
+        <div class="flaw-box">
+          <div class="flaw-label">Critical flaw</div>
+          <div class="flaw-text">No assurance before death. Al-Ghazali and Ibn Taymiyyah both acknowledged no Muslim knows their final standing. A destiny contingent on accumulated deeds cannot give rest — only anxiety.</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="rating-bar r-weak">Incoherent destination</div>
+      <div class="card-body">
+        <div class="tradition">Buddhism</div>
+        <div class="tradition-name">Rebirth until nirvana</div>
+        <div class="answer-label">The answer</div>
+        <div class="answer-text">Reincarnation through samsara until nirvana — the complete dissolution of individual selfhood and desire.</div>
+        <div class="flaw-box">
+          <div class="flaw-label">Critical flaw</div>
+          <div class="flaw-text">If the self is an illusion now, who is being reborn? And who experiences nirvana when they arrive? The destination directly contradicts the diagnosis. The system collapses on its own logic.</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="rating-bar r-partial">Partial — too narrow</div>
+      <div class="card-body">
+        <div class="tradition">Hebrew Israelites</div>
+        <div class="tradition-name">National restoration</div>
+        <div class="answer-label">The answer</div>
+        <div class="answer-text">Physical resurrection to an earth-kingdom is affirmed. Daniel 12:2, Isaiah 26:19. Resurrection is taken seriously and grounded in scripture.</div>
+        <div class="flaw-box">
+          <div class="flaw-label">Critical flaw</div>
+          <div class="flaw-text">Destiny restricted to one ethnic group contradicts Revelation 7:9 — a multitude from every nation, tribe, people, and language. And Isaiah 49:6 — Israel is called to be a light to the nations, not a wall around them.</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="rating-bar r-weak">No justice, no hope</div>
+      <div class="card-body">
+        <div class="tradition">Agnosticism / Secularism</div>
+        <div class="tradition-name">Annihilation</div>
+        <div class="answer-label">The answer</div>
+        <div class="answer-text">Consciousness ends at death. The body decays. There is no judgment, no continuity, no account to give.</div>
+        <div class="flaw-box">
+          <div class="flaw-label">Critical flaw</div>
+          <div class="flaw-text">The Holocaust, Auschwitz, Treblinka — if time is all there is, no one ever answers for it. Ravi Zacharias: if there is no eternity, there is no ultimate justice. A universe without final justice is a universe where the worst thing you can do goes permanently unpunished.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="summary" class="q-frame">
+  <div class="q-intro">
+    <div class="q-intro-q">How do all five worldviews score across all four questions?</div>
+    <div class="q-intro-why">This is the pattern at a glance. A worldview that fails the coherence or correspondence test on any question has a structural problem — not just a weak argument.</div>
+  </div>
+  <div class="summary-grid">
+    <div class="sg-label">Each cell shows whether the worldview gives a strong answer, a partial answer, or fails the question entirely. A partial answer means it corresponds to some reality but has an internal coherence problem — the answers contradict each other.</div>
+    <table class="sg-table">
+      <thead>
+        <tr>
+          <th>Worldview</th>
+          <th>Origins</th>
+          <th>Meaning</th>
+          <th>Morality</th>
+          <th>Destiny</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="trad-col">Christianity</td>
+          <td><span class="cell-strong">Strong</span></td>
+          <td><span class="cell-strong">Strong</span></td>
+          <td><span class="cell-strong">Strong</span></td>
+          <td><span class="cell-strong">Strong + evidence</span></td>
+        </tr>
+        <tr>
+          <td class="trad-col">Islam</td>
+          <td><span class="cell-partial">Partial</span></td>
+          <td><span class="cell-partial">Partial</span></td>
+          <td><span class="cell-partial">Partial</span></td>
+          <td><span class="cell-partial">Partial</span></td>
+        </tr>
+        <tr>
+          <td class="trad-col">Buddhism</td>
+          <td><span class="cell-weak">Fails</span></td>
+          <td><span class="cell-weak">Fails</span></td>
+          <td><span class="cell-weak">Fails</span></td>
+          <td><span class="cell-weak">Fails</span></td>
+        </tr>
+        <tr>
+          <td class="trad-col">Hebrew Israelites</td>
+          <td><span class="cell-partial">Partial</span></td>
+          <td><span class="cell-weak">Fails</span></td>
+          <td><span class="cell-partial">Partial</span></td>
+          <td><span class="cell-partial">Partial</span></td>
+        </tr>
+        <tr>
+          <td class="trad-col">Agnosticism</td>
+          <td><span class="cell-weak">Fails</span></td>
+          <td><span class="cell-weak">Fails</span></td>
+          <td><span class="cell-weak">Fails</span></td>
+          <td><span class="cell-weak">Fails</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="sg-note">Islam consistently reaches the right category — theism, purpose, justice — but stops short of internal coherence at each question. Buddhism and secular agnosticism fail structurally at every question, not just rhetorically. The Hebrew Israelite framework affirms the right texts but misreads their scope. Only Christianity passes both the correspondence and coherence test across all four — and uniquely provides historical evidence for its destiny claim.</div>
+  </div>
+</div>
+</div>
+
+<script>
+function show(id){
+  document.querySelectorAll('.q-frame').forEach(f=>f.classList.remove('on'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));
+  document.getElementById(id).classList.add('on');
+  const tabs=['origins','meaning','morality','destiny','summary'];
+  document.querySelectorAll('.tab')[tabs.indexOf(id)].classList.add('on');
+}
+</script>

@@ -76,7 +76,7 @@ export const studyBooks: StudyBook[] = [
           },
         ],
         christCentre:
-          "Daniel entered the darkest place on earth — the heart of pagan Babylon — and lived an undefiled life. He was a captive who became a counselor to kings. In this, he points to Jesus, who entered a world captive to sin, remained completely undefiled by its temptations, and was elevated to the right hand of the Majesty on high. Like Daniel's test, our true loyalty is tested not in the grand moments, but in our daily, unseen choices.",
+          "Daniel entered the darkest place on earth, the heart of pagan Babylon, and lived an undefiled life. A captive became a counsellor to kings. In this he points to Jesus, who stepped into a world held captive by sin, stayed undefiled by every temptation, and was lifted to the right hand of the Majesty on high. Your loyalty gets tested the same way Daniel's did. Not in the grand moments, but in the daily, unseen choices no one else sees.",
         nextLesson: {
           book: "daniel",
           lesson: "daniel-2",
@@ -104,7 +104,7 @@ export const studyBooks: StudyBook[] = [
               { label: "The Prophecy", text: "\"You are the head of gold.\" Daniel told Nebuchadnezzar directly — his empire was the first kingdom represented in the dream. Babylon stood alone at the top, the most glorious of all the kingdoms to follow. (Daniel 2:38)" },
               { label: "History Confirms", text: "Babylon under Nebuchadnezzar was the dominant world empire from 605–539 BC. Herodotus wrote of its astounding wealth — gold-covered temples, gold statues, palaces lined with gold. The Ishtar Gate remains one of the wonders of the ancient world. Babylon fell exactly as Daniel described: in a single night, to the Medes and Persians (Daniel 5)." }
             ],
-            christCentre: "Daniel himself was brought to Babylon as a captive teenager. The God who ruled over Nebuchadnezzar's golden empire was already preserving the line that would lead to Christ — and giving Daniel the wisdom to interpret what no one else could see.",
+            christCentre: "Daniel himself was brought to Babylon as a captive teenager. The God who ruled over Nebuchadnezzar's golden empire was already preserving the line that would lead to Christ, and giving Daniel the wisdom to read what no one else could see.",
             keyVerse: { text: "\"You are the head of gold.\"", ref: "Daniel 2:38" }
           },
           {
@@ -117,7 +117,7 @@ export const studyBooks: StudyBook[] = [
               { label: "The Prophecy", text: "\"After you shall arise another kingdom inferior to yours.\" The two arms point to the dual nature of this empire — Medes and Persians ruling together. Silver is valuable but less so than gold: the empire was vast but more bureaucratic, more diffuse. (Daniel 2:39)" },
               { label: "History Confirms", text: "Cyrus the Great of Persia conquered Babylon in 539 BC — the very night of Belshazzar's feast (Daniel 5). The Medo-Persian empire stretched from India to Ethiopia, with 127 provinces. Notably, Cyrus immediately freed the Jewish captives and financed the rebuilding of Jerusalem's temple. The two-armed nature of the empire perfectly maps to its dual Medo-Persian leadership." }
             ],
-            christCentre: "It was under Medo-Persian authority that the decree went out to restore Jerusalem — starting the prophetic 70-Week countdown that would end at the exact year of Jesus' baptism (Ezra 7; Daniel 9). Cyrus is even named by Isaiah 150 years before he was born as God's instrument for this. (Isaiah 44:28)",
+            christCentre: "It was under Medo-Persian authority that the decree went out to restore Jerusalem, starting the 70-week countdown that would end in the exact year of Jesus' baptism (Ezra 7; Daniel 9). Isaiah names Cyrus as God's instrument for this 150 years before he was born (Isaiah 44:28).",
             keyVerse: { text: "\"After you shall arise another kingdom inferior to yours.\"", ref: "Daniel 2:39" }
           },
           {
@@ -130,7 +130,7 @@ export const studyBooks: StudyBook[] = [
               { label: "The Prophecy", text: "\"A third kingdom of bronze, which shall rule over all the earth.\" Bronze was the metal of Greek warfare — their soldiers wore it into battle. The thighs suggest speed and power. This empire would be characterised by conquest across the known world. (Daniel 2:39)" },
               { label: "History Confirms", text: "Alexander the Great conquered Persia by 331 BC at just 25 years old. He marched an army from Greece to India in a decade — the fastest territorial expansion in ancient history. His soldiers famously wore bronze armour. After his death in 323 BC, his empire split among four generals, exactly mirroring the imagery in Daniel 8. Greece dominated Judea, forcing Hellenistic culture on the Jewish people." }
             ],
-            christCentre: "Greek conquest spread one common language — Koine Greek — across the entire known world. This was the language the New Testament would be written in, and the Septuagint (the Greek Old Testament) would be translated into. God used the Greek empire to prepare the communication network for the Gospel.",
+            christCentre: "Greek conquest spread one common language, Koine Greek, across the known world. This became the language the New Testament would be written in, and the language the Septuagint translated the Old Testament into. God used the Greek empire to lay the road the gospel would later travel.",
             keyVerse: { text: "\"A third kingdom of bronze, which shall rule over all the earth.\"", ref: "Daniel 2:39" }
           },
           {
@@ -143,7 +143,7 @@ export const studyBooks: StudyBook[] = [
               { label: "The Prophecy", text: "\"A fourth kingdom, strong as iron, because iron breaks in pieces and shatters all things.\" No imagery of inferiority here — iron is described as the most powerful material. And two legs: Rome would eventually split. (Daniel 2:40)" },
               { label: "History Confirms", text: "Rome is history's most iron-accurate empire. They built roads, aqueducts, and legal systems that still shape Western civilisation. Their two legs became literal — the Western Roman Empire fell in 476 AD, while the Eastern (Byzantine) Empire continued until 1453 AD. Rome crushed every kingdom before it. And it was under Roman rule — in the reign of Caesar Augustus — that Jesus was born. (Luke 2:1)" }
             ],
-            christCentre: "Jesus was crucified by Rome. The Roman road system carried the first apostles across the empire in decades. Roman law gave Paul his right of appeal to Caesar. Rome, the iron empire, was the unwitting infrastructure for the spread of the Gospel to the world.",
+            christCentre: "Jesus was crucified by Rome. Then the Roman road system carried the first apostles across the empire in decades, and Roman law gave Paul his right of appeal to Caesar. The iron empire became the unwitting infrastructure for the gospel it tried to crush.",
             keyVerse: { text: "\"Strong as iron, because iron breaks in pieces and shatters all things.\"", ref: "Daniel 2:40" }
           },
           {
@@ -156,7 +156,7 @@ export const studyBooks: StudyBook[] = [
               { label: "The Prophecy", text: "\"The feet and toes, partly of potter's clay and partly of iron, it shall be a divided kingdom.\" The mixture of iron and clay that won't bond: these kingdoms will be partly strong, partly brittle. Intermarriage will be attempted but won't hold them together. (Daniel 2:41–43)" },
               { label: "History Confirms", text: "After Rome fell in 476 AD, Europe fragmented into the Germanic kingdoms — the Visigoths, Ostrogoths, Franks, Vandals, and others. Every attempt to re-unify Europe has ultimately failed: Charlemagne, Napoleon, Hitler — all fell short. European royalty spent centuries intermarrying to create political alliances (the iron trying to mix with clay), and none of it lasted. Europe remains divided to this day, exactly as prophesied." }
             ],
-            christCentre: "The prophecy says no human power will unite these kingdoms. The next unifying event in Daniel's vision is the Stone — not a politician or a general, but Christ himself. We are living in the age of the feet right now. The next event in this prophecy is the Second Coming.",
+            christCentre: "The prophecy says no human power will hold these kingdoms together. The next unifying event in Daniel's vision is the Stone, not a politician or a general, but Christ himself. You are living in the age of the feet right now. The next event on this timeline is the Second Coming.",
             keyVerse: { text: "\"As the toes of the feet were partly iron and partly clay, so the kingdom shall be partly strong and partly brittle.\"", ref: "Daniel 2:42" }
           },
           {
@@ -169,12 +169,12 @@ export const studyBooks: StudyBook[] = [
               { label: "The Prophecy", text: "\"A stone was cut out by no human hand, and it struck the image on its feet of iron and clay, and broke them in pieces.\" The stone then became a mountain that filled the whole earth. This kingdom is not built by human effort — it arrives from outside history entirely. (Daniel 2:34–35, 44–45)" },
               { label: "What It Means", text: "Every previous kingdom succeeded through military conquest, political strategy, or intermarriage. The Stone kingdom is different: it is \"cut without human hands.\" It doesn't defeat the other kingdoms by playing by their rules — it replaces the entire system. The five kingdoms become \"like the chaff of the summer threshing floors\" and the Stone becomes a mountain filling the whole earth." }
             ],
-            christCentre: "Jesus called himself \"the stone the builders rejected\" (Matthew 21:42). Paul calls him \"the chief cornerstone\" (Ephesians 2:20). Peter calls him \"a living stone\" (1 Peter 2:4). The Stone in Daniel 2 is not a symbol that needs decoding — the New Testament is emphatic. Christ's kingdom will be the final one, and it will never be destroyed. (Daniel 2:44)",
+            christCentre: "Jesus called himself 'the stone the builders rejected' (Matthew 21:42). Paul calls him 'the chief cornerstone' (Ephesians 2:20). Peter calls him 'a living stone' (1 Peter 2:4). The Stone in Daniel 2 needs no decoding. The New Testament is emphatic. Every empire in this dream rose by force and fell by force. Christ's kingdom arrives without a human hand and never falls, because self-giving love is the one power that never runs out (Daniel 2:44).",
             keyVerse: { text: "\"The God of heaven will set up a kingdom that shall never be destroyed… it shall stand forever.\"", ref: "Daniel 2:44" }
           }
         ],
         christCentre:
-          "The stone is Christ — born of a virgin (cut without human hands), rejected by the builders (Ps 118:22; Matt 21:42), but destined to fill the earth. Every empire in this vision rises and falls. Only one is described as eternal (v.44). Daniel 2 is not principally about geopolitics — it is a Christological proclamation. The God of heaven had a plan before Babylon's first king sat on a throne, and it ends with Jesus.",
+          "The stone is Christ, born of a virgin (cut without human hands), rejected by the builders (Psalm 118:22; Matthew 21:42), destined to fill the earth. Every empire here runs on the same fuel: force, conquest, control. Only one kingdom is called eternal (v.44), and it runs on a different power entirely. Daniel 2 is not mainly about geopolitics. It is a proclamation about Jesus. The God of heaven had a plan before Babylon's first king sat down, and the plan ends with him.",
         nextLesson: {
           book: "daniel",
           lesson: "daniel-7",
@@ -206,7 +206,7 @@ export const studyBooks: StudyBook[] = [
           },
         ],
         christCentre:
-          "Jesus used the title 'Son of Man' more than any other self-designation — deliberately evoking this chapter. At his trial before the Sanhedrin he quoted Daniel 7:13 directly: 'You will see the Son of Man sitting at the right hand of Power and coming on the clouds of heaven' (Matt 26:64). The high priest called it blasphemy because he understood the claim: Jesus was asserting that he is the one presented before the Ancient of Days, the one who receives the eternal kingdom. Daniel 7 is not a political prophecy with a religious footnote. It is a Christological revelation that ends with the Son of Man receiving all authority.",
+          "Jesus called himself 'Son of Man' more than any other title, reaching straight back to this chapter. At his trial he quoted Daniel 7:13 to the high priest's face: 'You will see the Son of Man sitting at the right hand of Power and coming on the clouds of heaven' (Matthew 26:64). They called it blasphemy because they understood the claim. Daniel 7 is a study in contrast. Four beasts rule by teeth and terror. Then One like a Son of Man is given a kingdom he never grabbed by force. He receives it because he laid down his life, and his dominion never passes away, because love outlasts every empire built on fear.",
         nextLesson: {
           book: "daniel",
           lesson: "2300-days",
@@ -238,7 +238,7 @@ export const studyBooks: StudyBook[] = [
           },
         ],
         christCentre:
-          "The sanctuary of Daniel 8 is not the Jerusalem temple — it is the heavenly sanctuary of which the earthly was a copy (Heb 8:2, 5). Christ is the High Priest of that sanctuary (Heb 4:14). The 2,300 days are ultimately about his priestly work: after the 'little horn' power suppressed and substituted for Christ's mediation for centuries, the heavenly sanctuary ministry entered a new phase in 1844. This understanding — that the judgment of Daniel 7:9–14 and the sanctuary restoration of Daniel 8:14 are the same event, beginning in 1844 — is the conclusion historicist interpreters, particularly in the Adventist tradition, have drawn from this prophecy. It is one of the most significant and specific claims in the entire prophetic framework. Both visions point to Christ completing what no human priesthood can: the final atonement, the vindication of his people, the restoration of truth.",
+          "The sanctuary of Daniel 8 is not the Jerusalem temple. It is the heavenly sanctuary the earthly one only copied (Hebrews 8:2, 5), and Christ is its High Priest (Hebrews 4:14). The word behind 'restored' also means cleansed, vindicated, set right. For centuries a counterfeit system had buried the pure gospel and drawn worship to itself. The cleansing of the sanctuary is, at heart, a truth-recovery project: the good news about Jesus brought back into the light. Historicist interpreters, particularly in the Adventist tradition, read the judgment of Daniel 7:9-14 and the restoration of Daniel 8:14 as one event, opening in 1844. Both visions land on the same person, Christ finishing what no human priest could: the final atonement, the vindication of his people, and the recovery of the truth about God.",
         nextLesson: {
           book: "daniel",
           lesson: "daniel-9",
@@ -270,7 +270,7 @@ export const studyBooks: StudyBook[] = [
           },
         ],
         christCentre:
-          "Daniel 9:24–27 is the most detailed Messianic prophecy in the Hebrew Bible. It predicts: the year of his anointing (baptism), the year of his death ('cut off but not for himself' — he died as a substitute, not for his own sin), and the end of the Jewish civil period (34 AD). 'He shall cause sacrifice and offering to cease' — not by abolishing the law but by fulfilling it. His death rendered the sacrificial system obsolete. Every lamb that ever burned on an altar was pointing forward to this moment. Daniel saw it 500 years in advance.",
+          "Daniel 9:24-27 is the most detailed Messianic prophecy in the Hebrew Bible. It names the year of his anointing (baptism) and the year of his death: 'cut off, but not for himself.' He died as a substitute, not for his own sin, but for yours. 'He shall cause sacrifice and offering to cease,' not by abolishing the law but by fulfilling it. Every lamb that ever bled on an altar had been pointing forward to this one moment. Daniel saw it 500 years out.",
         nextLesson: {
           book: "daniel",
           lesson: "70-week-prophecy",
@@ -302,7 +302,7 @@ export const studyBooks: StudyBook[] = [
           },
         ],
         christCentre:
-          "The 70-week prophecy is a telescope pointed at one man. 'Messiah the Prince' — the anointed ruler — appears at the exact year of Jesus' baptism. 'Cut off but not for himself' — he dies as a substitutionary sacrifice. 'Covenant confirmed' — his 3.5-year ministry was the fulfilment of the new covenant promised in Jeremiah 31. The phrase 'not for himself' is one of the most theologically rich in all of Daniel: it is a pre-Calvary definition of penal substitutionary atonement. He was cut off — not because of crime, not because of failure — but for others. For us.",
+          "The 70-week prophecy is a telescope pointed at one man. 'Messiah the Prince,' the anointed ruler, appears in the exact year of Jesus' baptism. 'Cut off, but not for himself,' he dies as a sacrifice in your place. 'He shall confirm the covenant,' the covenant of faithful love promised in Jeremiah 31. Those three words, 'not for himself,' hold the whole gospel. He was cut off, not for a crime, not for a failure of his own, but for others. For you.",
         nextLesson: {
           book: "daniel",
           lesson: "daniel-12",
@@ -334,7 +334,7 @@ export const studyBooks: StudyBook[] = [
           },
         ],
         christCentre:
-          "Scripture's cumulative portrait of Michael points toward Christ himself. He is the 'Prince of princes' (Dan 8:25), the one who contends for Moses' body (Jude 9), whose voice raises the dead (1 Thess 4:16). The Adventist tradition, along with many Reformation-era scholars, has understood Michael as Christ in his role as the divine warrior-defender of his people — not a created angel, but the eternal Son acting under this title. When Michael stands up, the intercessory phase ends — not as punishment, but as the moment when grace has done its full work and every soul has made its final choice. Then he comes. The stone of Daniel 2 strikes. The Son of Man of Daniel 7 descends with the clouds. The sanctuary of Daniel 8 is fully restored. Every vision in the book of Daniel converges on this moment: the return of Jesus Christ.",
+          "Scripture's cumulative portrait of Michael points to Christ himself. He is the 'Prince of princes' (Daniel 8:25), the one who contends for Moses' body (Jude 9), whose voice raises the dead (1 Thessalonians 4:16). The Adventist tradition, with many Reformation-era scholars, reads Michael as Christ acting as the divine defender of his people, not a created angel but the eternal Son under this title. When Michael stands up, the work of intercession is finished. Not as a threat, but as the moment grace has done everything it can and every heart has made its final choice. Then he comes. The stone of Daniel 2 strikes. The Son of Man of Daniel 7 descends. The sanctuary of Daniel 8 is fully restored. Every vision in the book converges here, on the return of the Jesus who has been defending you the whole time.",
         nextLesson: {
           book: "revelation",
           lesson: "seven-seals",
@@ -375,7 +375,7 @@ export const studyBooks: StudyBook[] = [
           },
         ],
         christCentre:
-          "The entire drama of the seven seals is framed by one decisive act: the Lamb takes the scroll (Rev 5:7). Everything that follows — every seal, every trial, every martyrdom, every cosmic sign — is under the authority of the crucified and risen Christ. The souls under the altar are not forgotten — they are given white robes. The martyrs of the Dark Ages were not abandoned — they are vindicated. The seventh seal's silence is not emptiness — it is the reverent hush before the King appears. The seals are not a calendar of disasters; they are a revelation of Christ's sovereignty over all of history.",
+          "The whole drama of the seven seals turns on one act: the Lamb takes the scroll (Revelation 5:7). John weeps because no one is worthy to open it, then looks and sees, not a lion, but a Lamb that had been slain, standing. Everything that follows, every seal, every trial, every martyrdom, every cosmic sign, unfolds under the authority of the crucified and risen Christ. The souls under the altar are not forgotten. They are given white robes. The martyrs of the Dark Ages were not abandoned. They are vindicated. The seventh seal's silence is not emptiness. It is the hush before the King appears. The seals are not a calendar of disasters. They are the story of who holds history: the Lamb who wins by losing.",
         nextLesson: {
           book: "revelation",
           lesson: "revelation-13",
@@ -407,7 +407,7 @@ export const studyBooks: StudyBook[] = [
           },
         ],
         christCentre:
-          "Revelation 13 is ultimately about worship — who will be worshipped, and on what terms. The beast demands worship under threat of economic exclusion and death. But the Lamb of Revelation 5 earned worship by giving his life. The contrast is absolute: the beast takes; the Lamb gives. The beast's mark is a counterfeit of the seal of God (Rev 7:3). The fundamental question of the end times is not geopolitical — it is theological: will you worship the Creator (Rev 14:7) or the creature? Christ is the foundation of the true worship the beast seeks to counterfeit.",
+          "Revelation 13 is about worship: who gets it, and on what terms. The beast demands worship and backs the demand with economic exclusion and death. It knows only the language of force. The Lamb of Revelation 5 does the opposite. He wins your worship by giving his life, and he wants it freely or not at all. That is the whole contrast. The beast takes. The Lamb gives. Its mark is a counterfeit of God's seal (Revelation 7:3). The real question of the end is not geopolitical. It is this: will you love the Creator who gave himself for you (Revelation 14:7), or bow to a power that can only threaten? Forced loyalty is not worship. Christ is after the real thing.",
         nextLesson: {
           book: "revelation",
           lesson: "revelation-14",
@@ -439,7 +439,7 @@ export const studyBooks: StudyBook[] = [
           },
         ],
         christCentre:
-          "Revelation 14 begins with the Lamb (v.1) and ends with the Son of Man on the cloud (v.14). The three angels' messages are not free-standing proclamations — they are the Lamb's final call to his people before he comes to gather them. The First Angel's message is the eternal gospel (v.6) — the same gospel that has always been the heart of Scripture, now proclaimed in its end-time urgency. The commandments of God and the faith of Jesus (v.12) are not two separate things — the commandments are kept by faith, and faith in Jesus produces obedience. The final generation is defined not by their own righteousness but by their total trust in his.",
+          "Revelation 14 opens with the Lamb (v.1) and closes with the Son of Man on the cloud (v.14). The three angels' messages are not free-standing announcements. They are the Lamb's last call to his people before he comes to gather them. The first message is the eternal gospel (v.6), the same good news that has always been the heart of Scripture, now sounded with end-time urgency: 'the hour of his judgment has come.' Read rightly, that judgment is good news. Your Judge is your Advocate, and the verdict of Daniel 7 falls 'in favour of the saints.' The commandments of God and the faith of Jesus (v.12) are not two separate things. Faith in Jesus writes his law of love on the heart, and obedience grows from there. The final generation is defined not by its own record but by its trust in his.",
         nextLesson: {
           book: "gospel",
           lesson: "love-for-god",
@@ -575,7 +575,7 @@ export const studyBooks: StudyBook[] = [
           },
         ],
         christCentre:
-          "Jesus is not just the messenger of God's love. He is the love of God made visible, tangible, and historical. John 1:14 says the Word became flesh — God's love put on skin. In the incarnation, life, death, and resurrection of Jesus, we see not a distant God sending a message, but a God who entered the suffering He could have avoided, to rescue people who had no capacity to rescue themselves. 'God is love' is not an abstraction. It has a face: Jesus of Nazareth.",
+          "Jesus is not only the messenger of God's love. He is the love of God made visible, tangible, historical. John 1:14 says the Word became flesh, God's love with skin on. Watch the order closely, because it changes everything: God did not begin loving you because Jesus died. Jesus died because God already loved you. The cross is not the cause of the Father's love. It is the proof of it. In the incarnation, life, death, and resurrection of Jesus you meet a God who entered suffering He could have avoided, to rescue people who could never rescue themselves. 'God is love' is not an abstraction. It has a face: Jesus of Nazareth.",
         nextLesson: {
           book: "gospel",
           lesson: "righteousness-by-faith",
@@ -696,7 +696,7 @@ export const studyBooks: StudyBook[] = [
           },
         ],
         christCentre:
-          "Righteousness by faith is not a system — it is a Person. When Paul says in 1 Corinthians 1:30 that Christ 'became to us wisdom from God, righteousness and sanctification and redemption,' he is saying that every aspect of our standing before God is located in Jesus. We don't possess righteousness as a quality we have earned or even received and now own independently. We are righteous because we are in Christ. The moment we are in Him, His record becomes our record. His life, death, and resurrection are the substance of our justification.",
+          "Righteousness by faith is not a formula. It is a Person. When Paul says Christ 'became to us wisdom from God, righteousness and sanctification and redemption' (1 Corinthians 1:30), he locates your entire standing before God inside Jesus. You do not earn righteousness and then own it on your own. You are righteous because you are in Christ. The moment you are in Him, His record becomes your record. Every other religion runs on merit, on what you produce to make yourself acceptable. The gospel runs the other way. His life, death, and resurrection are the ground you stand on.",
         nextLesson: {
           book: "gospel",
           lesson: "the-resurrection",
@@ -850,7 +850,7 @@ export const studyBooks: StudyBook[] = [
           },
         ],
         christCentre:
-          "Jesus did not merely teach about life after death. He demonstrated it. He entered the tomb as every human being must — and He left it as no human being had. His resurrection is not a symbol of springtime or new beginnings. It is a dateable, historical, bodily event with named witnesses, legal and political consequences, and permanent cosmic significance. Because He lives, death for the believer is not a terminal event. It is a transition. The grave does not have the final word — the Risen Christ does.",
+          "Jesus did not only teach about life after death. He walked out of it. He entered the tomb as every human being must, and left it as no human being had. His resurrection is not a symbol of springtime or fresh starts. It is a dateable, bodily event with named witnesses and real consequences. And it was not an afterthought to the cross. Psalm 16 promised it centuries early: God would not abandon His Holy One to decay. Because He lives, death for the believer is not the end. It is a doorway. The grave does not get the last word. The risen Christ does.",
         nextLesson: {
           book: "gospel",
           lesson: "jesus-at-the-centre",
@@ -1047,7 +1047,7 @@ export const studyBooks: StudyBook[] = [
           },
         ],
         christCentre:
-          "Revelation 19:10 says 'the testimony of Jesus is the spirit of prophecy.' This means prophecy — all of it — exists to give testimony about Jesus. If you are studying prophecy and not finding Jesus, you have not yet found the point. He is the Lamb slain (Revelation 5:6), the High Priest interceding (Hebrews 7:25), the King who is coming (Revelation 19:11–16), the Judge whose verdict is grace (Daniel 7:22), and the New Creation's light (Revelation 21:23). Every study on Plain Prophecy is built on this conviction: prophecy stripped of Christ is not prophecy at all. It is map-reading with no destination.",
+          "Revelation 19:10 says 'the testimony of Jesus is the spirit of prophecy.' All of it exists to point to Him. If you study prophecy and do not find Jesus, you have not yet found the point. He is the Lamb slain (Revelation 5:6), the High Priest interceding for you right now (Hebrews 7:25), the King who is coming (Revelation 19:11-16), the Judge whose verdict falls in your favour (Daniel 7:22), and the light of the new creation (Revelation 21:23). Every study on Plain Prophecy rests on one conviction: prophecy stripped of Christ is not prophecy. It is map-reading with no destination.",
         nextLesson: {
           book: "gospel",
           lesson: "the-sabbath",
@@ -1205,7 +1205,7 @@ export const studyBooks: StudyBook[] = [
               },
             ],
             christCentre:
-              "Jesus did not teach about the Sabbath from a distance. He inhabited it every week of His life. He restored its meaning by healing on it, teaching on it, and resting in it after Calvary. He is its Lord because He is its Maker — 'all things were made through him, and without him was not any thing made that was made' (John 1:3). Every Sabbath we keep is a declaration that our Creator is also our Redeemer, and that His finished work is enough.",
+              "Jesus did not teach about the Sabbath from a distance. He lived inside it every week of His life. He restored its meaning by healing on it, teaching on it, and resting through it after Calvary. He is its Lord because He is its Maker: 'all things were made through him, and without him was not any thing made that was made' (John 1:3). Every Sabbath you keep says the same thing out loud: your Creator is also your Redeemer, and His finished work is enough. You rest because He already did the work.",
           },
           {
             heading: "Hebrews 4:9 — The Most Overlooked Proof Text",
@@ -1435,7 +1435,7 @@ export const studyBooks: StudyBook[] = [
               },
             ],
             christCentre:
-              "The Sabbath does not save you. Nothing you do saves you. But the Sabbath is a weekly declaration that you are already saved — that God's work is finished, that His love was first, that rest is the starting point of the whole story. Jesus kept it because He made it. He honoured it because He loved His Father's commandments. His disciples kept it because they walked as He walked. The apostles kept it because the resurrection did not abolish the law — it confirmed it. The redeemed will keep it in eternity because when every trace of sin is gone, the Sabbath will still be there — a relational space carved out of time, filled with the presence of a God who has always wanted to sit with His children and be known.",
+              "The Sabbath does not save you. Nothing you do saves you. The Sabbath is a weekly announcement that you are already saved: God's work is finished, His love came first, and rest is where the whole story starts, not where it is earned. Jesus kept it because He made it. He honoured it because He loved His Father's commandments. His disciples kept it because they walked as He walked. The apostles kept it because the resurrection did not abolish the law, it confirmed it. And the redeemed will keep it forever, because when every trace of sin is gone the Sabbath remains: time carved out for a God who has always wanted to sit with His children and be known.",
           },
           {
             heading: "Key Texts — Know These Cold",
@@ -1525,7 +1525,7 @@ export const studyBooks: StudyBook[] = [
             ],
           },
         ],
-        christCentre: "The study of the Antichrist is not about the study of evil; it is about the protection of the true Christ. We identify the counterfeit only so that we may more clearly cling to the original. Jesus is the only Mediator, the only High Priest, and the only Head of the Church. Any person, system, or tradition that seeks to occupy that space — even with the best of intentions — is operating in the spirit of antichrist. Our safety is found not in tracking every move of the enemy, but in knowing the voice of the Shepherd so well that no substitute can ever deceive us.",
+        christCentre: "The study of the Antichrist is not really about evil. It is about protecting the true Christ. You name the counterfeit only so you can cling more tightly to the original. Jesus is the only Mediator, the only High Priest, the only Head of the Church. Any person, power, or tradition that tries to occupy that space, even with the best of intentions, works in the spirit of antichrist. And the counterfeit's whole aim is to bury the good news about Jesus and pull your worship onto itself. Your safety is not in tracking every move of the enemy. It is in knowing the voice of the Shepherd so well that no substitute can fool you.",
         nextLesson: undefined,
       }
     ]
@@ -1623,7 +1623,7 @@ export const studyBooks: StudyBook[] = [
           },
         ],
         christCentre:
-          "Isaiah 53 is the prophecy the Ethiopian eunuch was reading when Philip found him on the desert road (Acts 8:32–35). 'About whom does the prophet say this — about himself or someone else?' Philip began with that same scripture and told him the good news about Jesus. Written when crucifixion was unknown as a Roman execution method, it describes not a general martyr but a specific Person whose suffering is vicarious, whose burial is dignified, and whose death leads to life.",
+          "Isaiah 53 is the scripture the Ethiopian eunuch was reading when Philip found him on the desert road (Acts 8:32-35). 'About whom does the prophet say this, about himself or someone else?' Philip began with that same passage and told him the good news about Jesus. Read it slowly and one thing becomes plain: the Servant does not suffer for his own sin. He was pierced for your transgressions, crushed for your iniquities. When you suffer, you assume God is pouncing on you. Here the opposite happens. He bears your grief because he chooses to, identifying with you so closely that he carries your sorrow in his own body. Written centuries before Rome turned crucifixion into an execution method, this is not a general portrait of a martyr. It is one Person, whose wounds heal you, whose burial is honoured, and whose death gives way to life.",
         nextLesson: {
           book: "messianic-prophecies",
           lesson: "first-promise",
@@ -1683,7 +1683,7 @@ export const studyBooks: StudyBook[] = [
           },
         ],
         christCentre:
-          "The first word God speaks after the fall is not judgment but gospel. Before expelling Adam and Eve from Eden, God turns to the serpent and announces that its victory will be short-lived. The rest of the Bible is the long unfolding of that promise — leading to a garden tomb on the third day, and a risen Seed who holds the keys of death and Hades (Revelation 1:18).",
+          "The first word God speaks after the fall is not judgment but gospel. Before he sends Adam and Eve out of Eden, God turns to the serpent and promises a Seed who will crush its head. The whole Bible unfolds from this one sentence. The Seed is Christ, the second Adam, who steps into the story the first Adam broke and reverses it. At the cross the serpent struck his heel and it looked like the serpent had won. The resurrection told the truth: the serpent's head was crushed, its lie exposed, and a risen Seed now holds the keys of death and Hades (Revelation 1:18). Your rescue was promised before you ever knew you needed rescuing.",
         nextLesson: {
           book: "messianic-prophecies",
           lesson: "seventy-weeks",
@@ -1769,7 +1769,7 @@ export const studyBooks: StudyBook[] = [
           },
         ],
         christCentre:
-          "Daniel 9 is the only prophecy in the Old Testament that gives an actual date for the Messiah's appearance. When Jesus announced 'The time is fulfilled' in Mark 1:15, he was not speaking generally — he was claiming that the clock Gabriel set running in 457 BC had just reached its terminus at his baptism. The prophecy that named the year of his anointing also named the year of his death. History was not happening to Jesus; he was walking into a script written centuries before.",
+          "Daniel 9 is the only prophecy in the Old Testament that dates the Messiah's arrival. When Jesus said 'The time is fulfilled' in Mark 1:15, he was not speaking loosely. He claimed the clock Gabriel started in 457 BC had reached its final hour at his baptism. The same prophecy named the year of his death and defined it: 'cut off, but not for himself.' To be cut off is sacrifice language. He submitted to it, and if not for himself, then for whom? For you. History was not happening to Jesus. He walked, on schedule, into a rescue written centuries before you were born.",
         nextLesson: {
           book: "messianic-prophecies",
           lesson: "born-in-bethlehem",
@@ -1829,7 +1829,7 @@ export const studyBooks: StudyBook[] = [
           },
         ],
         christCentre:
-          "The God who created the universe chose to enter it in a village so small it nearly didn't register on the census rolls. Bethlehem was not chosen for its prestige — it was chosen because God had promised it seven centuries earlier. The Magi travelled hundreds of miles following a star; the answer to where it led was already written in Jewish Scripture. The smallness of Bethlehem magnifies the greatness of the One it produced.",
+          "The God who made the universe chose to enter it in a village too small to register on the census rolls. Micah names the town seven centuries early, then names something stranger: this ruler's origins are 'from of old, from ancient times,' from everlasting. The one born in Bethlehem existed before Bethlehem. His birth was not the start of his life. It was the humbling of it, God stepping down to the lowest place to be near you. This is Immanuel, God with us, driven by a want to be close to his people that he refused to satisfy from a distance. The smallness of the town only magnifies the greatness, and the nearness, of the One it produced.",
         nextLesson: {
           book: "messianic-prophecies",
           lesson: "virgin-shall-conceive",
@@ -1889,7 +1889,7 @@ export const studyBooks: StudyBook[] = [
           },
         ],
         christCentre:
-          "The virgin birth is not a theological footnote — it is the hinge on which the incarnation turns. For Jesus to be the Seed of the woman (Genesis 3:15) without the seed of a man, for him to be born under the law (Galatians 4:4) yet without inheriting the guilt of Adam, required exactly what Isaiah predicted: a miraculous conception. Immanuel means God chose not to send a messenger but to come himself. That is the astonishing claim at the heart of Christmas.",
+          "The virgin birth is not a footnote. It is the hinge the incarnation turns on. For Jesus to be the Seed of the woman (Genesis 3:15) without a human father, born under the law (Galatians 4:4) yet free of Adam's guilt, God needed exactly what Isaiah predicted: a conception no man arranged. Immanuel means God did not send a messenger with news about himself. He came himself, took on flesh, and pitched his tent among us (John 1:14). The maker of the world became a baby you could hold. That is the claim at the heart of Christmas.",
         nextLesson: {
           book: "messianic-prophecies",
           lesson: "triumphal-entry-prophecy",
@@ -1949,7 +1949,7 @@ export const studyBooks: StudyBook[] = [
           },
         ],
         christCentre:
-          "Jesus entered Jerusalem knowing what the week would hold. He did not arrive on a war horse demanding surrender; he arrived on a donkey, offering peace. The prophecy's paradox — righteous and victorious, yet humble — is the gospel paradox. The greatest victory in history was won by the most seemingly defeated Person in history. Palm Sunday is not a triumphant prelude to a tragic week; it is the announcement of the kind of King who wins by giving himself away.",
+          "Jesus rode into Jerusalem knowing what the week held. He did not come on a war horse demanding surrender. He came on a donkey, offering peace. Zechariah's paradox, righteous and victorious yet humble, is the gospel itself. The most powerful person in the universe showed the universe how to use power. He did not seize the throne. He laid down his life for the people, and won. Palm Sunday is not a bright prelude to a dark week. It announces the kind of King who conquers by giving himself away, for you.",
         nextLesson: {
           book: "messianic-prophecies",
           lesson: "thirty-pieces-of-silver",
@@ -2005,7 +2005,7 @@ export const studyBooks: StudyBook[] = [
           },
         ],
         christCentre:
-          "Judas received thirty pieces of silver — the price of a slave — for the Son of God. The priests declared him worth less than a man accidentally killed by an ox. But the irony cuts the other way: the price of Christ's betrayal became the price of a field for the dead — a burial place. From the cheapest possible valuation, God produced a gift for the unburied poor of Jerusalem. The one who was treated as worthless made even his betrayal into grace.",
+          "Judas took thirty pieces of silver, the price of a slave, for the Son of God. The priests valued him below a man killed by an ox. The irony runs the other way. The blood money bought a field to bury strangers in. From the lowest price anyone could name, God made a resting place for Jerusalem's unclaimed dead. The one they treated as worthless turned even his betrayal into grace. He let himself be valued at nothing so you could be valued as his own.",
         nextLesson: {
           book: "messianic-prophecies",
           lesson: "forsaken-one",
@@ -2078,7 +2078,7 @@ export const studyBooks: StudyBook[] = [
           },
         ],
         christCentre:
-          "Psalm 22 ends not in abandonment but in praise: 'He has not despised or scorned the suffering of the afflicted one; he has not hidden his face from him but has listened to his cry for help' (v. 24). The dereliction was real — Christ bore the full weight of sin's separation — but it was not the last word. The psalm that opened with 'My God, my God, why have you forsaken me?' closes with 'future generations will be told about the Lord, and proclaim his righteousness.' The cross is not the end of the story. It is the pivot.",
+          "'My God, my God, why have you forsaken me?' The cry was real. Your sin blocked the sunshine of his Father's face, and the darkness went so deep he could not see his own resurrection through it. His agony was not mainly the nails. It was bearing the shame and guilt of the whole world, yours included, and refusing to walk away. He could have called ten thousand angels and ended it. He kept choosing you in the dark. And Psalm 22 does not stay in the dark. It closes in praise: 'future generations will be told about the Lord, and proclaim his righteousness.' The cross is not the end of the story. It is the pivot your story turns on.",
         nextLesson: {
           book: "messianic-prophecies",
           lesson: "risen-lord",
@@ -2138,7 +2138,7 @@ export const studyBooks: StudyBook[] = [
           },
         ],
         christCentre:
-          "Psalm 16 is a psalm of trust — David resting in God's faithfulness. The deepest expression of that trust is the confidence that not even death is the final word. Christ entered death trusting the Father completely. Three days later, the Father answered. 'You will not abandon my soul to Sheol' was not wishful thinking — it was prophecy. And the empty tomb is how God said Amen.",
+          "Psalm 16 is a psalm of trust, David resting in God's faithfulness. Its deepest note is confidence that not even death gets the last word. On the cross Jesus could not feel that promise. He entered death still trusting the Father he could no longer see. Three days later the Father answered. 'You will not abandon my soul to Sheol' was not wishful thinking. It was prophecy, and the empty tomb is how God said Amen. The same trust that carried Jesus through death is the trust he now holds out to you on the far side of it.",
         nextLesson: {
           book: "messianic-prophecies",
           lesson: "priest-forever",
@@ -2198,7 +2198,7 @@ export const studyBooks: StudyBook[] = [
           },
         ],
         christCentre:
-          "Psalm 110 answers the question every suffering believer asks: what is Jesus doing right now? He is seated at the right hand of the Majesty on high (Hebrews 1:3), interceding for us by name (Romans 8:34), as a priest after the order of Melchizedek — not by law but by life. The same Jesus who offered himself at Calvary is the Jesus who stands in our defence in the heavenly sanctuary. The priesthood that began with a cross continues in a throne room — and it will not end until every enemy, including death itself, is under his feet.",
+          "Psalm 110 answers the question every struggling believer asks: what is Jesus doing right now? He is seated at the right hand of the Majesty on high (Hebrews 1:3), interceding for you by name (Romans 8:34), a priest after the order of Melchizedek, not by law but by life. He qualified for the role by becoming one of us, so he deals gently with you and feels your weakness from the inside (Hebrews 4:15; 5:2). He is not there to talk a reluctant Father into loving you. His work is the proof of a love that was already there. He stands as guarantor that the covenant holds. The same Jesus who offered himself at Calvary now stands in your defence in the heavenly sanctuary. The priesthood that began at a cross continues in a throne room, and it will not close until every enemy, death included, lies under his feet.",
       },
     ],
   },

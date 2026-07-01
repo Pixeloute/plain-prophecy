@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foundations of Faith: A Biblical Perspective on Women in Islam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F7F6F2;
+    --paper-2:#EFEEE8;
+    --ink:#1C1F22;
+    --ink-soft:#3C4248;
+    --slate:#3A4750;
+    --slate-soft:#6B777E;
+    --rule:#E2E0D8;
+    --rule-strong:#CFCCC1;
+    --col: 45rem;          /* ~720px reading column */
+    --wide: 52rem;
+  }
+
+  *{box-sizing:border-box;}
+
+  html{ -webkit-text-size-adjust:100%; }
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Newsreader", Georgia, "Times New Roman", serif;
+    font-size:clamp(1.075rem, 0.95rem + 0.45vw, 1.2rem);
+    line-height:1.78;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+
+  ::selection{ background:#D9DEE0; color:var(--ink); }
+
+  .wrap{
+    max-width:var(--col);
+    margin-inline:auto;
+    padding-inline:clamp(1.25rem, 5vw, 2rem);
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    border-bottom:1px solid var(--rule);
+    padding-top:clamp(3.5rem, 9vw, 7rem);
+    padding-bottom:clamp(3rem, 7vw, 5rem);
+    animation:rise .9s cubic-bezier(.2,.7,.2,1) both;
+  }
+  .kicker{
+    font-family:"Inter", system-ui, sans-serif;
+    font-size:.72rem;
+    font-weight:600;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--slate);
+    margin:0 0 1.4rem;
+  }
+  h1{
+    font-family:"Inter", system-ui, sans-serif;
+    font-weight:700;
+    letter-spacing:-0.02em;
+    line-height:1.04;
+    font-size:clamp(2.3rem, 1.4rem + 4.4vw, 4.1rem);
+    margin:0 0 1.6rem;
+    color:var(--ink);
+    text-wrap:balance;
+  }
+  .standfirst{
+    font-size:clamp(1.2rem, 1.05rem + 0.6vw, 1.45rem);
+    font-style:italic;
+    color:var(--ink-soft);
+    line-height:1.6;
+    max-width:38rem;
+    margin:0;
+  }
+  .hero-meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.6rem 1.6rem;
+    margin-top:2.4rem;
+    font-family:"Inter", system-ui, sans-serif;
+    font-size:.78rem;
+    letter-spacing:.04em;
+    color:var(--slate-soft);
+    text-transform:uppercase;
+  }
+  .hero-meta span{ position:relative; }
+
+  /* ---------- Sections ---------- */
+  section{
+    padding-top:clamp(3rem, 6vw, 4.5rem);
+    padding-bottom:.5rem;
+  }
+  .sect-head{ margin-bottom:1.8rem; }
+  .numeral{
+    display:block;
+    font-family:"Inter", system-ui, sans-serif;
+    font-size:.74rem;
+    font-weight:600;
+    letter-spacing:.28em;
+    color:var(--slate);
+    margin-bottom:.7rem;
+  }
+  h2{
+    font-family:"Inter", system-ui, sans-serif;
+    font-weight:600;
+    letter-spacing:-0.015em;
+    line-height:1.12;
+    font-size:clamp(1.55rem, 1.2rem + 1.5vw, 2.25rem);
+    margin:0;
+    color:var(--ink);
+    text-wrap:balance;
+  }
+  h3{
+    font-family:"Inter", system-ui, sans-serif;
+    font-weight:600;
+    font-size:1.08rem;
+    letter-spacing:.005em;
+    color:var(--ink);
+    margin:2.6rem 0 .4rem;
+  }
+
+  p{ margin:0 0 1.35rem; }
+
+  /* opening drop cap on first body paragraph */
+  .lead::first-letter{
+    float:left;
+    font-family:"Inter", system-ui, sans-serif;
+    font-weight:700;
+    font-size:3.9rem;
+    line-height:.82;
+    padding:.32rem .6rem 0 0;
+    color:var(--slate);
+  }
+
+  /* scripture / source references */
+  .ref{
+    font-family:"Inter", system-ui, sans-serif;
+    font-size:.82em;
+    font-weight:500;
+    letter-spacing:.01em;
+    color:var(--slate);
+    white-space:nowrap;
+  }
+  em.arabic{ font-style:italic; color:var(--ink-soft); }
+
+  /* ---------- Pull quotes ---------- */
+  blockquote{
+    margin:clamp(2.4rem,5vw,3.4rem) 0;
+    padding:0;
+    position:relative;
+  }
+  blockquote p{
+    font-family:"Newsreader", Georgia, serif;
+    font-weight:500;
+    font-size:clamp(1.45rem, 1.1rem + 1.7vw, 2.05rem);
+    line-height:1.3;
+    letter-spacing:-0.01em;
+    color:var(--ink);
+    margin:0;
+    padding-left:1.6rem;
+    border-left:2px solid var(--slate);
+    text-wrap:balance;
+  }
+  blockquote cite{
+    display:block;
+    margin-top:1rem;
+    padding-left:1.6rem;
+    font-family:"Inter", system-ui, sans-serif;
+    font-style:normal;
+    font-size:.78rem;
+    font-weight:600;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--slate-soft);
+  }
+  @media (min-width:880px){
+    blockquote{ margin-inline:-2.5rem; }
+  }
+
+  /* ---------- Field notes (personal stories) ---------- */
+  .field-note{
+    background:var(--paper-2);
+    border-left:3px solid var(--slate);
+    border-radius:2px;
+    padding:clamp(1.4rem,3.5vw,2rem) clamp(1.4rem,4vw,2.2rem);
+    margin:2.4rem 0;
+  }
+  .field-note .fn-label{
+    font-family:"Inter", system-ui, sans-serif;
+    font-size:.7rem;
+    font-weight:600;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    color:var(--slate);
+    margin:0 0 1rem;
+  }
+  .field-note p{ font-size:.97em; }
+  .field-note p:last-child{ margin-bottom:0; }
+
+  /* ---------- Register of women ---------- */
+  .register{
+    margin:2rem 0 1rem;
+    border-top:1px solid var(--rule-strong);
+  }
+  .register .entry{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:.15rem;
+    padding:1rem 0;
+    border-bottom:1px solid var(--rule);
+  }
+  .register .name{
+    font-family:"Inter", system-ui, sans-serif;
+    font-weight:600;
+    font-size:.95rem;
+    letter-spacing:.01em;
+    color:var(--ink);
+  }
+  .register .gloss{
+    font-style:italic;
+    color:var(--ink-soft);
+    font-size:1.02rem;
+    line-height:1.5;
+  }
+  .register .gloss .ref{ font-style:normal; }
+  @media (min-width:640px){
+    .register .entry{
+      grid-template-columns: 11rem 1fr;
+      gap:1.4rem;
+      align-items:baseline;
+    }
+  }
+
+  hr.divider{
+    border:0;
+    height:1px;
+    background:var(--rule);
+    margin:clamp(3rem,6vw,4.5rem) 0 0;
+  }
+
+  /* ---------- Footer ---------- */
+  footer{
+    border-top:1px solid var(--rule);
+    margin-top:clamp(3.5rem,7vw,5rem);
+    padding:3rem 0 4.5rem;
+  }
+  .colophon{
+    font-family:"Inter", system-ui, sans-serif;
+    font-size:.8rem;
+    line-height:1.7;
+    letter-spacing:.01em;
+    color:var(--slate-soft);
+  }
+  .colophon strong{ color:var(--ink-soft); font-weight:600; }
+
+  a{ color:var(--slate); text-underline-offset:3px; }
+  a:focus-visible, [tabindex]:focus-visible{
+    outline:2px solid var(--slate);
+    outline-offset:3px;
+  }
+
+  @keyframes rise{
+    from{ opacity:0; transform:translateY(14px); }
+    to{ opacity:1; transform:none; }
+  }
+  @media (prefers-reduced-motion:reduce){
+    .hero{ animation:none; }
+    *{ scroll-behavior:auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker">Apologetics &amp; Teaching</p>
+    <h1>Foundations of Faith: A Biblical Perspective on Women in Islam</h1>
+    <p class="standfirst">Begin close to Christ. Read the texts of Islam honestly. Then return to the biblical vision of man and woman. The aim is never to shame the Muslim, but to introduce every Muslim to Jesus.</p>
+    <div class="hero-meta">
+      <span>Conference address</span>
+      <span>Christian and Muslim dialogue</span>
+      <span>Teaching paper</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="wrap" id="begin">
+    <div class="sect-head">
+      <span class="numeral">I"numeral">I   ·   nbsp;"numeral">I   ·   nbsp;·"numeral">I   ·   nbsp;"numeral">I   ·   nbsp;Begin Close to Christ</span>
+      <h2>Walk with the Lord before you engage Islam</h2>
+    </div>
+
+    <p class="lead">Greetings, friends, some of whom I know and some of you I do not. I hope I will be able to share and talk with many of you today. As I speak around the country and around the world, there will always be people in the congregation who are either struggling in their faith with the Lord, or who may not actually know the Lord, including at church conferences. So what I hope will happen today is that as we look at Islam, and we look at difficult topics, and we ask questions of Islam, all of us will come into a deeper relationship with the Lord. Because primarily that is what it is all about. We are here to bring and introduce Jesus to every Muslim on the planet. That is a quarter of the world's population. So we have a big job ahead of us. But let us make sure we are walking close with the Lord before we engage the topics of Islam.</p>
+
+    <p>Islam is a vast religion. It is a complex religion. It has multiple layers of texts and different opinions within it. Muslims themselves often do not know how to interpret their own text and have to go to the scholars. How many of you, in talking with a Muslim friend, have been told, “Go to the imam, go to my scholar,” because they do not know how to translate and interpret their own faith. And they are afraid to, because if they get it wrong it could be that Allah, the spirit they follow, will pour judgment on them and not allow them into the afterlife. That is a fear every Muslim carries. It is not a fear that Christians carry.</p>
+
+    <p>We know that when we trust Jesus, the Father loves us and has forgiven us. We can walk boldly to the throne of God. We can walk boldly into his presence. And when we die, because we are forgiven, we enter straight into his presence. No Muslim has that assurance. No Muslim has that confidence that they will stand before God and be forgiven. But we do, because of Jesus. We do, because of the good news of Jesus.</p>
+
+    <p>Today I am going to look at men and women in Islam, male and female according to the texts, seen in the life of Muhammad and across the multiple layers of Islamic literature. But we start with the Bible. We start with our foundation. Before we engage anything to do with Islam, let us make sure we have a firm foundation. Our starting point is always and only the Lord Jesus.</p>
+  </section>
+
+  <section class="wrap" id="foundation">
+    <div class="sect-head">
+      <span class="numeral">II"numeral">II   ·   nbsp;"numeral">II   ·   nbsp;·"numeral">II   ·   nbsp;"numeral">II   ·   nbsp;The Biblical Foundation</span>
+      <h2>Yahweh's view of male and female</h2>
+    </div>
+
+    <p><span class="ref">Genesis 1</span>, <span class="ref">John 1</span>, <span class="ref">Colossians 1</span> and <span class="ref">Hebrews 1</span> tell us that male and female were designed by God himself. We are then called, according to <span class="ref">Matthew 28</span>, to be Christ's witnesses to the world, including to Muslims. It is biblical foundations, including of man and woman, that are our greatest apologetic when we respond to Islamic thought.</p>
+
+    <blockquote>
+      <p>Biblical truth about male and female is our greatest apologetic to engage Islamic thought.</p>
+    </blockquote>
+
+    <p>So let us start by looking at Yahweh's view of us. The Father, the Son and the Holy Spirit created us in his image. <span class="ref">Genesis 1:26–28</span> sets the scene: “Let us make human beings, male and female, in our image.” When the Bible says “our”, we know there is theological depth to that. The Father, the Son and the Holy Spirit are having a conversation. In Islam, Allah sometimes refers to himself as “we”, but it is a borrowing without the theological depth.</p>
+
+    <p>And when God says, “Let us make human beings in our image, male and female,” who is the female in God? Who is the helper, the <em class="arabic">ezer</em>? Who is the one that gives life? It is interesting to think about. Consider how God made man, and drew woman out of man, the only creation that is of Adam's kind. Then God's breath gives us life, the Holy Spirit.</p>
+
+    <p>Consider how husbands and wives are called to submit to one another. <span class="ref">Ephesians 5:21</span>, a verse forgotten by many Christians and husbands around the world. Submit to each other. Consider how God values the man, created first, to walk in friendship with him, and then entrusts families and women into his care. Consider how God values woman, the key to life, called to rule over the earth alongside Adam. She has beauty of character. She is the lifegiver of every child. And the first prophecy of the Saviour goes through her, <span class="ref">Genesis 3:15</span>.</p>
+
+    <p>Consider how the man is called to give up his all, including his parents, for his wife, and to enable her to become holy. I emphasise this because any of you who have lived among Muslim communities know that the strongest bond in an Islamic family is the son and the mother, not the husband and the wife. That goes right back to the sayings of Muhammad in the hadith.</p>
+
+    <p>Consider the way Jesus looks at the church, his bride. We have an eternal spouse in heaven, the Lord Jesus, and he gives meaning and value to his bride. We are not just brought into God's family. There is the most intimate relationship between God and us. In Islam, there can never be any talk of marriage and God, or of a human being called a bride, because in Islam marriage is a contract so the man can have access to the woman's body. No other text puts the value on man and woman that the Bible does.</p>
+  </section>
+
+  <section class="wrap" id="identity">
+    <div class="sect-head">
+      <span class="numeral">III"numeral">III   ·   nbsp;"numeral">III   ·   nbsp;·"numeral">III   ·   nbsp;"numeral">III   ·   nbsp;Two Identities</span>
+      <h2>In Christ, or in status</h2>
+    </div>
+
+    <p>A Christian woman's identity is solely Christ, as is a man's. It is Christ, and being made in his image, not just what we do. Have you ever thought about it? God speaks, God hears, God sits down in a throne room. The tabernacle comes down as a perfect replication of what is in the heavens. This is not just imagery. Something of us bears out God. It is why he takes on flesh, because we are made in his image.</p>
+
+    <p>In Islam, nothing in creation can have any connection with the divine. There is no description of us that can be seen in God, or of God in us. Allah is utterly other. Not so in the Bible. And that reflects down into our relationships. Our intimate relationship with God is also intimate in life, in families and in communities. The way we look at God and creation bears out on how we live, from families to church.</p>
+
+    <p>A Muslim woman's identity, however, is wrapped up in the family. Her Islamic practice gives her some value, but really her value is in whether she is married and whether she has children. In the family setup she is rarely valued simply for who she is. She is referred to as a wife, a daughter, a sister.</p>
+
+    <div class="field-note">
+      <p class="fn-label">From the field</p>
+      <p>I only got married six years ago and I do not have a biological child. I cannot have biological children. God has gifted my husband and me an adopted child from Ghana, and a granddaughter overnight three years ago. But I have not borne children, and I did not marry until six years ago. In Islam, that puts me low down as far as value is concerned. Yet do you know what is interesting? Every time I went into Muslim homes I was given complete access into multiple homes, as if I had status and value. That was the Holy Spirit opening the doors. That is what he does for all of us when we interact with Muslims. He goes right through the boundaries and divisions that Islam puts in place.</p>
+    </div>
+
+    <p>A Christian's example of how a man should be is Jesus. He is the perfect human being. A Muslim man's example of how to be a good man is Muhammad. He is the example for all men. So let us look at the texts.</p>
+  </section>
+
+  <section class="wrap" id="quran">
+    <div class="sect-head">
+      <span class="numeral">IV"numeral">IV   ·   nbsp;"numeral">IV   ·   nbsp;·"numeral">IV   ·   nbsp;"numeral">IV   ·   nbsp;Inside the Quran</span>
+      <h2>The difficult texts of Surah 2 and Surah 4</h2>
+    </div>
+
+    <p>There is a movement within Islam where Muslims are beginning to say they do not follow the hadith, the sayings of Muhammad, nor Islamic law. They are becoming Quran-only Muslims. Because of that, I want us to start with the Quran, understand what it introduces, and then see how it is expanded elsewhere. Your go-to texts for a quick overview are <span class="ref">Surah 2, 4, 33, 65 and 66</span>. The whole concept of children, orphans and slavery is taught within the teaching of marriage in Islam.</p>
+
+    <p>The Bible tells us something has gone wrong, that there is a brokenness between husband and wife. It calls it brokenness, and it calls it sin. Islam also introduces a brokenness between men and women, but not as sin, rather as something Allah rewards, or simply a fact of marital life. <span class="ref">Surah 2:25</span> talks about the reward given to believers, and you quickly realise this is addressed to men, because female partners are given to men in paradise if they obey. If you think about it, those females have no real choice in the matter.</p>
+
+    <p><span class="ref">Surah 2:223</span> introduces a terrible verse that describes women as a field to plough when and where you want. I am sorry that we go into gritty material, but it is all in the text. Amina Wadud, a modernist Muslim, says we must say no to such a verse, that there is no room for it. She is appalled, as are other Muslim feminist scholars, who argue it should not be in a holy text of God. The Bible talks about abuse a great deal, but never as what God wants. It calls it out as sin. The Mosaic law says clearly that if you rape a woman you are put to death. That is how seriously God takes abuse. In the Quran, sometimes abuse is framed as a gift, a reward. The text allows for abuse. That is the point. Not every Muslim abuses. Most of my dearest friends in London are Muslims. But the texts allow for abuse.</p>
+
+    <p>In <span class="ref">Surah 2:228</span>, men are a degree above women, a concept that comes repeatedly through the Quran. <span class="ref">Surah 2:282</span> teaches that a woman's testimony is half that of a man. <span class="ref">Surah 2:230</span> says that if a woman divorces her husband and wishes to reconcile, she must first marry another and consummate that marriage before she can return to her first husband. That is practised across Sharia law, and it is practised in the UK as we speak.</p>
+
+    <h3>Polygamy, orphans, and “what your right hand possesses”</h3>
+
+    <p>In <span class="ref">Surah 4</span> you have the polygamy verses, which also introduce the concept of orphans. As this religion expanded by the sword, many people became orphans, including girls, because most of the men were killed. So you have orphans, then marriage teaching, then the permission for men to have four wives at any one time. You can remove one and add another, so across a lifetime a man can have many wives. Except, and this is the real abuse clause, “what your right hand possesses”, the woman that you own. That exception is granted not only as a general theme but to Muhammad himself. You can read much of that in <span class="ref">Surah 33</span>.</p>
+
+    <p>Some verses seem to imply kindness to orphans, that until they reach marriageable age you give them their money. Remember, it is all a contract. When you marry, a woman receives money, and once she receives it the man has access to her body. That is the contract of marriage. There is no covenant. There is no reality of God's relationship with his people. Muslims have no category for marriage as an image of God's love for the church. So it is a wonderful conversation to have, because it challenges everything Islam teaches.</p>
+
+    <p>Muslims will sometimes use <span class="ref">Surah 4:19</span>, that you cannot inherit wives against their will. But immediately following, <span class="ref">Surah 4:24</span> makes it permissible to marry married slaves. <span class="ref">Surah 4:25</span> permits a man who lacks self-control to marry a believing bondwoman with her owner's permission. Remember, most of the texts about women in Islam are given through the eyes of a man, instructing him on how to treat the women in his life: the wives, the concubines, the sex slaves, and the non-Muslim girl and woman. And girls are included in the category of women when it comes to sexuality, which is clear from Aisha, Muhammad's child bride.</p>
+
+    <blockquote>
+      <p>If you say a man cannot be with a child, you are standing against your own prophet. That is a real dilemma for Muslims.</p>
+    </blockquote>
+
+    <p>For Muslims, even if they are appalled at the abuse of children, opposing it means opposing Muhammad. It can cause all sorts of anxiety. So not only must we be gentle and careful as we talk about these things, we must care for our Muslim friends, because sometimes their own ideology traps them into supporting abusive situations they do not want.</p>
+
+    <div class="field-note">
+      <p class="fn-label">From the field</p>
+      <p>A dear friend from Kosovo, whom we used to visit and have tea with in London, came up to my flat one day and said, “I have been reading the Quran. I have heard there are bad verses about women in it.” It was her Muslim friends who had introduced her to this. She asked me to show her the verses. So we sat down for a couple of hours, she with her Quran in her own language, I with English and Arabic, and we went through them together. She kept saying, “This is bad. This is bad. I cannot believe Allah says this.” She had never heard these verses before. And I was able to say to her, “The Lord Jesus would never teach this. He dies on a cross for this kind of behaviour. If you abuse the permission these texts give you, the Lord Jesus will hold you in judgment.” Over and over, God says how he cares for the abandoned, the widowed and the orphaned.</p>
+    </div>
+
+    <h3>Surah 4:34, and the verse on purification</h3>
+
+    <p>Most of you will know <span class="ref">Surah 4:34</span>, even if you know nothing else about Islam. It begins by saying that men excel women, that righteous women are devoutly obedient to the husband who maintains and provides for her. It then permits wives to be beaten as one of the punishments if he fears she has done wrong, after a progression: admonish her, separate from her, ignore her in the most intimate part of marriage, and then beat her until she obeys. So neglect is taught in this verse too. <span class="ref">Surah 4:128</span> later encourages wives to work it out peacefully. The Quran also concedes that a man is unable to treat his wives equally.</p>
+
+    <p>In <span class="ref">Surah 5:6</span>, an interesting verse, men going to prayer are told to purify themselves after sexual contact with a woman, and also upon contact with a woman. There is a distinction within the same verse. And if you are travelling and there is no water, you may use the dirt of the ground. I remember saying to Muslim missionaries at Speakers' Corner, “Are you telling me the dirt of the ground is more pure than me?” Because that is what it teaches. That helps you understand something of the mindset of Muslim men when they view woman.</p>
+  </section>
+
+  <section class="wrap" id="muhammad">
+    <div class="sect-head">
+      <span class="numeral">V"numeral">V   ·   nbsp;"numeral">V   ·   nbsp;·"numeral">V   ·   nbsp;"numeral">V   ·   nbsp;The House of Muhammad</span>
+      <h2>Surah 33 and the role model for all men</h2>
+    </div>
+
+    <p><span class="ref">Surah 33</span> is your go-to text to understand not only women in Islam but Muhammad's marital home and family life. It is insightful, and Allah often speaks for Muhammad here. His wives are encouraged to stay in their houses and not be seen in public. Remember, Muhammad and his family are the role model for all Muslims to follow, the example for all mankind according to Islamic teaching. Women were offering themselves to Muhammad, and the Quran says it is a privilege for him alone.</p>
+
+    <p>When Muhammad went into warfare with his men and they killed the men of the tribes, including Jewish tribes, they took the women and girls as captives. Muhammad distributed them among his men and would often take the most beautiful, or the wife of the chief, for himself. That runs right through the <em class="arabic">sira</em>, the biographies. He was allowed to postpone or take on any female he wished, with that same exception clause, the women that you own.</p>
+
+    <p>In <span class="ref">Surah 33:53</span>, the men had to ask permission to enter Muhammad's house, because, the Quran says, he is easily annoyed, and his wives were to remain behind a screen. His wives were not allowed to remarry once he died. Allah even speaks for him when Muhammad is too embarrassed to speak, including when he wants to marry his adopted son's wife. Allah chides Muhammad, makes it so that the adopted son divorces the wife, and then Muhammad marries her. This is one of the reasons there is no adoption in Islam.</p>
+
+    <p>There is discussion in <span class="ref">Surah 65</span>, specifically verse 4, about whether pre-pubescent girls can be married, because it speaks of a woman waiting three months after divorce to confirm she is not pregnant, including women who have not yet begun menstruation. That is a troubling text. Traditional teaching would say a child could be married, with some saying she must begin menstruation before the marriage is consummated. Muhammad consummated his marriage with Aisha when she was about nine years old.</p>
+
+    <blockquote>
+      <p>This “get out” clause of what your right hand possesses is in play wherever there are Muslim communities. It gives men power for the sex slave.</p>
+    </blockquote>
+
+    <p>Look at the movements of Boko Haram, al-Shabaab, al-Qaeda and ISIS, and at the grooming gangs of Europe, seen also from Egypt through to Pakistan. The clause runs through them. <span class="ref">Surah 4:24–25</span> permits a man to take a married woman that he owns, or to marry a believing bondwoman with the owner's permission. Temporary marriages are also in play: <em class="arabic">mut'ah</em> among Shia Muslims today, and <em class="arabic">misyar</em> among Sunni Muslims. You can pay a contract for three hours of a woman's body and then divorce her in the Muslim way. <span class="ref">Surah 23:1–6</span> tells believers to guard their chastity except with their wives or their bondwomen. So a man can keep a girl on the side, and Allah does not count it as unchaste. Do you see the problem?</p>
+
+    <p>The way our theology teaches us about man and woman plays out in how we live. It either takes us to a holy way with God and a holy interaction with each other, or it causes great abuse across our lands. In <span class="ref">Surah 70:30</span>, men are protected from judgment if they are chaste, yet they may still have slave women. It is not in one place. It is over and over again, and it is exemplified in the life of Muhammad.</p>
+  </section>
+
+  <section class="wrap" id="jahiliyyah">
+    <div class="sect-head">
+      <span class="numeral">VI"numeral">VI   ·   nbsp;"numeral">VI   ·   nbsp;·"numeral">VI   ·   nbsp;"numeral">VI   ·   nbsp;Jahiliyyah</span>
+      <h2>The age of ignorance, and where the solution truly lies</h2>
+    </div>
+
+    <p>Muslim apologists and scholars writing on family life and sexual ethics will appeal to a concept called <em class="arabic">jahiliyyah</em>. The idea is that Islam came into a time of pagan, idolatrous immorality and set itself up as the framework guiding men and women against that age of ignorance. It is a huge theology in Islamic teaching. The age of ignorance is understood either as the era before Muhammad, or as Western secular modernity.</p>
+
+    <p>Now, we are Christians. We accept there is <em class="arabic">jahiliyyah</em> in Western society. We live it, we see it, we hate it. Every time you walk out on the street you see it. We understand how the Muslim thinks here. The difference is that the solution is not found in Islam.</p>
+
+    <blockquote>
+      <p>The solution is not found in Islam. The solution is found in Yahweh's view of you and me.</p>
+    </blockquote>
+
+    <p>Islam brought in some formulations for how men and women interact, but it theologised behaviour that causes harm. It can pervert the mind of a man, and it can cause abuse and control of the woman.</p>
+
+    <div class="field-note">
+      <p class="fn-label">From the field</p>
+      <p>There was a Muslim community in Central Asia I became immersed in. They asked me to teach English in their homes, and I was open from the start that I am a Christian. The second time I went, the mother, who knows no English, managed to say, “Allah, no son. Allah, no son.” So through translation we were able to talk with her sons about the Son of God.</p>
+      <p>One of the brothers, twenty years old, came in one day deeply stressed. He had slept with someone and could not tell his family because of the shame. He was confiding in me, his big sister, while breaking his fast. He kept saying, “This is good for Allah, this is good for Allah.” I asked him how not eating for a day replaces what he had just done, the damage to his body and hers, the immorality in his head. He had no answer. I said, “But I know the One who can break the power of that sin in your life.” He said, “Oh, Jesus. I know Jesus.” He had not accepted him yet, but I was able to say, yes, it is Jesus who breaks the power of that sin.</p>
+      <p>Months later he was getting married to his first cousin. It was not a love match, and he understood it could cause health problems for the children. I asked what would happen if his wife could not give him a child, since she had health problems. He said, “Do not worry, I will just take a second one so I can have a child.” His father has four wives: one in London who was my friend, one in Birmingham, one in Central Asia, and another on the continent. That is his role model. His religion has made unfaithfulness feel natural to him. His texts teach him to be unfaithful to his wife. But there is nothing in Islamic marriage that reflects our relationship with God, which is all faithfulness.</p>
+    </div>
+  </section>
+
+  <section class="wrap" id="defence">
+    <div class="sect-head">
+      <span class="numeral">VII"numeral">VII   ·   nbsp;"numeral">VII   ·   nbsp;·"numeral">VII   ·   nbsp;"numeral">VII   ·   nbsp;The Verses Used in Defence</span>
+      <h2>Surah 4:1 and Surah 33:35</h2>
+    </div>
+
+    <p>There are two key verses Muslims turn to in order to show a value or ennoblement of woman. The claim is that Islam set in motion a movement toward the emancipation of women, even if it does not look that way today.</p>
+
+    <p><span class="ref">Surah 4:1</span> is the foundational text many scholars use, trying to equate it with Genesis 1: “O humanity, be mindful of your Lord, who created you from a single soul, and from it created its mate, and through both spread countless men and women.” It is ambiguous, and translations differ, but the theology drawn from it is that we all come from the same origin, so there is value there. The problem is that two verses later, God has already introduced the get-out clause of the slave woman, the woman that you own, and the permission for multiple wives. Women are born into a theology that allows their husbands to take other women, which breaks a woman's heart.</p>
+
+    <p>A note of caution. In <span class="ref">Surah 4:34</span> the Arabic permits a man to beat his wife until she obeys. In some modern English translations on the book tables, that clause has been softened or removed. Be aware of it. Go back to the Arabic. Muslim men will say the beating is light, like a stick or grass, but there is no evidence of that, and it is a progression of punishments ending in beating until she obeys.</p>
+
+    <p>The other key verse is <span class="ref">Surah 33:35</span>, foundational for progressive and moderate Muslims. It reads: “Indeed, the Muslim men and women, the believing men and women, the obedient men and women, the truthful men and women, the patient men and women, the humble men and women, the charitable men and women, the fasting men and women, the men and women who guard their chastity, and the men and women who remember Allah often, for them Allah has prepared forgiveness and a great reward.”</p>
+
+    <p>So Muslims go to this verse to claim equality between men and women. And I say, yes, in your <em class="arabic">deen</em>, in how you perform the rituals of Islam with right intention, there does seem to be an equality. But in life, a few verses later in the same Surah 33, in how a man treats his women, and for Muhammad it was many women and his sex slaves, there is no equality, no value, no protection. Muhammad could take whatever woman he wanted and remove whatever woman he wanted, with twelve at any one time, including sex slaves.</p>
+  </section>
+
+  <section class="wrap" id="betterway">
+    <div class="sect-head">
+      <span class="numeral">VIII"numeral">VIII   ·   nbsp;"numeral">VIII   ·   nbsp;·"numeral">VIII   ·   nbsp;"numeral">VIII   ·   nbsp;A Better Way</span>
+      <h2>Women in the story of God</h2>
+    </div>
+
+    <p>We must end with biblical thought. Start with the Bible, and end with the Bible. When I was deep in this material for my thesis, I had to keep going back to the Word of God, because I was dealing with material that is dirty, that harms, and that still harms today. Muslims are victims of this. Do not hate them.</p>
+
+    <blockquote>
+      <p>They are victims of their theology. They do not know our Lord, who has redeemed them and rescued them from it.</p>
+    </blockquote>
+
+    <p>They might have chosen it, or they might simply have grown up in it, like my brothers from Central Asia, who knew no better until a Christian showed them a better way. That is why we learn this. Not to shame Muslims, not to bring Islam down, but to introduce Muslims to Jesus. There is no point if you are not introducing Muslims to Jesus, and no point if you are not living with Jesus and for Jesus.</p>
+
+    <p>So we end with his view, because his view challenges all of us, Muslim or not, misguided Christian or Christian on fire. Look at how God meets, values and works through women across the whole of Scripture.</p>
+
+    <h3>In the Old Testament</h3>
+
+    <div class="register">
+      <div class="entry">
+        <div class="name">Male and female</div>
+        <div class="gloss">Made in God's image, both bearing him out. <span class="ref">Genesis 1:27–28</span></div>
+      </div>
+      <div class="entry">
+        <div class="name">Eve</div>
+        <div class="gloss">Hears the voice of the Lord walking in the garden. The promise of the Saviour comes from her seed. <span class="ref">Genesis 3:15</span></div>
+      </div>
+      <div class="entry">
+        <div class="name">Sarah and Hagar</div>
+        <div class="gloss">God shares a meal with Abraham and Sarah, and speaks with the rejected Hagar, who sees God. <span class="ref">Genesis 18, 16</span></div>
+      </div>
+      <div class="entry">
+        <div class="name">Potiphar's wife</div>
+        <div class="gloss">A warning the Bible names plainly. Joseph does right and runs a mile.</div>
+      </div>
+      <div class="entry">
+        <div class="name">Miriam</div>
+        <div class="gloss">Called a prophetess, leading the people in worship beside Aaron and Moses. <span class="ref">Exodus 15:20, Micah 6:4</span></div>
+      </div>
+      <div class="entry">
+        <div class="name">Rahab</div>
+        <div class="gloss">A repentant prostitute, brought into the line of Jesus.</div>
+      </div>
+      <div class="entry">
+        <div class="name">Abigail</div>
+        <div class="gloss">Did right when her husband did not.</div>
+      </div>
+      <div class="entry">
+        <div class="name">Hannah</div>
+        <div class="gloss">In a polygamous marriage and great shame, yet God hears her cries. Her son Samuel is given back to the Lord's work.</div>
+      </div>
+      <div class="entry">
+        <div class="name">Bathsheba</div>
+        <div class="gloss">An abuse case, and yet reinstated. The line of Jesus comes through her.</div>
+      </div>
+      <div class="entry">
+        <div class="name">Huldah</div>
+        <div class="gloss">A prophetess through whom God spoke to a king.</div>
+      </div>
+      <div class="entry">
+        <div class="name">Deborah</div>
+        <div class="gloss">Leads her people into victory, trusted by the male leaders working with her.</div>
+      </div>
+      <div class="entry">
+        <div class="name">Samson's mother</div>
+        <div class="gloss">Sees God twice, the One we know to be Jesus.</div>
+      </div>
+      <div class="entry">
+        <div class="name">Ruth</div>
+        <div class="gloss">Faithfulness rewarded, woven into the story of redemption.</div>
+      </div>
+      <div class="entry">
+        <div class="name">The woman of Proverbs 31</div>
+        <div class="gloss">Entrepreneur, homemaker, publicly respected. Strength and honour are her clothing.</div>
+      </div>
+      <div class="entry">
+        <div class="name">The Bride</div>
+        <div class="gloss">The church as the bride of Christ. <span class="ref">Isaiah 54, Jeremiah 3</span></div>
+      </div>
+    </div>
+
+    <h3>In the New Testament</h3>
+
+    <div class="register">
+      <div class="entry">
+        <div class="name">Mary</div>
+        <div class="gloss">Central to God's salvation plan.</div>
+      </div>
+      <div class="entry">
+        <div class="name">Elizabeth</div>
+        <div class="gloss">John, filled with the Holy Spirit in her womb, leaps when that child meets Jesus.</div>
+      </div>
+      <div class="entry">
+        <div class="name">Mary of Bethany</div>
+        <div class="gloss">Chooses to learn from Jesus, a place culture reserved for men.</div>
+      </div>
+      <div class="entry">
+        <div class="name">Martha</div>
+        <div class="gloss">Runs to Jesus in real faith, knowing he can heal her brother Lazarus.</div>
+      </div>
+      <div class="entry">
+        <div class="name">The women who funded the ministry</div>
+        <div class="gloss">Leaders and providers who financed Jesus' work.</div>
+      </div>
+      <div class="entry">
+        <div class="name">The unclean and the immoral</div>
+        <div class="gloss">Jesus touches and heals them. They are not unclean to him. Muhammad could not heal them.</div>
+      </div>
+      <div class="entry">
+        <div class="name">The Samaritan woman</div>
+        <div class="gloss">A non-Jew, considered unclean and immoral. Jesus makes her one of the first evangelists.</div>
+      </div>
+    </div>
+
+    <p>On love and submission in marriage, on respect and sacrifice, remember who God is and how he values us. These texts can be abused by Christians too, so do not read Allah into them. A godly woman has a gentle and calm spirit. She might not be quiet. When I was at Bible school, young men would say they wanted a gentle and quiet wife, and I thought I had no chance. As I grew older I realised it is not about being quiet. My husband is Nordic, the quietest man in the room. It is the heart that has to be gentle and quiet. And women are modest not so that men do not have problems, as Islam frames it, where you are then blamed if they do, but simply because we are holy women of God.</p>
+  </section>
+
+  <section class="wrap" id="closing">
+    <div class="sect-head">
+      <span class="numeral">IX"numeral">IX   ·   nbsp;"numeral">IX   ·   nbsp;·"numeral">IX   ·   nbsp;"numeral">IX   ·   nbsp;The Closing Word</span>
+      <h2>Charm is deceitful, but she who fears the Lord</h2>
+    </div>
+
+    <p>And it ends with heaven, for all men and women together as brothers and sisters, the bride of Christ at the marriage feast of the Lamb. We want every Muslim in this world to be part of the bride of Christ.</p>
+
+    <blockquote>
+      <p>Strength and honour are her clothing. Charm is deceitful, and beauty is passing. But a woman who fears the Lord, she shall be praised.</p>
+      <cite>Proverbs 31</cite>
+    </blockquote>
+
+    <p>She opens her mouth with wisdom, and on her tongue is the law of kindness. That is talking about women, and it is also talking about the church. Amen.</p>
+
+    <hr class="divider">
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="colophon"><strong>Foundations of Faith</strong>. A biblical perspective on women in Islam.<br>
+    A conference teaching paper, formatted for reading. Scripture references are the speaker's own. Quranic surah and verse citations follow the address as delivered and should be verified against the Arabic before public use.</p>
+  </div>
+</footer>
+
+</body>
+</html>
