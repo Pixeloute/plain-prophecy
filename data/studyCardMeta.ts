@@ -5,7 +5,7 @@
 
 export interface StudyCardMeta {
   emoji: string;
-  accentColor: string; // dark hex — card background tint
+  accentColor: string; // dark hex, card background tint
   isNew?: boolean;
   shortDescription: string; // ≤ 90 chars
 }
@@ -15,19 +15,19 @@ export const studyCardMeta: Record<string, StudyCardMeta> = {
     emoji: "❤️",
     accentColor: "#0f0a0a",
     shortDescription:
-      "Before rules, before rituals — God loved us first. The foundation of everything.",
+      "Before rules, before rituals, God loved us first. The foundation of everything.",
   },
   "righteousness-by-faith": {
     emoji: "🕊️",
     accentColor: "#0a0a12",
     shortDescription:
-      "Righteousness is not achieved, it's received. A gift through faith in Jesus Christ.",
+      "Righteousness is not achieved. You receive it. A gift through faith in Jesus Christ.",
   },
   "the-resurrection": {
     emoji: "🌅",
     accentColor: "#0a0d0a",
     shortDescription:
-      "The empty tomb is God's 'Amen' to Christ's 'It is finished.' Death defeated forever.",
+      "The empty tomb is God's 'Amen' to Christ's 'It is finished.' Death is defeated forever.",
   },
   "jesus-at-the-centre": {
     emoji: "✝️",
@@ -52,14 +52,14 @@ export const studyCardMeta: Record<string, StudyCardMeta> = {
     emoji: "🗿",
     accentColor: "#0d0b1f",
     shortDescription:
-      "The statue that maps 4,000 years of world history — and where it ends.",
+      "The statue that maps 4,000 years of world history, and where it ends.",
   },
   "daniel-7": {
     emoji: "🦁",
     accentColor: "#1a0808",
     isNew: false,
     shortDescription:
-      "Four predatory empires seen from heaven's perspective — then the Son of Man arrives.",
+      "Four predatory empires seen from heaven's perspective. Then the Son of Man arrives.",
   },
   "2300-days": {
     emoji: "🐏",
@@ -77,7 +77,7 @@ export const studyCardMeta: Record<string, StudyCardMeta> = {
     emoji: "📜",
     accentColor: "#0f0a1f",
     shortDescription:
-      "The prophetic keystone of the Bible — 70 weeks that point to one Man.",
+      "The prophetic keystone of the Bible. 70 weeks that point to one Man.",
   },
   "daniel-12": {
     emoji: "🌅",
@@ -90,7 +90,7 @@ export const studyCardMeta: Record<string, StudyCardMeta> = {
     emoji: "🔏",
     accentColor: "#100a1a",
     shortDescription:
-      "The Lamb opens seven seals — mapping the spiritual history of the church age.",
+      "The Lamb opens seven seals, mapping the spiritual history of the church age.",
   },
   "revelation-13": {
     emoji: "🐉",
@@ -103,25 +103,25 @@ export const studyCardMeta: Record<string, StudyCardMeta> = {
     accentColor: "#05100f",
     isNew: true,
     shortDescription:
-      "The final gospel call before Christ returns — three angels, three urgent messages.",
+      "The final gospel call before Christ returns. Three angels, three urgent messages.",
   },
   "antichrist-development": {
     emoji: "🎭",
     accentColor: "#150505",
     isNew: true,
     shortDescription:
-      "The mystery of lawlessness — not a figure from horror movies, but a spirit from within.",
+      "The mystery of lawlessness. Not a figure from horror movies, but a spirit from within.",
   },
   "suffering-servant": {
     emoji: "🔥",
     accentColor: "#1a0505",
     shortDescription:
-      "The most detailed portrait of Christ's death — written 700 years before Calvary.",
+      "The most detailed portrait of Christ's death, written 700 years before Calvary.",
   },
   "first-promise": {
     emoji: "🐍",
     accentColor: "#050a05",
-    shortDescription: "The first prophecy in Scripture — a seed who would crush the serpent's head.",
+    shortDescription: "The first prophecy in Scripture. A seed who would crush the serpent's head.",
   },
   "seventy-weeks": {
     emoji: "⌛",
@@ -131,29 +131,29 @@ export const studyCardMeta: Record<string, StudyCardMeta> = {
   "born-in-bethlehem": {
     emoji: "⭐",
     accentColor: "#0a0805",
-    shortDescription: "A ruler from an obscure village — predicted 700 years in advance.",
+    shortDescription: "A ruler from an obscure village, predicted 700 years in advance.",
   },
   "virgin-shall-conceive": {
     emoji: "👼",
     accentColor: "#05050f",
-    shortDescription: "Immanuel — God with us. The sign that would change everything.",
+    shortDescription: "Immanuel, God with us. The sign that would change everything.",
   },
   "triumphal-entry-prophecy": {
     emoji: "🫏",
     accentColor: "#050a0a",
     shortDescription:
-      "A king on a donkey — the exact scene of Palm Sunday, written centuries before Rome.",
+      "A king on a donkey. The exact scene of Palm Sunday, written centuries before Rome.",
   },
   "thirty-pieces-of-silver": {
     emoji: "🪙",
     accentColor: "#0d0d05",
-    shortDescription: "The precise betrayal price — and what would happen to the money afterward.",
+    shortDescription: "The precise betrayal price, and what would happen to the money afterward.",
   },
   "forsaken-one": {
     emoji: "😭",
     accentColor: "#12050a",
     shortDescription:
-      "David's cry that Christ would echo from the cross — hands and feet pierced.",
+      "David's cry that Christ would echo from the cross. Hands and feet pierced.",
   },
   "risen-lord": {
     emoji: "🌄",
@@ -164,13 +164,13 @@ export const studyCardMeta: Record<string, StudyCardMeta> = {
   "priest-forever": {
     emoji: "👑",
     accentColor: "#0a050f",
-    shortDescription: "The most-cited OT passage in the NT — a priest and king on an eternal throne.",
+    shortDescription: "The most-cited OT passage in the NT. A priest and king on an eternal throne.",
   },
   "godhead-views-compared": {
     emoji: "✦",
     accentColor: "#0a0d1a",
     isNew: true,
-    shortDescription: "Catholic, Non-Trinitarian, and Heavenly Trio — three views of God's nature, compared side by side.",
+    shortDescription: "Catholic, Non-Trinitarian, and Heavenly Trio: three views of God's nature, compared side by side.",
   },
 };
 

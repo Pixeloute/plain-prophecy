@@ -18,14 +18,29 @@ Help young people (16–24) understand Christ-centred biblical prophecy in a way
 
 ---
 
-## Voice & Tone
+## Writing Rules (MANDATORY for all written content)
 
-**Source of Truth:** [writing-guidelines.md](file:///Users/laithwallace/CursorProjectDev/Plain%20Prophecy/docs/writing-guidelines.md) (Automated by `.cursor/rules/writing-guidelines.mdc`)
+**Governing source of truth:** [docs/WRITING-RULES.md](docs/WRITING-RULES.md)
+
+Before writing or editing ANY content that appears on the site - study text, `christCentre` Christ Pivots, lessons, doctrine pages, blog posts, MDX articles, UI microcopy, and any strings in `/data/*.ts` or `/content/` - you MUST read [docs/WRITING-RULES.md](docs/WRITING-RULES.md) in full and apply every rule in it. This is not optional and is not limited to blog posts.
+
+Hard rules that apply even without reopening the file:
+- Never use em dashes (—). Use commas, colons, or periods. To connect two ideas, prefer a period.
+- No markdown, asterisks, hashtags, or semicolons inside prose content.
+- Active voice. Short, direct sentences. Address the reader as "you"/"your".
+- Avoid the banned-word list in WRITING-RULES.md (e.g. just, very, really, that, powerful, testament, realm, tapestry, delve, unveil, pivotal, landscape, in conclusion).
+- Every piece cites Scripture and lands on a Christ Pivot.
+
+After writing or editing content, self-check the output against WRITING-RULES.md and confirm zero em dashes before considering the task done.
+
+## Voice & Tone
 
 - **Christ-centred & Historicist**: Always anchor to Jesus, using the Reformation consensus.
 - **Conversational Depth**: Clear English for 16–24 year olds without losing biblical rigour.
 - **Hook Immediately**: Open inside the scene; skip introductions.
 - **No Fear**: Wonder-based, not anxiety-driven.
+
+_Note: `docs/writing-guidelines.md` and `.cursor/rules/writing-guidelines.mdc` are earlier voice/tone notes. `docs/WRITING-RULES.md` is the authority and wins wherever they overlap._
 
 ## Content Rules
 

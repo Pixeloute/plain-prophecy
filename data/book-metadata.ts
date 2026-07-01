@@ -95,12 +95,12 @@ for (const book of BOOKS) {
   ABBR_TO_INDEX[book.abbr] = book.index
 }
 
-// Index of the first NT book (Matthew) — used for OT/NT divider x-position
+// Index of the first NT book (Matthew), used for OT/NT divider x-position
 export const NT_START_BOOK_INDEX = 39
 
 /**
  * Resolve a verse index (0–31101) back to a human-readable reference.
- * Returns { book, chapter, verse } — all 1-based for chapter and verse.
+ * Returns { book, chapter, verse }, all 1-based for chapter and verse.
  * Requires the chapters array from the runtime CrossReferenceData.
  */
 export function resolveVerseIndex(

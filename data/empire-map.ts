@@ -1,5 +1,5 @@
 // data/empire-map.ts
-// Historical Empire Map — geographic data for Daniel 2 empire progression
+// Historical Empire Map: geographic data for Daniel 2 empire progression
 //
 // Territory coordinates are real lat/lng points derived from historical sources.
 // They were originally computed from a schematic SVG canvas using:
@@ -27,7 +27,7 @@ export interface EmpireMapEntry {
   capital: string
   /** Position of the capital city on the map */
   capitalCoords: LatLngPoint
-  color: string       // territory fill — matches parallels.ts empireRows
+  color: string       // territory fill, matches parallels.ts empireRows
   glowColor: string
   textColor: 'dark' | 'light'
   bibleRef: string
@@ -42,7 +42,7 @@ export interface EmpireMapEntry {
 
 // ─── Empire territory polygons ────────────────────────────────────────────────
 
-// Babylon — Mesopotamia: modern Iraq, eastern Syria, Kuwait
+// Babylon, Mesopotamia: modern Iraq, eastern Syria, Kuwait
 const BABYLON: LatLngPoint[] = [
   { lat: 35.1, lng: 36.4 }, { lat: 37.9, lng: 41.0 }, { lat: 38.2, lng: 43.0 },
   { lat: 38.5, lng: 46.3 }, { lat: 37.4, lng: 48.1 }, { lat: 35.6, lng: 49.1 },
@@ -51,7 +51,7 @@ const BABYLON: LatLngPoint[] = [
   { lat: 31.4, lng: 36.9 }, { lat: 33.3, lng: 36.1 },
 ]
 
-// Medo-Persia — Egypt/Libya through Anatolia to the Indus River
+// Medo-Persia, Egypt/Libya through Anatolia to the Indus River
 const MEDO_PERSIA: LatLngPoint[] = [
   { lat: 32.4, lng: 20.3 }, { lat: 40.9, lng: 21.7 }, { lat: 43.0, lng: 26.0 },
   { lat: 43.3, lng: 29.2 }, { lat: 43.3, lng: 35.5 }, { lat: 43.7, lng: 41.1 },
@@ -63,7 +63,7 @@ const MEDO_PERSIA: LatLngPoint[] = [
   { lat: 32.0, lng: 25.0 },
 ]
 
-// Greece (Alexander) — from mainland Greece all the way to the Indus
+// Greece (Alexander), from mainland Greece all the way to the Indus
 const GREECE: LatLngPoint[] = [
   { lat: 36.7, lng: 19.8 }, { lat: 41.4, lng: 21.9 }, { lat: 43.2, lng: 26.1 },
   { lat: 43.3, lng: 29.2 }, { lat: 43.3, lng: 35.5 }, { lat: 43.7, lng: 41.1 },
@@ -75,7 +75,7 @@ const GREECE: LatLngPoint[] = [
   { lat: 32.0, lng: 25.0 }, { lat: 32.4, lng: 20.3 }, { lat: 34.1, lng: 17.8 },
 ]
 
-// Rome — the full Mediterranean Rim: Portugal to Levant, Rhine to Sahara
+// Rome, the full Mediterranean Rim: Portugal to Levant, Rhine to Sahara
 const ROME: LatLngPoint[] = [
   { lat: 38.7, lng: -8.7 }, { lat: 43.4, lng: -7.7 }, { lat: 47.7, lng: -5.5 },
   { lat: 49.7, lng: -2.4 }, { lat: 51.1, lng:  2.2 }, { lat: 51.2, lng:  6.4 },
@@ -89,7 +89,7 @@ const ROME: LatLngPoint[] = [
   { lat: 35.7, lng: -7.7 },
 ]
 
-// Divided Rome — same footprint split at the Diocletianic administrative divide (~lon 18.5)
+// Divided Rome, same footprint split at the Diocletianic administrative divide (~lon 18.5)
 // West: Hispania + Gaul + Italy
 const DIVIDED_WEST: LatLngPoint[] = [
   { lat: 38.7, lng: -8.7 }, { lat: 43.4, lng: -7.7 }, { lat: 47.7, lng: -5.5 },
@@ -124,7 +124,7 @@ export const empireMapData: EmpireMapEntry[] = [
     bibleRef: 'Daniel 2:38',
     bibleText: '"You are the head of gold."',
     historicNote:
-      'The Babylonian Empire dominated the ancient Near East from its capital on the Euphrates. Under Nebuchadnezzar II it stretched from the Persian Gulf through Mesopotamia and the Levant — the richest and most absolute power of its age.',
+      'The Babylonian Empire dominated the ancient Near East from its capital on the Euphrates. Under Nebuchadnezzar II it stretched from the Persian Gulf through Mesopotamia and the Levant. It was the richest and most absolute power of its age.',
     coordinates: BABYLON,
     statueSection: 'Gold',
   },
@@ -140,7 +140,7 @@ export const empireMapData: EmpireMapEntry[] = [
     bibleRef: 'Daniel 2:39',
     bibleText: '"After you shall arise another kingdom."',
     historicNote:
-      'The Achaemenid Persian Empire became the largest the ancient world had yet seen — stretching from Greece and Egypt in the west to the Indus River in the east. More than two million square miles under one throne.',
+      'The Achaemenid Persian Empire became the largest the ancient world had yet seen, stretching from Greece and Egypt in the west to the Indus River in the east. More than two million square miles under one throne.',
     coordinates: MEDO_PERSIA,
     statueSection: 'Silver',
   },
@@ -156,7 +156,7 @@ export const empireMapData: EmpireMapEntry[] = [
     bibleRef: 'Daniel 2:39',
     bibleText: '"A third kingdom of bronze, which shall rule over all the earth."',
     historicNote:
-      "Alexander the Great conquered the Persian Empire in just nine years. By 323 BC his territory stretched from Greece to the Indus — farther east than any Western army had marched. When he died aged 32, his four generals divided the world between them.",
+      "Alexander the Great conquered the Persian Empire in nine years. By 323 BC his territory stretched from Greece to the Indus, farther east than any Western army had marched. When he died aged 32, his four generals divided the world between them.",
     coordinates: GREECE,
     statueSection: 'Bronze',
   },
@@ -170,9 +170,9 @@ export const empireMapData: EmpireMapEntry[] = [
     glowColor: '#64748b',
     textColor: 'light',
     bibleRef: 'Daniel 2:40',
-    bibleText: '"A fourth kingdom, strong as iron — it shall break and crush all these."',
+    bibleText: '"A fourth kingdom, strong as iron. It shall break and crush all these."',
     historicNote:
-      'Rome encircled the entire Mediterranean Sea — which the Romans called Mare Nostrum, "our sea." At its peak, the Roman Empire bound more of the ancient world together under a single power than any empire before or since.',
+      'Rome encircled the entire Mediterranean Sea, which the Romans called Mare Nostrum, "our sea." At its peak, the Roman Empire bound more of the ancient world together under a single power than any empire before or since.',
     coordinates: ROME,
     statueSection: 'Iron',
   },
@@ -180,7 +180,7 @@ export const empireMapData: EmpireMapEntry[] = [
     id: 'divided',
     name: 'Divided Europe',
     era: 'AD 476 – present',
-    capital: 'No single capital — never reunited',
+    capital: 'No single capital, never reunited',
     capitalCoords: { lat: 48.8, lng: 2.3 },
     color: '#8A6A5A',
     glowColor: '#78716c',
@@ -188,7 +188,7 @@ export const empireMapData: EmpireMapEntry[] = [
     bibleRef: 'Daniel 2:41–43',
     bibleText: '"The kingdom shall be divided… iron mixed with clay."',
     historicNote:
-      'When the Western Roman Empire fell in 476 AD it shattered into a patchwork of Germanic kingdoms — Franks, Visigoths, Ostrogoths, Lombards. Every attempt to reunite Europe under one ruler — Charlemagne, Napoleon, Hitler — has failed. Exactly as Daniel foresaw.',
+      'When the Western Roman Empire fell in 476 AD it shattered into a patchwork of Germanic kingdoms: Franks, Visigoths, Ostrogoths, Lombards. Every attempt to reunite Europe under one ruler, from Charlemagne to Napoleon to Hitler, has failed. Exactly as Daniel foresaw.',
     coordinates: ROME,
     subCoordinates: [DIVIDED_WEST, DIVIDED_EAST],
     statueSection: 'Iron & Clay',
@@ -205,7 +205,7 @@ export const empireMapData: EmpireMapEntry[] = [
     bibleRef: 'Daniel 2:44',
     bibleText: '"God will set up a kingdom that shall never be destroyed."',
     historicNote:
-      'The stone cut without hands — not built by any human dynasty — strikes the statue and fills the whole earth. This is the point every empire in Daniel 2 has been building toward: not another king in the sequence, but a divine kingdom that ends all human kingdoms forever.',
+      'The stone cut without hands, not built by any human dynasty, strikes the statue and fills the whole earth. This is the point every empire in Daniel 2 has been building toward: not another king in the sequence, but a divine kingdom that ends all human kingdoms forever.',
     coordinates: [],
     statueSection: 'Stone',
   },

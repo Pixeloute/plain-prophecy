@@ -1,4 +1,4 @@
-// The Christ Thread — curated messianic connections.
+// The Christ Thread: curated messianic connections.
 // This is theological curation, NOT algorithmic. These connections are the source of truth.
 // Format: OSIS verse references (e.g. "Dan.9.25", "Luk.3.1")
 // Used by: Christ Thread filter mode + ConnectionDetail panel + ShareCard.
@@ -19,7 +19,7 @@ export const CHRIST_THREAD: ChristThreadConnection[] = [
   {
     from: 'Ps.22.1',
     to: 'Matt.27.46',
-    label: 'My God, My God — the cry from the cross',
+    label: 'My God, My God. The cry from the cross',
     gapYears: 1000,
     type: 'prophecy_fulfilment',
     fromText: '"My God, my God, why have you forsaken me? Why are you so far from saving me, so far from my cries of anguish?"',
@@ -46,7 +46,7 @@ export const CHRIST_THREAD: ChristThreadConnection[] = [
   {
     from: 'Isa.9.6',
     to: 'Luke.1.32',
-    label: 'Son given — throne of David',
+    label: 'Son given, throne of David',
     gapYears: 720,
     type: 'prophecy_fulfilment',
     fromText: '"For to us a child is born, to us a son is given; and the government shall be upon his shoulder, and his name shall be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace."',
@@ -82,7 +82,7 @@ export const CHRIST_THREAD: ChristThreadConnection[] = [
   {
     from: 'Dan.7.13',
     to: 'Rev.1.7',
-    label: 'Coming with clouds — every eye shall see',
+    label: 'Coming with clouds, every eye shall see',
     gapYears: 645,
     type: 'prophecy_fulfilment',
     fromText: '"I saw in the night visions, and behold, with the clouds of heaven there came one like a son of man."',
@@ -100,7 +100,7 @@ export const CHRIST_THREAD: ChristThreadConnection[] = [
   {
     from: 'Dan.9.26',
     to: 'John.12.12',
-    label: '70 Weeks — the Anointed One cut off',
+    label: '70 Weeks, the Anointed One cut off',
     gapYears: 483,
     type: 'prophecy_fulfilment',
     fromText: '"And after the sixty-two weeks, an anointed one shall be cut off and shall have nothing."',
@@ -109,7 +109,7 @@ export const CHRIST_THREAD: ChristThreadConnection[] = [
   {
     from: 'Mic.5.2',
     to: 'Matt.2.6',
-    label: 'Bethlehem — ruler from ancient times',
+    label: 'Bethlehem, ruler from ancient times',
     gapYears: 710,
     type: 'prophecy_fulfilment',
     fromText: '"But you, O Bethlehem Ephrathah, who are too little to be among the clans of Judah, from you shall come forth for me one who is to be ruler in Israel, whose coming forth is from of old, from ancient days."',
@@ -147,7 +147,7 @@ export const CHRIST_THREAD: ChristThreadConnection[] = [
   {
     from: 'Gen.22.2',
     to: 'John.3.16',
-    label: "Isaac the sacrifice — the Father's offering",
+    label: "Isaac the sacrifice, the Father's offering",
     gapYears: 1950,
     type: 'typological_shadow',
     fromText: '"He said, Take your son, your only son Isaac, whom you love, and go to the land of Moriah, and offer him there as a burnt offering."',
@@ -156,7 +156,7 @@ export const CHRIST_THREAD: ChristThreadConnection[] = [
   {
     from: 'Exod.12.13',
     to: '1Cor.5.7',
-    label: 'The Passover Lamb — Christ our Passover',
+    label: 'The Passover Lamb, Christ our Passover',
     gapYears: 1450,
     type: 'typological_shadow',
     fromText: '"The blood shall be a sign for you, on the houses where you are. And when I see the blood, I will pass over you."',
@@ -165,7 +165,7 @@ export const CHRIST_THREAD: ChristThreadConnection[] = [
   {
     from: 'Num.21.9',
     to: 'John.3.14',
-    label: 'Bronze Serpent lifted up — the Son of Man lifted up',
+    label: 'Bronze Serpent lifted up, the Son of Man lifted up',
     gapYears: 1440,
     type: 'typological_shadow',
     fromText: '"So Moses made a bronze serpent and set it on a pole. And if a serpent bit anyone, he would look at the bronze serpent and live."',
@@ -174,7 +174,7 @@ export const CHRIST_THREAD: ChristThreadConnection[] = [
   {
     from: 'Lev.16.15',
     to: 'Heb.9.12',
-    label: 'Day of Atonement — eternal redemption secured',
+    label: 'Day of Atonement, eternal redemption secured',
     gapYears: 1400,
     type: 'typological_shadow',
     fromText: '"He shall kill the goat of the sin offering that is for the people and bring its blood inside the veil and do with its blood as he did with the blood of the bull."',
@@ -183,7 +183,7 @@ export const CHRIST_THREAD: ChristThreadConnection[] = [
   {
     from: 'Jonah.1.17',
     to: 'Matt.12.40',
-    label: "Jonah's three days — the sign of the Son of Man",
+    label: "Jonah's three days, the sign of the Son of Man",
     gapYears: 760,
     type: 'typological_shadow',
     fromText: '"And the LORD appointed a great fish to swallow up Jonah. And Jonah was in the belly of the fish three days and three nights."',
@@ -192,7 +192,7 @@ export const CHRIST_THREAD: ChristThreadConnection[] = [
   {
     from: '2Sam.7.12',
     to: 'Luke.1.32',
-    label: 'Davidic Covenant — throne forever',
+    label: 'Davidic Covenant, throne forever',
     gapYears: 990,
     type: 'typological_shadow',
     fromText: '"When your days are fulfilled and you lie down with your fathers, I will raise up your offspring after you, who shall come from your body, and I will establish his kingdom."',

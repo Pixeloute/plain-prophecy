@@ -1,6 +1,6 @@
 // Study challenge questions for the /connections ChallengeModal.
 // Three types: FindIt, CountIt, NameIt.
-// Theologically vetted — no futurist/preterist interpretations.
+// Theologically vetted, no futurist/preterist interpretations.
 
 import type { Challenge } from '@/types/connections'
 
@@ -14,13 +14,13 @@ export const CHALLENGES: Challenge[] = [
     xpReward: 50,
     targetArcFrom: 'Dan.9.25',
     targetArcTo: 'Matt.21.5',
-    hint: 'Look for the arc connecting Daniel to Matthew. Jesus enters Jerusalem on a donkey — Zechariah 9:9 and Matthew 21:5 are the key connection.',
+    hint: 'Look for the arc connecting Daniel to Matthew. Jesus enters Jerusalem on a donkey. Zechariah 9:9 and Matthew 21:5 are the key connection.',
   },
   {
     id: 'find-gen-john3',
     type: 'findIt',
     question:
-      'Genesis 22 — where Abraham offers his only son — is called the "shadow" of something in the New Testament. Which verse in John explicitly points back to it?',
+      'Genesis 22, where Abraham offers his only son, is called the "shadow" of something in the New Testament. Which verse in John explicitly points back to it?',
     xpReward: 50,
     targetArcFrom: 'Gen.22.2',
     targetArcTo: 'John.3.16',
@@ -34,7 +34,7 @@ export const CHALLENGES: Challenge[] = [
     xpReward: 40,
     targetArcFrom: 'Mal.3.1',
     targetArcTo: 'Mark.1.2',
-    hint: 'Malachi ends the Old Testament. Mark opens the New Testament. The gap between them is 400 years of silence — broken by a messenger.',
+    hint: 'Malachi ends the Old Testament. Mark opens the New Testament. The gap between them is 400 years of silence, broken by a messenger.',
   },
 
   // ── Type B: Count It ────────────────────────────────────────────────────
@@ -42,7 +42,7 @@ export const CHALLENGES: Challenge[] = [
     id: 'count-daniel-rev',
     type: 'countIt',
     question:
-      'How many cross-references connect the book of Daniel to the book of Revelation? (Enter your best estimate — within ±20 is correct)',
+      'How many cross-references connect the book of Daniel to the book of Revelation? (Enter your best estimate. Within ±20 is correct)',
     xpReward: 60,
     correctAnswer: 150,
     tolerance: 20,
@@ -51,7 +51,7 @@ export const CHALLENGES: Challenge[] = [
     id: 'count-isa53',
     type: 'countIt',
     question:
-      'Isaiah 53 — the suffering servant chapter — is one of the most cross-referenced passages in the Bible. Roughly how many connections does it have to the New Testament? (within ±10)',
+      'Isaiah 53, the suffering servant chapter, is one of the most cross-referenced passages in the Bible. Roughly how many connections does it have to the New Testament? (within ±10)',
     xpReward: 60,
     correctAnswer: 40,
     tolerance: 10,
@@ -89,7 +89,7 @@ export const CHALLENGES: Challenge[] = [
     id: 'name-longest-arc',
     type: 'nameIt',
     question:
-      'The longest possible arc on this visualisation connects Genesis to which book — the furthest connection across the entire Bible?',
+      'The longest possible arc on this visualisation connects Genesis to which book, the furthest connection across the entire Bible?',
     xpReward: 30,
     options: ['Hebrews', 'Revelation', 'John', '2 Peter'],
     correctIndex: 1,
