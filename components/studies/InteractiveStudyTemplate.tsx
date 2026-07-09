@@ -202,7 +202,7 @@ export default function InteractiveStudyTemplate({ book, lesson, VisualComponent
                 <div className="detail-header">
                   <div className="detail-era" style={{ color: getBadgeColor(activeSection.id) }}>{activeSection.era}</div>
                   <div className="detail-title" style={{ color: getHeadingColor(activeSection.id) }}>{activeSection.heading}</div>
-                  <div className="detail-dates">By Daniel</div>
+                  <div className="detail-dates">{book.slug === "daniel" ? "By Daniel" : lesson.scriptureRef}</div>
                   {activeSection.badge && (
                     <div className="detail-badge" style={{ color: getBadgeColor(activeSection.id) }}>{activeSection.badge}</div>
                   )}
@@ -278,10 +278,10 @@ export default function InteractiveStudyTemplate({ book, lesson, VisualComponent
       {/* ── CLOSING VERSE ── */}
       <div className="closing reveal" style={{ position: 'relative', zIndex: 10, textAlign: 'center', padding: '60px 24px', maxWidth: '600px', margin: '0 auto' }}>
         <p className="closing-verse" style={{ fontFamily: 'Cinzel', fontSize: '16px', color: 'rgba(255,255,255,0.7)', lineHeight: 1.8, fontStyle: 'italic', marginBottom: '8px' }}>
-          &ldquo;The great God has made known to the king what shall be after this. The dream is certain, and its interpretation sure.&rdquo;
+          &ldquo;{lesson.keyVerse ?? "The great God has made known to the king what shall be after this. The dream is certain, and its interpretation sure."}&rdquo;
         </p>
         <div className="closing-ref" style={{ fontSize: '12px', color: 'var(--gold)', opacity: 0.7, letterSpacing: '0.1em' }}>
-          Daniel 2:45
+          {lesson.keyVerse ? lesson.keyVerseRef : "Daniel 2:45"}
         </div>
       </div>
 

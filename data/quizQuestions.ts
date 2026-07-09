@@ -11,7 +11,8 @@ export interface QuizQuestion {
 export type LessonQuizId = 
   | "daniel-1" | "daniel-2" | "daniel-7" | "2300-days" | "daniel-9" | "70-week-prophecy" | "daniel-12" 
   | "seven-seals" | "revelation-13" | "revelation-14"
-  | "love-for-god" | "righteousness-by-faith" | "the-resurrection" | "jesus-at-the-centre";
+  | "love-for-god" | "righteousness-by-faith" | "the-resurrection" | "jesus-at-the-centre"
+  | "lion-of-judah";
 
 export const quizData: Record<LessonQuizId, QuizQuestion[]> = {
   "daniel-1": [
@@ -141,6 +142,68 @@ export const quizData: Record<LessonQuizId, QuizQuestion[]> = {
       correctAnswer: "Jesus Himself",
       hint: "He is the heart of every page.",
       explanation: "Jesus said, 'You study the Scriptures... These are the Scriptures that testify about me.'",
+    }
+  ],
+  "lion-of-judah": [
+    {
+      id: "loj-q1",
+      type: "multiple_choice",
+      question: "The firstborn blessing carried two gifts. What were they?",
+      options: [
+        "A double portion of the inheritance and leadership of the family",
+        "Land and livestock",
+        "Priesthood and prophecy",
+        "Gold and a new name",
+      ],
+      correctAnswer: "A double portion of the inheritance and leadership of the family",
+      hint: "Deuteronomy 21:17 spells out the first half.",
+      explanation: "Deuteronomy 21:17 grants the firstborn a double portion of all the father has. Headship over the family completed the birthright.",
+    },
+    {
+      id: "loj-q2",
+      type: "multiple_choice",
+      question: "After Reuben forfeited the birthright, who received the double portion?",
+      options: ["Joseph, through Ephraim and Manasseh", "Judah", "Levi", "Benjamin"],
+      correctAnswer: "Joseph, through Ephraim and Manasseh",
+      hint: "1 Chronicles 5:1 states the transfer in one sentence.",
+      explanation: "1 Chronicles 5:1 says the birthright was given to the sons of Joseph. Jacob adopted Ephraim and Manasseh as his own sons in Genesis 48:5, so Joseph became two tribes.",
+    },
+    {
+      id: "loj-q3",
+      type: "multiple_choice",
+      question: "Why were Simeon and Levi passed over for leadership of the family?",
+      options: [
+        "They massacred the city of Shechem",
+        "They sold Joseph into slavery",
+        "They worshipped idols in Egypt",
+        "They refused to bless Jacob",
+      ],
+      correctAnswer: "They massacred the city of Shechem",
+      hint: "Genesis 34 records the story. Genesis 49:5–7 records the verdict.",
+      explanation: "After Shechem raped their sister Dinah, Simeon and Levi killed every male in the city. Jacob's verdict: 'I will divide them in Jacob and scatter them in Israel' (Genesis 49:5–7).",
+    },
+    {
+      id: "loj-q4",
+      type: "multiple_choice",
+      question: "What did Judah do in Genesis 44 that marked his transformation?",
+      options: [
+        "He offered himself as a slave in place of Benjamin",
+        "He returned the silver from selling Joseph",
+        "He defeated the Egyptians in battle",
+        "He built an altar at Bethel",
+      ],
+      correctAnswer: "He offered himself as a slave in place of Benjamin",
+      hint: "'Let your servant remain instead of the boy.'",
+      explanation: "In Genesis 44:33 Judah offers his own life in place of his brother, the first substitution in Scripture. The man who once sold a brother now offers himself as the payment.",
+    },
+    {
+      id: "loj-q5",
+      type: "true_false",
+      question: "True or False: In Revelation 5, John is told about the Lion of the tribe of Judah, but when he turns to look, he sees a slain Lamb.",
+      options: ["True", "False"],
+      correctAnswer: "True",
+      hint: "The Lion conquers in an unexpected form.",
+      explanation: "Revelation 5:5–6. The elder announces the Lion of the tribe of Judah has conquered, and John sees 'a Lamb standing, as though it had been slain.' The Lion wins by self-sacrifice.",
     }
   ]
 };

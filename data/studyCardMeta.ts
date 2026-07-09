@@ -123,6 +123,12 @@ export const studyCardMeta: Record<string, StudyCardMeta> = {
     accentColor: "#050a05",
     shortDescription: "The first prophecy in Scripture. A seed who would crush the serpent's head.",
   },
+  "lion-of-judah": {
+    emoji: "🦁",
+    accentColor: "#140f05",
+    isNew: true,
+    shortDescription: "The firstborn blessing splits, three brothers fall, and the crown finds Judah.",
+  },
   "seventy-weeks": {
     emoji: "⌛",
     accentColor: "#0a0a1a",

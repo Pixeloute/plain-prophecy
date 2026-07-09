@@ -1686,6 +1686,159 @@ export const studyBooks: StudyBook[] = [
           "The first word God speaks after the fall is not judgment but gospel. Before he sends Adam and Eve out of Eden, God turns to the serpent and promises a Seed who will crush its head. The whole Bible unfolds from this one sentence. The Seed is Christ, the second Adam, who steps into the story the first Adam broke and reverses it. At the cross the serpent struck his heel and it looked like the serpent had won. The resurrection told the truth: the serpent's head was crushed, its lie exposed, and a risen Seed now holds the keys of death and Hades (Revelation 1:18). Your rescue was promised before you ever knew you needed rescuing.",
         nextLesson: {
           book: "messianic-prophecies",
+          lesson: "lion-of-judah",
+          title: "The Lion of Judah",
+        },
+      },
+      {
+        slug: "lion-of-judah",
+        title: "The Lion of Judah",
+        scriptureRef: "Genesis 49:8–10",
+        readingTime: 9,
+        published: true,
+        keyVerse:
+          "The scepter shall not depart from Judah, nor the ruler's staff from between his feet, until tribute comes to him; and to him shall be the obedience of the peoples.",
+        keyVerseRef: "Genesis 49:10",
+        intro:
+          "Jesus carries the title Lion of Judah. But Judah was son number four. The firstborn blessing belonged to Reuben, and the story of how the crown skipped three brothers shows what heaven counts as greatness.",
+        sections: [
+          {
+            id: "birthright",
+            era: "Deuteronomy 21:17",
+            badge: "The Birthright",
+            heading: "The Firstborn Blessing",
+            contentBlocks: [
+              {
+                label: "The Scene",
+                text: "Jacob is dying. Genesis 49 gathers his twelve sons around the bed to hear the words spoken over each of them. In this family one son expects more than the others. The firstborn carries a double weight of privilege, and everyone in the tent knows who holds the birthright.",
+              },
+              {
+                label: "The Two Gifts",
+                text: "The firstborn blessing splits into two gifts. First, a double portion of the inheritance: the father must acknowledge the firstborn 'by giving him a double portion of all he has' (Deuteronomy 21:17). Second, headship: the firstborn leads the family and the clan the way his father did before him. Two gifts, one son. Until Reuben.",
+              },
+            ],
+            christCentre:
+              "Before you follow the blessing, notice the setup. God plants his promises inside a family, not a committee of the qualified. The line to the Messiah runs through a household full of rivalry, favouritism, and secrets. Jesus enters real family history, the kind you recognise from your own.",
+            keyVerse: {
+              text: "He shall acknowledge the firstborn... by giving him a double portion of all he has.",
+              ref: "Deuteronomy 21:17",
+            },
+          },
+          {
+            id: "reuben",
+            era: "Genesis 35:22",
+            badge: "Forfeited",
+            heading: "Reuben Loses Everything",
+            contentBlocks: [
+              {
+                label: "The Act",
+                text: "Reuben sleeps with Bilhah, his father's concubine (Genesis 35:22). One verse records the act. In the ancient world, taking a father's concubine was a public claim to his authority. Absalom did the same thing on a palace roof to declare himself king (2 Samuel 16:22). Reuben was not losing control. He was announcing a takeover.",
+              },
+              {
+                label: "The Verdict",
+                text: "Jacob does not forget. On his deathbed he delivers the sentence: 'Reuben, you are my firstborn... Unstable as water, you shall not have preeminence, because you went up to your father's bed' (Genesis 49:3–4). Scripture later states the transfer in plain terms: 'Reuben... was the firstborn, but because he defiled his father's couch, his birthright was given to the sons of Joseph' (1 Chronicles 5:1).",
+              },
+            ],
+            christCentre:
+              "Reuben grabbed at headship and lost everything. Jesus held equality with God and refused to grasp at it. He emptied himself and took the form of a servant (Philippians 2:6–7). The grab loses the blessing. The self-giving Son receives the name above every name.",
+            keyVerse: {
+              text: "Unstable as water, you shall not have preeminence, because you went up to your father's bed.",
+              ref: "Genesis 49:4",
+            },
+          },
+          {
+            id: "double-portion",
+            era: "Genesis 48:5",
+            badge: "Adopted",
+            heading: "The Double Portion Goes to Joseph",
+            contentBlocks: [
+              {
+                label: "The Adoption",
+                text: "Jacob calls Joseph's two sons to his bedside and speaks legal words: 'your two sons, Ephraim and Manasseh... are mine, as Reuben and Simeon are' (Genesis 48:5). This is the double portion in action. Every other son becomes one tribe. Joseph becomes two. From this moment Joseph's own name fades from the tribal lists, and Ephraim and Manasseh stand in his place.",
+              },
+              {
+                label: "So Why 12 Tribes?",
+                text: "Count with the text. Jacob has 12 sons. Adopting Ephraim and Manasseh raises the roster of tribe fathers to 14. Joseph is absorbed into his two sons, which brings the count to 13. Then Levi receives no land, because 'the LORD God of Israel is their inheritance' (Joshua 13:14). So the map shows 12 territories, and Scripture keeps the number 12 in every list by rotating the names. Revelation 7 leaves out Dan, counts Levi, and names Joseph in place of Ephraim.",
+              },
+            ],
+            christCentre:
+              "The double portion made room for two outsiders. Ephraim and Manasseh were born in Egypt to an Egyptian mother, and Jacob adopted them as full sons. Adoption is not a loophole in this family. Adoption is the pattern. Paul writes God 'predestined us for adoption as sons through Jesus Christ' (Ephesians 1:5). You enter the same way they did: by the Father's word.",
+            keyVerse: {
+              text: "Your two sons, Ephraim and Manasseh... are mine, as Reuben and Simeon are.",
+              ref: "Genesis 48:5",
+            },
+          },
+          {
+            id: "simeon-levi",
+            era: "Genesis 34",
+            badge: "Scattered",
+            heading: "Simeon and Levi Disqualified",
+            contentBlocks: [
+              {
+                label: "The Massacre",
+                text: "With Reuben out, headship should pass to son two, then son three. Genesis 34 stands in the way. After Shechem rapes their sister Dinah, Simeon and Levi answer with deception and slaughter. They offer peace, wait until the men of the city are weakened by circumcision, then kill every male. Jacob's deathbed verdict: 'weapons of violence are their swords... I will divide them in Jacob and scatter them in Israel' (Genesis 49:5–7).",
+              },
+              {
+                label: "The Scattering",
+                text: "The sentence lands with precision. Simeon's territory dissolves into pockets inside Judah's land (Joshua 19:1, 9). Levi receives no territory at all, only cities spread through every tribe. Then something unexpected happens. Levi's scattering becomes a calling. The tribe under a curse becomes the tribe of priests, placed in every corner of Israel to teach the people. God did not cancel the sentence. He transformed the sentence into ministry.",
+              },
+            ],
+            christCentre:
+              "Dinah's brothers met evil with vengeance and inherited a curse. Jesus met evil with his own blood and became a curse for us, so the blessing would reach us (Galatians 3:13). Watch what God does with Levi: the scattering meant as judgment becomes a priesthood. He does the same work with the broken places in your story.",
+            keyVerse: {
+              text: "I will divide them in Jacob and scatter them in Israel.",
+              ref: "Genesis 49:7",
+            },
+          },
+          {
+            id: "judah",
+            era: "Genesis 38, 44",
+            badge: "Substitute",
+            heading: "Why Judah?",
+            contentBlocks: [
+              {
+                label: "His Own Record",
+                text: "Judah is next in line, and his file is not clean. He is the brother who proposed selling Joseph for profit (Genesis 37:26–27). In Genesis 38 he leaves the family, withholds justice from his widowed daughter-in-law Tamar, then sleeps with her believing she is a shrine prostitute. When she is condemned to burn, she produces his own seal and staff. Judah stands exposed in front of everyone.",
+              },
+              {
+                label: "The Turning Point",
+                text: "His response separates him from every brother before him: 'She is more righteous than I' (Genesis 38:26). No excuse, no cover-up. The first open confession in the family's story. Years later comes the proof. When Benjamin faces slavery in Egypt, Judah steps forward: 'let your servant remain instead of the boy' (Genesis 44:33). The man who once sold a brother now offers himself as the payment. He is the first substitute in Scripture.",
+              },
+            ],
+            christCentre:
+              "Judah did not receive the crown for a clean record. He received the crown as the brother who confessed without excuse and offered his life in another's place. Leadership in God's family looks like this. Jesus, the greater Son of Judah, spoke Judah's sentence in full, take me instead, and carried the offer all the way to a cross.",
+            keyVerse: {
+              text: "Let your servant remain instead of the boy as a servant to my lord, and let the boy go back with his brothers.",
+              ref: "Genesis 44:33",
+            },
+          },
+          {
+            id: "lion",
+            era: "Genesis 49:8–10",
+            badge: "Crowned",
+            heading: "The Sceptre and the Lion",
+            contentBlocks: [
+              {
+                label: "The Blessing",
+                text: "Jacob turns to his fourth son and the poetry changes register: 'Judah, your brothers shall praise you... Judah is a lion's cub... The scepter shall not depart from Judah, nor the ruler's staff from between his feet, until tribute comes to him' (Genesis 49:8–10). Kingship is promised to Judah's line centuries before Israel has a king. David comes from Judah (Ruth 4:18–22). And the blessing points past David to a ruler whom all peoples will obey.",
+              },
+              {
+                label: "The Lion Who Is a Lamb",
+                text: "Revelation picks up the thread in the throne room. John weeps because no one is worthy to open the scroll, and an elder tells him: 'Weep no more; behold, the Lion of the tribe of Judah... has conquered' (Revelation 5:5). John turns to see the Lion, and he sees 'a Lamb standing, as though it had been slain' (Revelation 5:6). The Lion conquers as a Lamb. He wins the way Judah won the crown, by offering himself in place of his brothers.",
+              },
+            ],
+            christCentre:
+              "Heaven's throne room answers Jacob's deathbed. The sceptre never departs from Judah, because the Son of Judah holds the sceptre with pierced hands. The obedience of the peoples is not forced. He wins hearts the way a Lamb wins them, slain for the ones he rules.",
+            keyVerse: {
+              text: "The scepter shall not depart from Judah... and to him shall be the obedience of the peoples.",
+              ref: "Genesis 49:10",
+            },
+          },
+        ],
+        christCentre:
+          "Every brother in this story failed. Reuben grabbed power. Simeon and Levi drew swords. Judah sold his brother and slept with his daughter-in-law. The blessing still found a path, and the path ran through confession and substitution. The title Lion of Judah belongs to Jesus because Judah's story sketches his in shadow: the brother who steps forward and says, take me instead. In Revelation 5 John hears about a Lion and sees a slain Lamb. Your place in this family works the same way. You do not enter by birth order or a clean record. You enter through the Substitute who took your place and now holds the sceptre forever.",
+        nextLesson: {
+          book: "messianic-prophecies",
           lesson: "seventy-weeks",
           title: "The 70 Weeks",
         },

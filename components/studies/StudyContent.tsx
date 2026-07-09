@@ -3,6 +3,7 @@
 import { StudyBook, StudyLesson } from "@/data/studies";
 import InteractiveStudyTemplate from "./InteractiveStudyTemplate";
 import Daniel2Statue from "./Visuals/Daniel2Statue";
+import JudahBlessingTree from "./Visuals/JudahBlessingTree";
 // import GospelPlaceholder from "./GospelPlaceholder";
 
 interface StudyContentProps {
@@ -17,6 +18,9 @@ export default function StudyContent({ book, lesson }: StudyContentProps) {
   
   if (lesson.slug === "daniel-2") {
     VisualComponent = Daniel2Statue;
+  }
+  if (lesson.slug === "lion-of-judah") {
+    VisualComponent = JudahBlessingTree;
   }
   // Add more conditions here as we create visuals for other studies (e.g. Daniel 7)
 
