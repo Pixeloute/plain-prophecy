@@ -30,6 +30,7 @@ const EXPLORE_ROUTES = [
 ];
 
 const MORE_ITEMS = [
+  { href: "/bible", label: "Bible", Icon: BookMarked },
   { href: "/blog", label: "Blog", Icon: Newspaper },
   { href: "/compare", label: "Compare", Icon: Scale },
   { href: "/evidence", label: "Evidence", Icon: FlaskConical },
@@ -56,6 +57,7 @@ export default function MobileBottomNav({ onSearchOpen }: { onSearchOpen?: () =>
       if (isExploreRoute(pathname)) return false;
       return (
         pathname.startsWith("/studies") ||
+        pathname.startsWith("/bible") ||
         pathname.startsWith("/compare") ||
         pathname.startsWith("/evidence") ||
         pathname.startsWith("/doctrine") ||

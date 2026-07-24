@@ -55,9 +55,11 @@ const NAV: NavEntry[] = [
       {
         items: [
           { href: "/studies", label: "All Courses", description: "Structured lessons on Daniel & Revelation" },
+          { href: "/bible", label: "Bible", description: "Search Scripture, Strong's lexicon, and read by chapter" },
           { href: "/compare", label: "Compare Frameworks", description: "Historicism vs. Futurism explained" },
           { href: "/evidence", label: "Evidence Today", description: "Historical & archaeological proof" },
           { href: "/doctrine", label: "Doctrine", description: "Core beliefs, plainly explained" },
+          { href: "/answers/islam", label: "Answering Objections", description: "Honest answers to hard questions about the faith" },
           { href: "/prophet", label: "The Prophet", description: "Meet the biblical prophets" },
           { href: "/learn", label: "Learn", description: "Guides and deep dives" },
         ],
@@ -106,7 +108,8 @@ function isEntryActive(entry: NavEntry, pathname: string): boolean {
     if (EXPLORE_ROUTES.some(r => pathname === r || pathname.startsWith(r + "/"))) return false;
     return pathname.startsWith("/studies") || pathname.startsWith("/compare") ||
       pathname.startsWith("/evidence") || pathname.startsWith("/doctrine") ||
-      pathname.startsWith("/prophet") || pathname.startsWith("/learn");
+      pathname.startsWith("/prophet") || pathname.startsWith("/learn") ||
+      pathname.startsWith("/answers");
   }
   // For Prophecies: same as Study (both point at /studies)
   if (entry.label === "Prophecies") {

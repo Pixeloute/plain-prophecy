@@ -54,6 +54,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const exploreLinks = [
+  { href: "/bible", label: "Bible", icon: BookOpen },
   { href: "/studies/map", label: "Map", icon: Map },
   { href: "/studies/timeline", label: "Timeline", icon: Clock },
   { href: "/studies/parallels", label: "Parallels", icon: Columns2 },
