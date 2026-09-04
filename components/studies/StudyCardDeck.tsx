@@ -39,8 +39,34 @@ const GODHEAD_LESSON: StudyLesson = {
   ],
 };
 
+const HOLY_SPIRIT_BOOK: StudyBook = {
+  slug: "theology",
+  title: "Theology",
+  icon: "✦",
+  description: "Studies in biblical theology.",
+  lessons: [],
+};
+
+const HOLY_SPIRIT_LESSON: StudyLesson = {
+  slug: "another-helper",
+  title: "Another Helper",
+  scriptureRef: "John 14-16",
+  keyVerse: "But the Helper, the Holy Spirit, whom the Father will send in my name, he will teach you all things.",
+  keyVerseRef: "John 14:26",
+  intro: "A six-session study on the Holy Spirit, from the upper room to Pentecost and beyond.",
+  sections: [
+    { heading: "The room before the promise" },
+    { heading: "The Spirit who came and went" },
+    { heading: "Abiding and the double witness" },
+    { heading: "Why his leaving was better" },
+    { heading: "Poured out" },
+    { heading: "The Spirit in you now" },
+  ],
+};
+
 const FEATURE_CARDS: FlatLesson[] = [
   { lesson: GODHEAD_LESSON, book: GODHEAD_BOOK, href: "/studies/godhead" },
+  { lesson: HOLY_SPIRIT_LESSON, book: HOLY_SPIRIT_BOOK, href: "/studies/holy-spirit" },
 ];
 
 function buildFlatLessons(

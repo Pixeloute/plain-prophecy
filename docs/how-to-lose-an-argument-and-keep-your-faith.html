@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Six Hours of Debate, One Verse at a Time | PlainProphecy</title>
+<meta name="description" content="A room full of Christians and Muslims argued for hours about whether Jesus is God. Here is what held up, what fell apart, and what it teaches you about defending your faith without losing your soul.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Karla:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0E1A2B;
+  --ink-deep:#081120;
+  --ink-soft:#152742;
+  --gold:#C9A24B;
+  --gold-bright:#E3BE68;
+  --cream:#F4EFE4;
+  --cream-dim:#E4DCCB;
+  --blood:#9B2D2A;
+  --muted:rgba(244,239,228,0.62);
+  --rule:rgba(201,162,75,0.28);
+  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --body:'Karla',Calibri,'Segoe UI',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--ink);
+  color:var(--cream);
+  font-family:var(--body);
+  font-weight:300;
+  font-size:clamp(1.02rem,0.98rem + 0.25vw,1.16rem);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+body::before{
+  content:'';position:fixed;inset:0;z-index:1;pointer-events:none;opacity:0.35;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.42'/%3E%3C/svg%3E");
+  mix-blend-mode:overlay;
+}
+.bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--blood),var(--gold),var(--gold-bright));z-index:99;transition:width .1s linear}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem);position:relative;z-index:2}
+.col{max-width:730px}
+
+/* HERO */
+header.hero{
+  position:relative;min-height:100svh;display:flex;align-items:flex-end;
+  padding-bottom:clamp(3rem,8vh,7rem);overflow:hidden;
+  background:
+    radial-gradient(120% 90% at 78% 8%,rgba(201,162,75,0.20) 0%,transparent 58%),
+    radial-gradient(90% 70% at 8% 92%,rgba(155,45,42,0.30) 0%,transparent 62%),
+    linear-gradient(178deg,var(--ink-deep),var(--ink) 62%,var(--ink-soft));
+}
+.hero .grid-lines{
+  position:absolute;inset:0;opacity:0.22;
+  background-image:linear-gradient(var(--rule) 1px,transparent 1px);
+  background-size:100% 64px;
+  mask-image:linear-gradient(180deg,transparent,#000 30%,#000 70%,transparent);
+}
+.kicker{
+  font-family:var(--body);font-weight:700;font-size:.72rem;letter-spacing:.32em;
+  text-transform:uppercase;color:var(--gold);margin-bottom:1.6rem;display:flex;
+  align-items:center;gap:.9rem;
+}
+.kicker::before{content:'';width:clamp(28px,6vw,72px);height:1px;background:var(--gold)}
+h1{
+  font-family:var(--display);font-weight:900;
+  font-size:clamp(2.7rem,1.4rem + 6.2vw,6.4rem);
+  line-height:0.94;letter-spacing:-0.028em;text-wrap:balance;
+}
+h1 em{font-style:italic;font-weight:400;color:var(--gold-bright);display:block}
+.standfirst{
+  font-family:var(--display);font-size:clamp(1.12rem,1rem + 0.55vw,1.5rem);
+  font-weight:400;line-height:1.55;color:var(--cream-dim);
+  max-width:44ch;margin-top:2.2rem;border-left:2px solid var(--gold);padding-left:1.6rem;
+}
+.byline{margin-top:2.6rem;font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+
+/* SECTIONS */
+section{padding:clamp(4rem,9vh,7.5rem) 0;position:relative}
+.sec-num{
+  font-family:var(--display);font-weight:900;font-size:clamp(3.4rem,10vw,7rem);
+  line-height:.8;color:transparent;-webkit-text-stroke:1px var(--rule);
+  display:block;margin-bottom:.5rem;
+}
+h2{
+  font-family:var(--display);font-weight:600;letter-spacing:-0.02em;
+  font-size:clamp(1.85rem,1.2rem + 2.3vw,3.3rem);line-height:1.08;
+  margin-bottom:1.6rem;text-wrap:balance;
+}
+h3{
+  font-family:var(--display);font-weight:600;font-size:clamp(1.25rem,1.1rem + .7vw,1.72rem);
+  line-height:1.22;margin:2.6rem 0 .9rem;color:var(--gold-bright);
+}
+h4{font-family:var(--body);font-weight:700;font-size:.76rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.8rem}
+p{margin-bottom:1.25rem;color:rgba(244,239,228,0.86)}
+p.lead{font-size:1.16em;color:var(--cream)}
+strong{font-weight:700;color:var(--cream)}
+a{color:var(--gold-bright)}
+
+.cream{background:var(--cream);color:var(--ink)}
+.cream p{color:rgba(14,26,43,0.82)}
+.cream h2,.cream h1{color:var(--ink)}
+.cream h3{color:var(--blood)}
+.cream h4{color:var(--blood)}
+.cream .sec-num{-webkit-text-stroke:1px rgba(14,26,43,0.22)}
+.cream strong{color:var(--ink)}
+
+/* VERSE CARD */
+.verse{
+  border:1px solid var(--rule);border-left:3px solid var(--gold);
+  background:linear-gradient(160deg,rgba(201,162,75,0.09),rgba(201,162,75,0.02));
+  padding:1.5rem 1.7rem;margin:1.8rem 0;border-radius:2px;
+}
+.cream .verse{background:linear-gradient(160deg,rgba(14,26,43,0.05),transparent);border-color:rgba(14,26,43,0.16);border-left-color:var(--blood)}
+.verse .ref{font-family:var(--body);font-weight:700;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:.6rem}
+.cream .verse .ref{color:var(--blood)}
+.verse q{font-family:var(--display);font-size:1.14em;font-style:italic;line-height:1.5;quotes:none}
+.verse .note{font-size:.86rem;color:var(--muted);margin-top:.9rem;margin-bottom:0}
+.cream .verse .note{color:rgba(14,26,43,0.62)}
+
+/* PULL */
+.pull{
+  font-family:var(--display);font-weight:600;font-style:italic;
+  font-size:clamp(1.4rem,1.1rem + 1.5vw,2.4rem);line-height:1.24;
+  color:var(--gold-bright);margin:2.8rem 0;padding-left:1.6rem;
+  border-left:2px solid var(--blood);text-wrap:balance;
+}
+.cream .pull{color:var(--blood)}
+
+/* GREEK/HEBREW CHIP */
+.lex{
+  display:inline-block;font-family:var(--display);font-style:italic;font-weight:600;
+  background:rgba(201,162,75,0.14);border-bottom:1px solid var(--gold);
+  padding:0 .35em;border-radius:2px;color:var(--gold-bright);
+}
+.cream .lex{background:rgba(155,45,42,0.09);border-color:var(--blood);color:var(--blood)}
+
+/* MOVE CARDS */
+.moves{display:grid;gap:1.1rem;margin-top:2.4rem}
+@media(min-width:800px){.moves{grid-template-columns:repeat(2,1fr)}}
+.move{
+  border:1px solid var(--rule);padding:1.5rem 1.6rem;border-radius:2px;
+  background:rgba(255,255,255,0.02);transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .35s;
+}
+.move:hover{transform:translateY(-4px);border-color:var(--gold)}
+.cream .move{border-color:rgba(14,26,43,0.14);background:rgba(255,255,255,0.5)}
+.cream .move:hover{border-color:var(--blood)}
+.move .tag{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--gold);display:block;margin-bottom:.7rem}
+.cream .move .tag{color:var(--blood)}
+.move h5{font-family:var(--display);font-weight:600;font-size:1.16rem;line-height:1.25;margin-bottom:.6rem}
+.move p{font-size:.94rem;margin-bottom:0;line-height:1.65}
+
+/* SCORE TABLE */
+.tablewrap{overflow-x:auto;margin:2.4rem 0;border:1px solid var(--rule)}
+table{width:100%;border-collapse:collapse;min-width:540px;font-size:.9rem}
+th,td{padding:.85rem 1rem;text-align:left;border-bottom:1px solid var(--rule)}
+th{font-family:var(--body);font-weight:700;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);background:rgba(201,162,75,0.07)}
+td:first-child{font-family:var(--display);font-weight:600}
+tr:last-child td{border-bottom:none}
+.cream .tablewrap{border-color:rgba(14,26,43,0.16)}
+.cream th{color:var(--blood);background:rgba(14,26,43,0.05);border-color:rgba(14,26,43,0.12)}
+.cream td{border-color:rgba(14,26,43,0.1)}
+.hi{color:var(--gold-bright);font-weight:700}
+.cream .hi{color:var(--blood)}
+
+/* DETAILS */
+details{border-top:1px solid var(--rule);padding:1.15rem 0}
+details summary{
+  cursor:pointer;list-style:none;font-family:var(--display);font-weight:600;
+  font-size:1.08rem;display:flex;gap:1rem;align-items:baseline;color:var(--cream);
+}
+.cream details{border-color:rgba(14,26,43,0.14)}
+.cream details summary{color:var(--ink)}
+details summary::-webkit-details-marker{display:none}
+details summary::before{content:'+';color:var(--gold);font-weight:400;font-size:1.3rem;line-height:1;transition:transform .3s}
+.cream details summary::before{color:var(--blood)}
+details[open] summary::before{transform:rotate(45deg)}
+details .body{padding-top:1rem;padding-left:1.9rem}
+details .body p:last-child{margin-bottom:0}
+
+/* WARNING BLOCK */
+.flag{
+  border:1px solid rgba(155,45,42,0.5);background:rgba(155,45,42,0.12);
+  padding:1.4rem 1.6rem;margin:2rem 0;border-radius:2px;
+}
+.cream .flag{background:rgba(155,45,42,0.07);border-color:rgba(155,45,42,0.3)}
+.flag h4{color:#E08A86}
+.cream .flag h4{color:var(--blood)}
+.flag p:last-child{margin-bottom:0}
+
+/* CHECKLIST */
+ol.steps{list-style:none;counter-reset:s;margin:2rem 0}
+ol.steps li{counter-increment:s;padding-left:3.4rem;position:relative;margin-bottom:1.5rem}
+ol.steps li::before{
+  content:counter(s,decimal-leading-zero);position:absolute;left:0;top:-0.1rem;
+  font-family:var(--display);font-weight:900;font-size:1.5rem;color:transparent;
+  -webkit-text-stroke:1px var(--gold);
+}
+.cream ol.steps li::before{-webkit-text-stroke:1px var(--blood)}
+ol.steps strong{display:block;font-family:var(--display);font-size:1.1rem;margin-bottom:.25rem;color:var(--gold-bright)}
+.cream ol.steps strong{color:var(--ink)}
+
+/* CLOSING */
+.closing{
+  background:
+    radial-gradient(90% 80% at 50% 0%,rgba(155,45,42,0.28),transparent 62%),
+    linear-gradient(180deg,var(--ink),var(--ink-deep));
+  text-align:center;
+}
+.closing .col{margin:0 auto;text-align:left}
+.cross{width:1px;height:clamp(60px,10vh,110px);background:linear-gradient(180deg,transparent,var(--gold));margin:0 auto 2.5rem}
+
+footer{border-top:1px solid var(--rule);padding:2.6rem 0;font-size:.8rem;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center}
+footer .mark{font-family:var(--display);font-weight:900;letter-spacing:-.02em;font-size:1.1rem;color:var(--gold)}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.hero .rv{transition-delay:var(--d,0s)}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="bar" id="bar"></div>
+
+<header class="hero">
+  <div class="grid-lines"></div>
+  <div class="wrap">
+    <div class="col">
+      <div class="kicker rv" style="--d:.05s">Apologetics Field Notes</div>
+      <h1 class="rv" style="--d:.15s">Six hours<br>of argument.<em>One verse at a time.</em></h1>
+      <p class="standfirst rv" style="--d:.3s">A room full of Christians and Muslims went back and forth for hours on whether Jesus is God. Some arguments held. Some collapsed. Here is what you learn from both.</p>
+      <div class="byline rv" style="--d:.45s">PlainProphecy &nbsp;/&nbsp; Defending the Faith &nbsp;/&nbsp; 14 min read</div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap"><div class="col">
+    <span class="sec-num rv">01</span>
+    <h2 class="rv">Watching a debate is not the same as learning from one</h2>
+    <p class="lead rv">Most people watch these clips for the moment somebody gets caught. The dunk. The pause. The face. Then they close the app feeling like their side won and having learned nothing.</p>
+    <p class="rv">Do something different with this one. Treat it as a training ground. Every argument in that room was either sound or it was not, and you have to be willing to say so even when the shaky one belongs to your side. Peter did not tell you to have a comeback ready. He told you to have a reason ready.</p>
+    <div class="verse rv">
+      <span class="ref">1 Peter 3:15 (ESV)</span>
+      <q>In your hearts honour Christ the Lord as holy, always being prepared to make a defence to anyone who asks you for a reason for the hope in you.</q>
+      <p class="note">The Greek word behind "defence" is <span class="lex">apologia</span>, a legal term. It described a prisoner standing up to answer a charge. Not a shouting match. An account of yourself, given calmly, in front of people who have every right to weigh it.</p>
+    </div>
+    <p class="rv">Read the rest of the verse and it gets sharper. Peter adds "with gentleness and respect." He wrote it to believers who were being slandered by their neighbours, so the tone was not optional politeness. It was the point. A believer who wins the exchange and loses the room has not obeyed the verse.</p>
+    <p class="pull rv">Truth delivered badly is still truth. It is also still a closed door.</p>
+  </div></div>
+</section>
+
+<section class="cream">
+  <div class="wrap"><div class="col">
+    <span class="sec-num rv">02</span>
+    <h2 class="rv">First, the strongest case against you</h2>
+    <p class="lead rv">Steel-man before you critique. Always. If you cannot state the other position in a way the other person would sign off on, you are arguing with a puppet.</p>
+    <p class="rv">The Muslim debater built his case on a real pattern in Scripture, and it deserves a straight answer rather than a dodge. His argument ran like this. Jesus speaks about God as somebody other than himself, and he keeps doing it after the resurrection, when the earthly ministry is finished.</p>
+
+    <div class="verse rv">
+      <span class="ref">Revelation 3:12 (NIV)</span>
+      <q>I will write on them the name of my God and the name of the city of my God, the new Jerusalem, which is coming down out of heaven from my God.</q>
+      <p class="note">Spoken by the risen, glorified Christ. "My God" four times in one verse. If you have never sat with how odd that sounds, sit with it now.</p>
+    </div>
+
+    <p class="rv">He stacked more on top. John 8:40, where Jesus calls himself "a man who has told you the truth." John 17:3, where the Father is named "the only true God." John 20:17, "my God and your God." Acts 3:13, where God glorifies "his servant Jesus." Ephesians 1:17, "the God of our Lord Jesus Christ."</p>
+    <p class="rv">Notice what he was doing. He was not inventing verses. Every one of those is in your Bible, and a Christian who has never read them slowly is going to be rattled the first time somebody reads them aloud in a row.</p>
+
+    <div class="flag rv">
+      <h4>Be honest about this</h4>
+      <p>The Christian debaters in that room did not fully answer this line. They kept redirecting to their own verses instead of dealing with his. On the recording you hear him say it four separate times, and he was right to keep saying it. Learn from the gap rather than pretending it was not there.</p>
+    </div>
+
+    <h3 class="rv">So how do you answer it?</h3>
+    <p class="rv">Not by softening the verses. By reading them alongside the ones that sit next to them, in the same books, from the same writers.</p>
+    <p class="rv">John, who records "the Father is greater than I" in 14:28, opens his Gospel by writing that the Word was with God and the Word was God. The same author. The same document. If those two statements were a contradiction, John would be the first person to notice. He did not, because he was describing a Son who is fully divine in nature and voluntarily submitted in role.</p>
+    <p class="rv">Paul does the same thing in Philippians 2:6 to 11. He says Christ existed in the form of God, then emptied himself, took the form of a servant, obeyed to the point of death, and was exalted. The whole passage depends on two things being true at once. He was divine. He submitted. Remove either half and the hymn falls apart.</p>
+    <p class="rv">That is the answer to "my God." A Son who took our nature keeps speaking from within the relationship he entered. Distinction between the Father and the Son is not the same claim as difference in nature, and the debate turned on somebody quietly swapping one for the other.</p>
+  </div></div>
+</section>
+
+<section>
+  <div class="wrap"><div class="col">
+    <span class="sec-num rv">03</span>
+    <h2 class="rv">The arguments that held</h2>
+    <p class="lead rv">Four moves in that debate were built properly. Learn the shape of them, not the wording, because the wording will not fit your conversation and the shape always will.</p>
+
+    <div class="moves">
+      <div class="move rv">
+        <span class="tag">Move 01</span>
+        <h5>Let the Old Testament identify Jesus</h5>
+        <p>In Isaiah 44:6 and 48:12 the LORD says "I am the first and I am the last." In Revelation 1:17 and 22:13 Jesus says it about himself. Nobody had to argue Jesus is divine. The two texts were laid side by side and the reader did the work.</p>
+      </div>
+      <div class="move rv">
+        <span class="tag">Move 02</span>
+        <h5>Follow the name in Jeremiah 23</h5>
+        <p>Psalm 83:18 says the one whose name is the LORD alone is Most High. Jeremiah 23:5 to 6 promises a righteous Branch from David who will be called "The LORD Our Righteousness." A messianic king carrying the divine name.</p>
+      </div>
+      <div class="move rv">
+        <span class="tag">Move 03</span>
+        <h5>Press the honour of John 5:23</h5>
+        <p>Jesus says all should honour the Son "just as" they honour the Father. Greek <span class="lex">kathōs</span>, meaning to the same degree, not merely in a similar spirit. Set beside Isaiah 42:8, where God refuses to give his glory to another, the sentence has nowhere else to go.</p>
+      </div>
+      <div class="move rv">
+        <span class="tag">Move 04</span>
+        <h5>Test a claim against dates and distances</h5>
+        <p>The strongest section of the whole night was not theological at all. It was geography and arithmetic, and it is worth its own heading below.</p>
+      </div>
+    </div>
+
+    <h3 class="rv">Why move 04 was the best argument of the night</h3>
+    <p class="rv">The claim under discussion was whether the biblical account of Ishmael has been corrupted. Rather than trading assertions, the Christian debater laid out specifics from both traditions and let them sit next to each other.</p>
+    <div class="tablewrap rv">
+      <table>
+        <thead><tr><th>Detail</th><th>Genesis</th><th>Sahih al-Bukhari 3364</th></tr></thead>
+        <tbody>
+          <tr><td>Ishmael's age</td><td>Circumcised at 13 in Canaan (Gen 17:25)</td><td>An infant at the separation</td></tr>
+          <tr><td>Who travels</td><td>Hagar and the boy sent out (Gen 21:14)</td><td>Abraham escorts them personally</td></tr>
+          <tr><td>Destination</td><td>Wilderness of Beersheba, roughly 30 km away</td><td>Mecca, roughly 1,300 km south</td></tr>
+          <tr><td>Ishmael's wife</td><td>An Egyptian woman (Gen 21:21)</td><td>A woman of the Jurhum tribe at Mecca</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="rv">Then came the part worth copying. He asked what kind of corruption would produce those differences. A copyist error explains a slipped number or a repeated line. It does not relocate a city by more than a thousand kilometres, consistently, across multiple chapters, while keeping the surrounding narrative coherent.</p>
+    <p class="rv">And he brought outside witnesses. The Book of Jubilees, from roughly the second century BC. Josephus, writing in the first century AD. Philo of Alexandria, first century. All three retell the Abraham material independently and all three match the account you have in your Bible, centuries before Islam existed. A corruption theory now needs every one of those documents corrupted too, by people with no shared motive.</p>
+    <p class="pull rv">Specific beats loud. Every single time.</p>
+  </div></div>
+</section>
+
+<section class="cream">
+  <div class="wrap"><div class="col">
+    <span class="sec-num rv">04</span>
+    <h2 class="rv">The arguments that collapsed</h2>
+    <p class="lead rv">Two collapses on the Muslim side, one overreach on the Christian side. You need all three, because the point of this exercise is not scoring. It is learning what a bad argument looks like from the inside.</p>
+
+    <h3 class="rv">Collapse one: quoting a source that says the opposite</h3>
+    <p class="rv">The Muslim debater held up the MacArthur Study Bible to prove the Bible is riddled with uncorrected errors. The Christian debater found the actual page and read the note aloud. It says relatively few scribal errors were made, they are identifiable and correctable, and the original content of the Bible has been preserved.</p>
+    <p class="rv">The source, read in full, argued against the person holding it. That is the worst position in any exchange, and it happened because the quote was lifted from someone else's list instead of being read in context.</p>
+
+    <h3 class="rv">Collapse two: half a paragraph from James Dunn</h3>
+    <p class="rv">He quoted the scholar James D. G. Dunn to argue the first Christians did not worship Jesus. Then the other debater opened the same book to page 28 and had him read what came before it. Dunn describes worship language used of Jesus as striking and without precedent in the Judaism of the time, and says invocation of Jesus in prayer was a regular feature of early Christian worship, pointing to 1 Corinthians 1:2.</p>
+    <p class="rv">Dunn's caution about how Christ-devotion relates to Father-devotion is a real scholarly discussion. Quoting the caution while hiding the description flips the author's meaning. Anyone with the book on the shelf will catch it.</p>
+
+    <h3 class="rv">Collapse three: Song of Songs 5:16</h3>
+    <p class="rv">The final claim of the night was that the name Muhammad appears in the Bible, in Song of Songs 5:16, hidden inside the Hebrew word rendered "altogether lovely."</p>
+    <div class="verse rv">
+      <span class="ref">Song of Songs 5:16 (NASB)</span>
+      <q>His mouth is full of sweetness. And he is wholly desirable. This is my beloved and this is my friend, daughters of Jerusalem.</q>
+      <p class="note">The Hebrew is <span class="lex">machamaddim</span>, from the root <span class="lex">chamad</span>, to desire.</p>
+    </div>
+    <p class="rv">Here is the check anyone can run. The same word appears elsewhere as an ordinary noun meaning something precious or desirable. Lamentations 1:10 uses it of the treasures of the temple. Lamentations 2:4 uses it of the delights of the eye. Hosea 9:6 and 9:16 use it of prized silver and beloved children. Isaiah 64:11 uses it of pleasant places. No tradition, Jewish or Christian, reads any of those as a proper name.</p>
+    <p class="rv">The plural ending works the way it works in <span class="lex">Elohim</span>, a plural of majesty with a singular subject. That grammatical point was made in the room and it is correct. And the immediate context settles it anyway. A bride is describing her bridegroom to the daughters of Jerusalem, verse by verse, from his head to his legs. Verse 16 is the last line of a physical description of a man she is already married to.</p>
+
+    <h3 class="rv">And the Christian overreach</h3>
+    <p class="rv">One of the Christian debaters claimed the church fathers unanimously agreed on the divinity of Christ and treated them as the settled authority on the question. Both halves need trimming.</p>
+    <p class="rv">Early Christology was more varied than "unanimous." Justin Martyr's Logos language and Origen's gradations of being do not line up neatly with later formulations, and pretending otherwise hands the other side an easy correction. He also had stronger evidence sitting unused. Pliny the Younger, a Roman governor with no interest in defending Christians, wrote to Emperor Trajan around AD 112 reporting that they gathered before dawn to sing to Christ as to a god. A hostile witness, dated, on the record.</p>
+    <div class="flag rv">
+      <h4>The deeper problem</h4>
+      <p>He was arguing from church authority rather than from Scripture, and he told the other side their own scholars did not count because they lacked ecclesial standing. That is a losing position on principle, not merely on tactics. Isaiah 8:20 sets the standard. To the law and to the testimony. If a claim will not stand from the text, no council or father makes it stand.</p>
+    </div>
+  </div></div>
+</section>
+
+<section>
+  <div class="wrap"><div class="col">
+    <span class="sec-num rv">05</span>
+    <h2 class="rv">Four hard questions, answered properly</h2>
+    <p class="lead rv">Open these one at a time. Sit with the objection before you read the response. If you skip to the answer you are training yourself to recite rather than to think.</p>
+
+    <details class="rv"><summary>"Jesus says my God after the resurrection. God does not have a God."</summary>
+      <div class="body">
+        <p>True observation, wrong conclusion. Hebrews 1 has the Father addressing the Son directly as God in verse 8, then in verse 9 says "God, your God, has anointed you." Both statements in consecutive verses, from the same writer, who saw no clash.</p>
+        <p>The Son entered our humanity permanently, not temporarily. He did not shed it at the resurrection. Revelation 5 shows the Lamb still bearing the marks of slaughter, receiving the identical worship given to the one on the throne. Relationship inside the Godhead is real, and it never was a ranking of nature.</p>
+      </div>
+    </details>
+
+    <details class="rv"><summary>"Jeremiah 23 says Judah will be saved and Israel will dwell safely. That never happened."</summary>
+      <div class="body">
+        <p>This was the best point the Muslim debater made all night, and nobody answered it. Do not let that stand.</p>
+        <p>Messianic prophecy in the Hebrew Bible regularly holds two horizons together. Isaiah 9:6 announces a child born with the government on his shoulders and a kingdom without end in the same breath. Isaiah 61 does the same, and when Jesus read it aloud in Luke 4:18 to 21 he stopped mid-sentence, before the line about the day of vengeance, and said the part he had read was fulfilled that day. He divided the prophecy himself.</p>
+        <p>So the honest response is not "it did happen." It is that the reign began at the cross and completes at the return. Which is exactly the shape of everything else you believe about him.</p>
+      </div>
+    </details>
+
+    <details class="rv"><summary>"Your own scholars admit the Bible has textual variants."</summary>
+      <div class="body">
+        <p>Yes. Say so plainly and quickly, because the flinch is what makes it look damaging.</p>
+        <p>Then explain why variants exist. Around 5,800 Greek manuscripts of the New Testament survive, plus roughly 10,000 Latin and thousands more in other languages. More copies produce more variation, and more copies also let you trace the wording back. A text preserved through a single controlled line would have fewer variants and far less ability to check itself.</p>
+        <p>The vast majority of variants are spelling and word order. The two significant disputed passages, the longer ending of Mark and the story in John 8, are flagged in the footnotes of any modern Bible. No doctrine rests on either. 1 John 5:7 in the King James, which came up repeatedly in the debate, is a genuinely late addition, and modern translations have already removed it. That correction was made by Christian scholars, published in Christian Bibles, in public.</p>
+      </div>
+    </details>
+
+    <details class="rv"><summary>"The unlettered prophet of Surah 7:157 is described in your Torah and Gospel."</summary>
+      <div class="body">
+        <p>Ask which passage, then read it in full. The text usually offered is Deuteronomy 18:15, the prophet like Moses.</p>
+        <p>Acts 3:22 to 26 has Peter quoting that exact passage and applying it to Jesus, in Jerusalem, within a few years of the crucifixion, in front of a Jewish audience who knew the text and could have objected. That is the earliest interpretation on record by several centuries.</p>
+        <p>Deuteronomy 18:18 also says the prophet will be raised up "from among their brothers," and Deuteronomy 34:10 adds that no prophet had arisen in Israel like Moses. The passage is looking inside Israel.</p>
+      </div>
+    </details>
+  </div></div>
+</section>
+
+<section class="cream">
+  <div class="wrap"><div class="col">
+    <span class="sec-num rv">06</span>
+    <h2 class="rv">Six rules that came out of that room</h2>
+    <p class="lead rv">Most of these were learned the hard way, by somebody getting caught on camera. Take them for free.</p>
+    <ol class="steps">
+      <li class="rv"><strong>Read the whole page before you quote it</strong>Two arguments died that night because someone quoted a source they had not read. Open the book. Read what comes before and after. If the surrounding paragraph works against you, you have found something out and you should be glad you found it in private.</li>
+      <li class="rv"><strong>Never repeat a claim you cannot check yourself</strong>A quotation was read from a website with no named book and no chain of transmission. When asked for the source, there was nothing to produce. If your only source is a screenshot, it is not yet an argument.</li>
+      <li class="rv"><strong>Answer the question asked</strong>Both sides dodged. Both sides looked worse for it. When you cannot answer, say you do not know and offer to come back with something solid. People forgive that. They do not forgive the swerve.</li>
+      <li class="rv"><strong>Build from the text, not from your institution</strong>The moment your case depends on which authorities count, the conversation has left Scripture. Isaiah 8:20 is not a slogan. It is a method.</li>
+      <li class="rv"><strong>Watch the swap</strong>The core move of the night was quietly trading "distinct from the Father" for "not divine." Learn to spot the swap. Name it calmly when you see it.</li>
+      <li class="rv"><strong>Keep the person in front of you</strong>Somebody in that room got called a disbeliever by a man from another religion, and the whole thing derailed for several minutes. Nobody learned anything during that stretch. Nobody ever does.</li>
+    </ol>
+  </div></div>
+</section>
+
+<section class="closing">
+  <div class="wrap"><div class="col">
+    <div class="cross"></div>
+    <span class="sec-num rv">07</span>
+    <h2 class="rv">The part nobody debated</h2>
+    <p class="lead rv">Hours of argument, and here is what struck me at the end of it. Not one person in that room disagreed about what Jesus did. They argued about who he is. Nobody argued about whether he healed the sick, fed the hungry, or went to the cross.</p>
+    <p class="rv">And the identity question was never a technicality. It settles whether the cross was a good man dying or God himself coming down into the wreckage to get you out.</p>
+    <div class="verse rv">
+      <span class="ref">Philippians 2:6 to 8 (ESV)</span>
+      <q>Though he was in the form of God, he did not count equality with God a thing to be grasped, but emptied himself, by taking the form of a servant. And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross.</q>
+    </div>
+    <p class="rv">Read what he gave up. Not his nature. His rights. He had every claim to the throne and he laid them down, and he did it before you had any interest in him, before you could argue a single point in his defence. The blood came first. Your testimony comes second. Revelation 12:11 puts them in that order deliberately.</p>
+    <p class="pull rv">You do not defend him to earn him. You defend him because he already came for you.</p>
+    <p class="rv">So here is the invitation, and it is not "go and win an argument." Some of you have been carrying quiet fear that your faith would not survive a real question. That is not a reason to read harder. It is a reason to look again at the one who held on to you while you were unsure.</p>
+    <p class="rv">Sit with Philippians 2 this week. Read it slowly. Ask him for what he already purchased, which is a settled heart. Study follows that. It has never worked in the other order.</p>
+    <p class="rv">Then go and be the kind of person somebody wants to ask.</p>
+  </div></div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="mark">PlainProphecy</span>
+    <span>Every claim in this article is checkable. Go and check it.</span>
+  </div>
+</footer>
+
+<script>
+const bar=document.getElementById('bar');
+addEventListener('scroll',()=>{
+  const h=document.documentElement.scrollHeight-innerHeight;
+  bar.style.width=(h>0?(scrollY/h)*100:0)+'%';
+},{passive:true});
+
+const io=new IntersectionObserver((es)=>{
+  es.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('in'),i*60);io.unobserve(e.target)}})
+},{threshold:0.12,rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+addEventListener('load',()=>document.querySelectorAll('.hero .rv').forEach(el=>el.classList.add('in')));
+</script>
+</body>
+</html>

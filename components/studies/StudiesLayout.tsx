@@ -161,6 +161,17 @@ function StudiesNav() {
           </SidebarMenuItem>
           <SidebarMenuItem>
             <SidebarMenuButton
+              tooltip="Another Helper"
+              isActive={pathname === "/studies/holy-spirit"}
+              className="studies-book-btn"
+              onClick={() => router.push("/studies/holy-spirit")}
+            >
+              <span className="studies-book-icon-24" aria-hidden="true">🕊️</span>
+              <span className="studies-book-label studies-sidebar-footer-text">Another Helper</span>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+          <SidebarMenuItem>
+            <SidebarMenuButton
               tooltip="Studies Home"
               isActive={pathname === "/studies"}
               className="studies-book-btn"

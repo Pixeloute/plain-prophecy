@@ -172,6 +172,12 @@ export const studyCardMeta: Record<string, StudyCardMeta> = {
     isNew: true,
     shortDescription: "Catholic, Non-Trinitarian, and Heavenly Trio: three views of God's nature, compared side by side.",
   },
+  "another-helper": {
+    emoji: "🕊️",
+    accentColor: "#0e1a2b",
+    isNew: true,
+    shortDescription: "A six-session study on the Holy Spirit, from the upper room to Pentecost and beyond.",
+  },
 };
 
 export function getCardMeta(slug: string): StudyCardMeta {
